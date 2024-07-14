@@ -1,0 +1,146 @@
+body {
+    font-family: 'Faustina', serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+header {
+    background-color: #003049;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #ffd900b0;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.user-menu img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.user-menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #003049;
+    border-radius: 5px;
+}
+
+.user-menu:hover .dropdown {
+    display: block;
+}
+
+.user-menu .dropdown ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-menu .dropdown ul li {
+    padding: 10px;
+}
+
+.user-menu .dropdown ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.content h2 {
+    color: #003049;
+}
+
+.logout button {
+    background-color: #003049;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-resources, .footer-main, .footer-legal {
+    flex: 1;
+}
+
+.footer-resources ul, .footer-legal ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-resources ul li, .footer-legal ul li {
+    margin-bottom: 10px;
+}
+
+.footer-resources ul li a, .footer-legal ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-main {
+    text-align: center;
+}
