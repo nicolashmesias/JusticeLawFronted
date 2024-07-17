@@ -36,11 +36,16 @@ header {
 }
 
 .search-bar button {
-    background-color: #ffd900b0;
+    background-color: #ffd900;
     border: none;
     padding: 5px;
     border-radius: 5px;
     margin-left: 5px;
+}
+
+.search-bar img {
+height: 20px;
+align-items: center;
 }
 
 nav ul {
