@@ -247,9 +247,22 @@ footer {
   margin: 20px;
 }
 
-.footer-main img {
-  position: relative;
+.footer-main a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-decoration: none; 
+  overflow: hidden; 
+  position: relative; 
   top: -30px;
+}
+
+.footer-main a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
 }
 
 .footer-main .linea2 {
