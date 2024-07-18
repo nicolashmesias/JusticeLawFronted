@@ -93,8 +93,10 @@ footer {
   background-color: #000000;
   color: #ffffff;
   display: flex;
+  height: 220px;
+  width: 100%;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0px;
 }
 
 .footer-resources,
@@ -229,7 +231,7 @@ body {
 }
 .footer-legal .linea4{
   position: relative ;
-  left:369px;
+  left:379px;
   right: 97px;
   border-top: 1px solid #CF9E3E;
   margin-bottom: 10px; 
@@ -250,20 +252,46 @@ body {
   width: 7%; 
 }
 .footer-main .linea2{
-  width: 50%; 
+  width: 16%; 
+  position: relative;
+  top:-25px;
+  left: unset;
   height: 1px; 
   background-color: #CF9E3E; 
   margin: 20px auto;
 }
+.footer-main img{
+  position: relative;
+  top: -30px;
+  left: unset;
+}
+.footer-main h3{
+  font-size: 20px;
+  text-align:inherit;
+  font-weight: lighter;
+  font-family: "Faustina", serif;
+  position:relative ;
+  top: -20px;
+  left:unset;
+
+}
+.footer-main h1{
+  font-size: 40px;
+  font-weight:550;
+
+}
 .footer-main p{
+  position: relative;
+  top: -30px;
   font-size: 10px;
   margin: 20px;
 }
 .footer-main .linea3{
-  position: absolute;
+  position: relative;
+  top: -20px;
   left: 50%;
   right: 50%;
-  width:100%;
+  width:330%;
   height: 1px;
   transform: translateX(-50%);
   background-color: white;
