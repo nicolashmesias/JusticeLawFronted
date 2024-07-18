@@ -9,17 +9,51 @@
     <style>
         .footer-legal{
             text-align: right;
-            padding-right: 60px;
+            padding-right: 95px;
         }
         .footer-legal li{
             font-size: 14px; 
         }
+        .footer-legal .linea4{
+            position: absolute;
+            right: 97px;
+            border-top: 1px solid #CF9E3E; /* Grosor y tipo de línea */
+            margin-bottom: 10px; /* Espacio debajo de la línea */
+            width: 8%; 
+        }
         .footer-resources{
             text-align: left;
-            padding-left: 60px;
+            padding-left: 95px;
         }
         .footer-resources li{
             font-size: 14px;
+        }
+        .footer-resources .linea1{
+            position: absolute;
+            left: 97px;
+            border-top: 1px solid #CF9E3E; /* Grosor y tipo de línea */
+            margin-bottom: 10px; /* Espacio debajo de la línea */
+            width: 8%; 
+        }
+        .footer-main .linea2{
+            width: 50%; /* Ancho de la línea */
+            height: 1px; /* Grosor de la línea */
+            background-color: #CF9E3E; /* Color de la línea */
+            margin: 20px auto;
+        }
+        .footer-main p{
+            font-size: 10px;
+            margin: 20px;
+        }
+        .footer-main .linea3{
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            width:100%;
+            height: 1px;
+            transform: translateX(-50%);
+            background-color: white;
+            margin: 10px;
         }
     </style>
 </head>
@@ -104,6 +138,7 @@
         <div class="footer-resources">
             <ul>
                 <h3>Recursos</h3>
+                <div class="linea1"></div>
                 <li><a href="blog">Blog</a></li>
                 <li><a href="contacto">Contacto</a></li>
                 <li><a href="faq">FAQ</a></li>
@@ -111,18 +146,21 @@
         </div>
         <div class="footer-main">
             <h1>JUSTICE</h1>
-                <p>LAW</p>
-            <p>&copy; 2024 JusticeLaw - Todos los derechos reservados</p>
+                <h2>LAW</h2>
+        <div class="linea2"></div>
             <img src="../../img/Instagram.png" alt="Instagram">
             <img src="../../img/Facebook.png" alt="Facebook">
             <img src="../../img/Youtube.png" alt="Youtube">
             <img src="../../img/Twiter.png" alt="Twiter">
             <img src="../../img/Linkedin.png" alt="Linkedin">
+            <div class="linea3"></div>
+            <p>&copy; 2024 JusticeLaw - Todos los derechos reservados</p>
             
         </div>
         <div class="footer-legal">
             <ul>
                 <h3>Legal</h3>
+                <div class="linea4"></div>
                 <li><a href="terminos">Términos de uso</a></li>
                 <li><a href="cookies">Política de Cookies</a></li>
                 <li><a href="privacidad">Política de privacidad</a></li>
