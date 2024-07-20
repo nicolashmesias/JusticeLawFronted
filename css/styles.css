@@ -187,6 +187,7 @@ body {
 .search-bar input {
   border: none;
   outline: none;
+  margin-left: 7px;
   width: 100%;
   border-radius: 15px 0 0 15px;
 }
