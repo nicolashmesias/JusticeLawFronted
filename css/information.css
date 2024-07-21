@@ -98,3 +98,8 @@
 .pension h2{
     font-size: 26px;
 }
+.pension h3{
+    margin-top: 0; 
+    font-weight: lighter;
+    font-size: 16px;
+}
