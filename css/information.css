@@ -45,6 +45,7 @@
     float: left;
     width: 30%; 
     text-align: center;
+    color:#003049;
 }
 .information h2{
     font-size: 29px;
@@ -71,7 +72,7 @@
 }
 .dest {
     position: relative;
-    left: 450px;
+    left: 600px;
     top: -255px;
     float: left;
     width: 30%; 
@@ -84,4 +85,16 @@
     width: 317px; /* Ajusta el tamaño de la imagen */
     height: 218px; 
     margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+.pension{
+    position: relative;
+    left: 265px;
+    top: -40px;
+    float: left;
+    width: 20%; 
+    text-align: center;
+    color:#003049;
+}
+.pension h2{
+    font-size: 26px;
 }
