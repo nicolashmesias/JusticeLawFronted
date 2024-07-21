@@ -1,0 +1,43 @@
+.content {
+    display: flex;
+   text-align: right 80%;
+   position: relative;
+}
+.information {
+    text-align:center;
+    left:70px;
+    right: 70px;
+    margin-bottom: 10px; 
+}
+
+.information img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin-top: -10px;
+}
+.information p{
+    margin-top: -10px;
+}
+.guia img {
+    width: 830px;
+    height: 350px;
+    margin:20px;
+
+}
+
+.guia h2 {
+   position:absolute;
+   right: 50%;
+   top:90%;
+   text-align: center;
+}
+.guia h3{
+    font-size: 15px;
+    position:absolute;
+    right: 70%;
+    top:105%;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Faustina", serif;
+}
