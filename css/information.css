@@ -7,7 +7,6 @@
     padding: 20px;
     box-sizing: border-box;
 }
-
 .guia {
 
     text-align: center;
@@ -15,10 +14,8 @@
     display: flex;
     flex-direction: column;
     margin-right: 60px;
-    color:#003049;
-    
+    color:#003049;  
 }
-
 .guia img {
     width: 800px; 
     height: 370px; 
@@ -52,16 +49,15 @@
 }
 
 .information img {
-    width: 150px; /* Ajusta el tamaño de la imagen */
+    width: 150px; 
     height: 150px;
-    border-radius: 50%; /* Redondea la imagen */
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    border-radius: 50%; 
+    margin-bottom: 10px; 
 }
 
 .information p {
-
     font-size: 24px;
-    margin-top: 0; /* Elimina el margen superior del párrafo */
+    margin-top: 0;
 }
 .logout button{
     left: 25%;
@@ -82,9 +78,9 @@
     font-size: 29px;
 }
 .dest img {
-    width: 317px; /* Ajusta el tamaño de la imagen */
+    width: 317px; 
     height: 218px; 
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 10px;
 }
 .pension{
     position: relative;
