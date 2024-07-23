@@ -1,0 +1,101 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.guia {
+
+    text-align: center;
+    flex: 60%; 
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    color:#003049;  
+}
+.guia img {
+    width: 800px; 
+    height: 370px; 
+    margin-bottom: 20px; 
+}
+.guia h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.guia h3{
+    margin-top: 0; 
+    font-weight: lighter;
+    font-size: 16px;
+}
+.guia p{
+    margin-right: 60px;
+    font-size: 22px;
+    margin-top: 0; 
+}
+.information {
+    position: relative;
+    left: 10px;
+    top: -160px;
+    float: left;
+    width: 30%; 
+    text-align: center;
+    color:#003049;
+}
+.information h2{
+    font-size: 29px;
+}
+
+.information img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    margin-bottom: 10px; 
+}
+
+.information p {
+    font-size: 22px;
+    margin-top: 0;
+}
+.logout button{
+    left: 25%;
+    width: 12%;
+    position: relative;
+    top: -350px;
+    border-radius: 20px;
+}
+.dest {
+    position: relative;
+    left: 600px;
+    top: -290px;
+    float: left;
+    width: 30%; 
+    text-align: center;
+}
+.dest h2{
+    font-size: 29px;
+}
+.dest img {
+    width: 317px; 
+    height: 218px; 
+    margin-bottom: 10px;
+}
+.pension{
+    position: relative;
+    left: 265px;
+    top: -70px;
+    float: left;
+    width: 20%; 
+    text-align: center;
+    color:#003049;
+}
+.pension h2{
+    font-size: 26px;
+}
+.pension h3{
+    margin-top: -20px; 
+    font-weight: lighter;
+    font-size: 16px;
+}
