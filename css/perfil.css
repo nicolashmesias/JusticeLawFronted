@@ -1,0 +1,42 @@
+.perfil {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.sidebar {
+    position: sticky;
+    top: 20px; /* Ajusta la distancia desde el top para mantener el espacio con el borde superior */
+    width: 200px;
+    background-color: #ffffff;
+    padding: 30px;
+    height: calc(100vh - 60px); /* Ajusta la altura considerando el padding superior e inferior */
+    overflow-y: auto;
+    
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #00A8FF;
+    
+}
