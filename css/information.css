@@ -222,7 +222,7 @@ button{
     gap:5px;
     width: 300px;
     position: absolute; 
-    top:150%;
+    top:145%;
     right: 140px; 
 }
 
@@ -254,6 +254,104 @@ button{
     background: gray;
     border-radius: 10px;
 }
+.tutela h1{
+    text-align: center;
+    font-size: 64px;
+}
+.tutela img{
+    width: 900px;
+    height: 776px;  
+    margin: 30px;
+}
+.info{
+    position: absolute;
+    top: 250px;
+    right: 90px;
+    width: 40%;
+    height: auto;
+    text-align: auto;
+}
+.info h2{
+    font-size: 39px;
+    text-align: left;
+}
+.info p{
+    font-size: 29px;
+    text-align: left;
+}
+.container {
+    display: flex;
+    justify-content: space-between; 
+    width: 95%;
+    gap:30px;
+    padding: 10px;
+    margin-top: 40px;
+    margin: 40px;
+   
+}
+.info1, .info2, .info3 {
+    flex: 1;
+    text-align: center;
+}
+.info1 h2,.info2 h2, .info3 h2{
+    font-size: 36px;
+}
+.info1 p, .info2 p,.info3 p{
+    font-size: 20px;
+}
+.info4 {
+    margin-top: 90px;
+    margin: 20px;
+}
+.info4 h1{
+    font-size: 36px;
+}
+.info4 .line1{
+    padding-left: 60px;
+    border-top: 1px solid #ABABAB;
+    margin-bottom: 10px;
+    width: 40%;
+}
+.info4 p{
+    font-size: 20px;
+}
+.contenedor-columnas {
+    display: flex;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    gap: 40px; /* Espacio entre las columnas */
+    padding: 20px; /* Espacio interno del contenedor */
+}
 
+.columna-izquierda, .columna-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+.info5, .info6, .info7, .info8, .info9, .info10 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 20px;
+    border: 1px solid #ccc; 
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); 
+    background-color: #fff; 
+    transition: background-color 0.3s; 
+    cursor: pointer; 
+    box-sizing: border-box; 
+    width: 350px;
+}
 
+.info5:hover, .info6:hover, .info7:hover, .info8:hover, .info9:hover, .info10:hover {
+    background-color: #f0f0f0;
+}
+
+h3 {
+    margin: 0; 
+}
+
+img {
+    width: 20px; 
+    height: 20px;
+}
