@@ -1,101 +1,184 @@
+/* CSS General */
 .content {
-    display: flex;
+    display:contents;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
+    color: #003049;
 }
-.guia {
 
-    text-align: center;
-    flex: 60%; 
-    display: flex;
-    flex-direction: column;
-    margin-right: 60px;
-    color:#003049;  
+/* CSS para .guia */
+.guia {
+    text-align: center; 
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
 }
+
 .guia img {
-    width: 800px; 
-    height: 370px; 
-    margin-bottom: 20px; 
+    left: 300px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
-.guia h2{
+
+.guia h2 {
     font-size: 30px;
     margin-bottom: 10px;
 }
-.guia h3{
-    margin-top: 0; 
+
+.guia h3 {
+    margin-top: 0;
     font-weight: lighter;
     font-size: 16px;
 }
-.guia p{
-    margin-right: 60px;
+
+.guia p {
     font-size: 22px;
-    margin-top: 0; 
+    margin: 0;
 }
+
+/* CSS para .information */
 .information {
-    position: relative;
-    left: 10px;
-    top: -160px;
-    float: left;
-    width: 30%; 
+    position: absolute;
+    top: 70px;
+    right: 90px;
+    width: 30%;
+    height: auto;
     text-align: center;
-    color:#003049;
 }
-.information h2{
+
+.information h2 {
     font-size: 29px;
 }
 
 .information img {
-    width: 150px; 
-    height: 150px;
-    border-radius: 50%; 
-    margin-bottom: 10px; 
+    width: 100%;
+    max-width: 130px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .information p {
     font-size: 22px;
-    margin-top: 0;
 }
-.logout button{
-    left: 25%;
-    width: 12%;
-    position: relative;
-    top: -350px;
-    border-radius: 20px;
-}
+
+/* CSS para .dest */
 .dest {
-    position: relative;
-    left: 600px;
-    top: -290px;
-    float: left;
-    width: 30%; 
+    position: absolute;
+    top: 450px;
+    right: 90px;
+    width: 30%;
+    height: auto;
     text-align: center;
 }
-.dest h2{
+
+.dest h2 {
     font-size: 29px;
 }
+
 .dest img {
-    width: 317px; 
-    height: 218px; 
+    width: 100%;
+    max-width: 317px;
+    height: auto;
     margin-bottom: 10px;
 }
-.pension{
-    position: relative;
-    left: 265px;
-    top: -70px;
+
+/* CSS para .pension */
+.pension {
+    position: absolute;
+    left:68%;
+    top:750px;
     float: left;
     width: 20%; 
     text-align: center;
-    color:#003049;
+
 }
-.pension h2{
+
+.pension h2 {
+    text-align: center;
     font-size: 26px;
+    margin-top: 0px;
 }
-.pension h3{
-    margin-top: -20px; 
+
+.pension h3 {
+    margin-top: -20px;
     font-weight: lighter;
     font-size: 16px;
+}
+
+.pension p {
+    font-size: 20px;
+}
+
+/* CSS para .img */
+.img {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img h2 {
+    text-align: left;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.img h3 {
+    margin-top: -20px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.img img {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.img p {
+    font-size: 20px;
+}
+
+/* CSS para .img2 */
+.img2 {
+    position: absolute;
+    left:32%;
+    top:690px;
+    width: 30%; 
+    text-align: center;
+}
+
+.img2 h2 {
+    text-align: left;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.img2 h3 {
+    margin-top: -20px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.img2 img {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.img2 p {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+/* CSS para .logout button */
+.logout button {
+    width: 12%;
+    border-radius: 20px;
+    margin-top: 20px;
 }
