@@ -41,22 +41,45 @@
 }
 
 .carousel {
-  display: flex;
-  align-items: center;
-  width: 1000px;
+  width: 90vw;
+  margin: 20px 0px;
   height: auto;
+  overflow:hidden;
+  flex-wrap: nowrap;
+}
+.carousel .carousel-slide {
+ display: flex;
+ align-items: center;
+  gap: 20px;
+  animation: scroll 60s linear infinite;
+  -webkit-animation: scroll 60s linear infinite;
+  width: calc(300px * 8);
 }
 
-.carousel img {
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  transition: .5s ease;
+.carousel .slide {
+  width:300px;
+  flex: 1 0 auto;
+  margin: 0 10px;
+}
+.carousel .slide  img {
+  width: 100%;
 }
 
-.carousel img:hover {
-  width: 10%;
+.carousel .slide img:hover {
+  width: 120%;
 }
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(calc(-300 * 4));
+  }
+  100%{
+    -webkit-transform: translateX(calc(-350px * 4));
+    transform: translateX(calc(-300 * 4));
+  }
+  }
+
 
 .informacion {
   background-color: #003049;
