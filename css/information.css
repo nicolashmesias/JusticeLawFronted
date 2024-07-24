@@ -1,4 +1,3 @@
-/* CSS General */
 main{
 margin: 0px 20px;
 }
@@ -12,8 +11,6 @@ margin: 0px 20px;
     margin-bottom: 80px;
     
 }
-
-/* CSS para .guia */
 .guia {
     text-align: center; 
     width: 100%;
@@ -41,11 +38,9 @@ margin: 0px 20px;
 
 .guia p {
     font-size: 22px;
-    margin: 0;
-    
+    margin: 0;    
 }
 
-/* CSS para .information */
 .information {
     position: absolute;
     top: 70px;
@@ -58,7 +53,6 @@ margin: 0px 20px;
 .information h2 {
     font-size: 29px;
 }
-
 .information img {
     width: 100%;
     max-width: 130px;
@@ -66,12 +60,10 @@ margin: 0px 20px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
-
 .information p {
     font-size: 22px;
 }
 
-/* CSS para .dest */
 .dest {
     position: absolute;
     top: 450px;
@@ -80,19 +72,15 @@ margin: 0px 20px;
     height: auto;
     text-align: center;
 }
-
 .dest h2 {
     font-size: 29px;
 }
-
 .dest img {
     width: 100%;
     max-width: 317px;
     height: auto;
     margin-bottom: 10px;
 }
-
-/* CSS para .pension */
 .pension {
     position: absolute;
     left:68%;
@@ -100,53 +88,44 @@ margin: 0px 20px;
     float: left;
     width: 20%; 
     text-align: center;
-
 }
-
 .pension h2 {
     text-align: center;
     font-size: 26px;
     margin-top: 0px;
 }
-
 .pension h3 {
     margin-top: -20px;
     font-weight: lighter;
     font-size: 16px;
 }
-
 .pension p {
     font-size: 20px;
 }
 
-/* CSS para .img */
 .img {
     width: 30%;
     text-align: center;
     margin-bottom: 20px;
    box-sizing: border-box;
-    
+   
 }
-
 .img h2 {
     text-align: center;
     font-size: 25px;
     margin-top: 0px;
 }
-
 .img h3 {
     margin-top: -20px;
     font-weight: lighter;
     font-size: 16px;
 }
-
 .img img {
     width: 100%;
     max-width: 370px;
     height: auto;
     margin-bottom: 10px;
 }
-
 .img p {
     font-size: 20px;
 }
@@ -154,33 +133,27 @@ margin: 0px 20px;
     width: 30%;
     text-align: center;
     margin-bottom: 20px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
-
 .img2 h2 {
     text-align: center;
     font-size: 25px;
     margin-top: 0px;
 }
-
 .img2 h3 {
     margin-top: -20px;
     font-weight: lighter;
     font-size: 16px;
 }
-
 .img2 img {
     width: 100%;
     max-width: 370px;
     height: auto;
     margin-bottom: 10px;
 }
-
 .img2 p {
     font-size: 20px;
 }
-/* CSS para .img2 */
 .img3 {
     position: absolute;
     left:32%;
@@ -231,23 +204,19 @@ margin: 0px 20px;
     font-size: 25px;
     margin-top: 0px;
 }
-
 .img4 h3 {
     margin-top: -20px;
     font-weight: lighter;
     font-size: 16px;
 }
-
 .img4 img {
     width: 370px;
     height: auto;
     margin-bottom: 10px;
 }
-
 .img4 p {
    
     font-size: 20px;
-
 }
 button{
   background-color: #003049;
@@ -259,5 +228,4 @@ button{
   border-radius: 20px;
   width: 168px;
   height: 48;
-  margin:
 }
