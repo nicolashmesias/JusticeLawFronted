@@ -1,4 +1,7 @@
 /* CSS General */
+main{
+margin: 0px 20px;
+}
 .content {
     display:contents;
     flex-wrap: wrap;
@@ -6,6 +9,8 @@
     padding: 10px;
     box-sizing: border-box;
     color: #003049;
+    margin-bottom: 80px;
+    
 }
 
 /* CSS para .guia */
@@ -20,7 +25,7 @@
     left: 300px;
     width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .guia h2 {
@@ -37,6 +42,7 @@
 .guia p {
     font-size: 22px;
     margin: 0;
+    
 }
 
 /* CSS para .information */
@@ -118,10 +124,12 @@
     width: 30%;
     text-align: center;
     margin-bottom: 20px;
+   box-sizing: border-box;
+    
 }
 
 .img h2 {
-    text-align: left;
+    text-align: center;
     font-size: 25px;
     margin-top: 0px;
 }
@@ -142,18 +150,16 @@
 .img p {
     font-size: 20px;
 }
-
-/* CSS para .img2 */
 .img2 {
-    position: absolute;
-    left:32%;
-    top:690px;
-    width: 30%; 
+    width: 30%;
     text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    
 }
 
 .img2 h2 {
-    text-align: left;
+    text-align: center;
     font-size: 25px;
     margin-top: 0px;
 }
@@ -172,13 +178,86 @@
 }
 
 .img2 p {
-    margin-left: 20px;
     font-size: 20px;
 }
+/* CSS para .img2 */
+.img3 {
+    position: absolute;
+    left:32%;
+    top:740px;
+    width: 30%; 
+    height: 1169;
+    text-align: center;
+    box-sizing: border-box;
 
-/* CSS para .logout button */
-.logout button {
-    width: 12%;
-    border-radius: 20px;
-    margin-top: 20px;
+}
+
+.img3 h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.img3 h3 {
+    margin-top: -20px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.img3 img {
+    width: 370px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.img3 p {
+   
+    font-size: 20px;
+
+}
+.img4 {
+    position: absolute;
+    left:32%;
+    top:1200px;
+    width: 30%; 
+    height: 1169;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.img4 h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.img4 h3 {
+    margin-top: -20px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.img4 img {
+    width: 370px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.img4 p {
+   
+    font-size: 20px;
+
+}
+button{
+  background-color: #003049;
+  color: #ffffff;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 168px;
+  height: 48;
+  margin:
 }
