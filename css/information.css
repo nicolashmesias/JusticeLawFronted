@@ -259,9 +259,9 @@ button{
     font-size: 64px;
 }
 .tutela img{
-    width: 620px;
-    height: 540px;  
-    margin: 30px; 
+    width: 900px;
+    height: 776px;  
+    margin: 30px;
 }
 .info{
     position: absolute;
@@ -272,11 +272,11 @@ button{
     text-align: auto;
 }
 .info h2{
-    font-size: 36px;
+    font-size: 39px;
     text-align: left;
 }
 .info p{
-    font-size: 25px;
+    font-size: 29px;
     text-align: left;
 }
 .container {
