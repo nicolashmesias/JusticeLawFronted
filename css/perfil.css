@@ -39,6 +39,7 @@
   font-weight: 700;
   margin-bottom: 2.5rem;
 }
+
 .sidebar ul .titulo i {
   padding-right: 1rem;
 }
@@ -67,31 +68,42 @@ hr {
   background-color: #e9e9e9;
 }
 
-.crear-perfil {
-  padding-top: 3.5rem;
-  padding-left: 6rem;
+.perfil-content {
+  flex: 1;
+  padding: 3.5rem 6rem;
+  position: relative;
+}
+
+.perfil-main {
+  position: relative;
 }
 
 #fotoPerfil {
-  float: left;
   width: 100px;
   height: 100px;
   position: absolute;
 }
 
 #circuloPerfil {
-  top: 40%;
-  left: 40%;
-  float: left;
+  top: 4rem;
+  left: 10%;
   width: 35px;
   height: 35px;
   position: absolute;
 }
 
+#agregarFoto {
+  top: 4.44rem;
+  left: 11%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
 .nombre-perfil {
-  left: 40.6%;
   padding-top: 1rem;
-  float: right;
+  padding-left: 7.5rem;
+  position: absolute;
 }
 
 .nombre-perfil h3 {
@@ -100,39 +112,12 @@ hr {
   font-size: 20px;
 }
 
-#agregarFoto {
-  top: 41.2%;
-  left: 40.6%;
-  float: left;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-}
-
 .info {
-  padding-top: 10rem;
-}
-
-.info input, .info select {
-  border: none;
-  border-radius: 10px;
-  font-size: 13px;
-  width: 90%;
-  padding: 7px 13px;
-  margin: 15px 0;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  box-sizing: border-box;
-}
-
-input:focus, select:focus {
-  outline: none;
+  margin-top: 10rem;
 }
 
 .container {
   display: flex;
-  
   justify-content: space-between;
 }
 
@@ -144,4 +129,35 @@ input:focus, select:focus {
 
 label {
   margin-top: 10px;
+}
+
+.info input, .info select {
+  border: none;
+  border-radius: 10px;
+  font-size: 13px;
+  width: 100%;
+  padding: 7px 13px 7px 20px;
+  margin: 15px 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-sizing: border-box;
+  font-family: "Faustina", serif;
+}
+
+
+input:focus, select:focus {
+  outline: none;
+}
+
+.info button{
+  background-color: #003049;
+  color: white;
+  border-radius: 20px;
+  padding: 6px 0;
+  margin-right: 8.5rem;
+  font-size: 14px;
+  width: 25%;
+  margin-top: 3rem;
+  float: right;
 }
