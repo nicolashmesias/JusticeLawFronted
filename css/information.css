@@ -259,9 +259,9 @@ button{
     font-size: 64px;
 }
 .tutela img{
-    width: 900px;
-    height: 776px;  
-    margin: 30px;
+    width: 620px;
+    height: 540px;  
+    margin: 30px; 
 }
 .info{
     position: absolute;
@@ -272,11 +272,11 @@ button{
     text-align: auto;
 }
 .info h2{
-    font-size: 39px;
+    font-size: 36px;
     text-align: left;
 }
 .info p{
-    font-size: 29px;
+    font-size: 25px;
     text-align: left;
 }
 .container {
@@ -317,17 +317,15 @@ button{
 }
 .contenedor-columnas {
     display: flex;
-    justify-content: center; /* Centra las columnas horizontalmente */
-    gap: 40px; /* Espacio entre las columnas */
-    padding: 20px; /* Espacio interno del contenedor */
+    justify-content: center;
+    gap: 40px; 
+    padding: 20px;
 }
-
 .columna-izquierda, .columna-derecha {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .info5, .info6, .info7, .info8, .info9, .info10 {
     display: flex;
     justify-content: space-between;
@@ -341,6 +339,18 @@ button{
     cursor: pointer; 
     box-sizing: border-box; 
     width: 350px;
+}
+.infor{
+    display: flex;
+    justify-content: space-between;
+    align-items: left; 
+    font-weight: lighter;
+    padding: 10px 20px;
+    border: 1px solid #ccc; 
+    border-radius: 20px;
+    background-color: #fff; 
+    font-weight: lighter;
+    
 }
 
 .info5:hover, .info6:hover, .info7:hover, .info8:hover, .info9:hover, .info10:hover {
