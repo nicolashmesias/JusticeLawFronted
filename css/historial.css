@@ -1,0 +1,196 @@
+.configuration {
+    margin-top: 3rem !important;
+    margin-bottom: 4rem !important;
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .sidebar {
+    position: sticky;
+    top: 20px;
+    width: 300px;
+    background-color: #ffffff;
+    padding: 40px;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .titulo {
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+  }
+  
+  .sidebar ul .titulo i {
+    padding-right: 1rem;
+  }
+  
+  .sidebar ul li i {
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+  }
+  
+  #cerrarSesion {
+    margin-top: 14rem;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #00a8ff;
+  }
+  
+  hr {
+    height: 90vh;
+    width: 0.1vw;
+    left: 25%;
+    top: 23%;
+    position: absolute;
+    border-width: 0;
+    color: #e9e9e9;
+    background-color: #e9e9e9;
+  }
+  
+  .configuration-content {
+    flex: 1;
+    padding: 2rem 2rem;
+    position: relative;
+  }
+  
+  .configuration-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.configuration-header h3 {
+    margin: 0;
+}
+
+.search-configuration {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    height: 25px;
+    border: 1px solid #e9e9e9;
+    width: 45rem;
+    margin-left: 1rem; 
+    position: relative;
+}
+
+.search-configuration input {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 15px 0 0 15px;
+    padding-left: 0.5rem;
+}
+
+#lupa {
+    max-width: 15px;
+    max-height: 15px;
+    margin-left: 1rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.container{
+    margin-top: 1.2rem !important;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 1000px;
+    border: 1.5px solid #e9e9e9;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.container p, .container h4{
+    padding: 0.1rem;
+    margin: 0.5rem;
+}
+.container p{
+    margin-left: 1.5rem;
+}
+
+.container p:hover, 
+.configuration-content a:hover{
+    color: #00a8ff;
+}
+.configuration-content a{
+    color: inherit;
+    text-decoration: none;
+}
+.configuration-header i{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 1.5rem;
+}
+
+  .checkbox-wrapper-18 .round {
+    position: relative;
+  }
+
+  .checkbox-wrapper-18 .round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 19px;
+    width: 19px;
+    display: block;
+  }
+
+  .checkbox-wrapper-18 .round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 4px;
+    left: 5px;
+    opacity: 0;
+    position: absolute;
+    top: 6px;
+    transform: rotate(-45deg);
+    width: 8px;
+  }
+
+  .checkbox-wrapper-18 .round input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+  }
+
+  .checkbox-wrapper-18 .round input[type="checkbox"]:checked + label {
+    background-color: #ccc;
+  }
+
+  .checkbox-wrapper-18 .round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+  }
