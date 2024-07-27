@@ -317,17 +317,15 @@ button{
 }
 .contenedor-columnas {
     display: flex;
-    justify-content: center; /* Centra las columnas horizontalmente */
-    gap: 40px; /* Espacio entre las columnas */
-    padding: 20px; /* Espacio interno del contenedor */
+    justify-content: center;
+    gap: 40px; 
+    padding: 20px;
 }
-
 .columna-izquierda, .columna-derecha {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .info5, .info6, .info7, .info8, .info9, .info10 {
     display: flex;
     justify-content: space-between;
@@ -341,6 +339,18 @@ button{
     cursor: pointer; 
     box-sizing: border-box; 
     width: 350px;
+}
+.infor{
+    display: flex;
+    justify-content: space-between;
+    align-items: left; 
+    font-weight: lighter;
+    padding: 10px 20px;
+    border: 1px solid #ccc; 
+    border-radius: 20px;
+    background-color: #fff; 
+    font-weight: lighter;
+    
 }
 
 .info5:hover, .info6:hover, .info7:hover, .info8:hover, .info9:hover, .info10:hover {
