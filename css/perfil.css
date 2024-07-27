@@ -1,6 +1,6 @@
 .perfil {
   margin-top: 3rem !important;
-  margin-bottom: 3rem !important;
+  margin-bottom: 4rem !important;
   display: flex;
   width: 90%;
   max-width: 1200px;
@@ -121,7 +121,8 @@ hr {
   justify-content: space-between;
 }
 
-.form-left, .form-right {
+.form-left,
+.form-right {
   display: flex;
   flex-direction: column;
   width: 45%;
@@ -131,8 +132,10 @@ label {
   margin-top: 10px;
 }
 
-.info input, .info select {
+.info input,
+.info select {
   border: none;
+
   border-radius: 10px;
   font-size: 13px;
   width: 100%;
@@ -144,20 +147,276 @@ label {
   box-sizing: border-box;
   font-family: "Faustina", serif;
 }
+.input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
 
+.input-container input,
+.input-container select {
+  width: calc(100% - 40px);
+  padding-right: 40px;
+}
 
-input:focus, select:focus {
+.input-container a {
+  text-decoration: none;
+  color: inherit;
+}
+.input-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#trash {
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form-left,
+.form-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-left label,
+.form-right label {
+  margin-bottom: 5px;
+}
+
+.form-left .input-container,
+.form-right .input-container {
+  margin-bottom: 15px;
+}
+
+.info input i {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+input:focus,
+select:focus {
   outline: none;
 }
 
-.info button{
+#boton-guardar {
   background-color: #003049;
   color: white;
   border-radius: 20px;
-  padding: 6px 0;
+  padding: 7px 0;
   margin-right: 8.5rem;
-  font-size: 14px;
+  font-size: 15px;
   width: 25%;
+  text-align: center;
   margin-top: 3rem;
   float: right;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
 }
+
+#boton-actualizar {
+  background-color: #003049;
+  color: white;
+  border-radius: 20px;
+  padding: 7px 0;
+  margin-right: 6.8rem;
+  font-size: 15px;
+  width: 25%;
+  text-align: center;
+  margin-top: 3rem;
+  float: right;
+  text-decoration: none;
+}
+
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 0rem;
+  border-radius: 12px;
+  background: #003049;
+  padding: 28px 25px 20px 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 2000;
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast.active {
+  transform: translateX(0);
+}
+.toast .toast-content {
+  display: flex;
+  align-items: center;
+}
+.toast-content .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.toast .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 5px;
+  color: #003049;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.toast .close:hover {
+  opacity: 1;
+}
+.toast-content .message {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px;
+}
+.message .text {
+  font-size: 16px;
+  font-weight: 200;
+  color: #ffffff;
+}
+.message .text.text-1 {
+  font-weight: 600;
+  color: #ffffff;
+}
+.toast .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #ddd;
+}
+
+.toast .progress:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #2c354e;
+  transition: width 5s linear;
+}
+
+.progress.active:before {
+  width: 100%;
+}
+@keyframes progress {
+  100% {
+    right: 100%;
+  }
+}
+
+.toast.active ~ #boton-guardar {
+  pointer-events: none;
+}
+
+
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in;
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 50rem;
+  height: 25rem;
+  position: relative; /* Esto asegura que los elementos posicionados absolutamente estén dentro de este contenedor */
+  margin: 10% auto;
+  padding: 40px 20px 13px 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+
+#avatarUno, #avatarDos, #avatarTres {
+  display: inline-block; /* Permite que los elementos se alineen horizontalmente uno al lado del otro */
+  vertical-align: top; /* Alinea verticalmente al inicio del contenedor */
+}
+
+#avatarUno, #avatarDos {
+  margin-top: 10px; /* Ajusta la posición vertical */
+  width: 7rem;
+  height: 7rem;
+}
+
+#avatarTres {
+  width: 11rem;
+  height: 10rem;
+}
+
+.subir-foto {
+  position: absolute;
+  bottom: 20px; 
+  right: 20px; 
+  cursor: pointer;
+}
+
+.subir-foto::before {
+  background-color: #003049;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  content: 'Seleccionar'; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.subir-foto input[type="file"] {
+  opacity: 0;
+  width: 170px;
+  height: 32px;
+  display: inline-block;
+}
+
+#seleccionarFoto::before {
+  content: 'Subir foto';
+}
+
+
+.close {
+
+  position: absolute;
+  left: 15px; 
+  top: 10;
+  color: black;
+  width: 30px; 
+  text-decoration: none;
+}
+

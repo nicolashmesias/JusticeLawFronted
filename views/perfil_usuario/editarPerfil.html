@@ -102,29 +102,49 @@
                         <div class="container">
                             <div class="form-left">
                                 <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre">
+                                <div class="input-container">
+                                    <input type="text" name="nombre">
+                                    <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+                                </div>
                                 <label for="email">Email</label>
-                                <input type="email" name="email">
+                                <div class="input-container">
+                                    <input type="email" name="email">
+                                    <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+                                </div>
                                 <label for="pais">País</label>
-                                <select name="pais" onchange="cambia_provincia()"> 
-                                    <option value="0" selected></option>
-                                    <option value="1">España</option>
-                                    <option value="2">Argentina</option>
-                                    <option value="3">Colombia</option>
-                                    <option value="4">Francia</option>
-                                </select>
+                                <div class="input-container">
+                                    <select name="pais" onchange="cambia_provincia()"> 
+                                        <option value="0" selected></option>
+                                        <option value="1">España</option>
+                                        <option value="2">Argentina</option>
+                                        <option value="3">Colombia</option>
+                                        <option value="4">Francia</option>
+                                    </select>
+                                   <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+                                </div>
                             </div>
                             <div class="form-right">
                                 <label for="apellidos">Apellidos</label>
-                                <input type="text" name="apellidos">
+                                <div class="input-container">
+                                    <input type="text" name="apellidos">
+                                  <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>  
+                                </div>
                                 <label for="telefono">Teléfono</label>
-                                <input type="text" name="telefono">
+                                <div class="input-container">
+                                    <input type="text" name="telefono">
+                                   <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+                                   <a href="#"><i id="trash" class="fa-regular fa-trash-can"></i></a> 
+                                </div>
                                 <label for="provincia">Ciudad</label>
-                                <select name="provincia"> 
-                                    <option value="-"></option>
-                                </select> 
+                                <div class="input-container">
+                                    <select name="provincia"> 
+                                        <option value="-"></option>
+                                    </select>
+                                   <a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+                                </div>
                             </div>
                         </div>
+                        
                         <a id="boton-guardar">Guardar datos</a>
                     </form>
                 </div>
