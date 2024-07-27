@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JusticeLaw</title>
     <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="../../css/perfil.css">
+    <link rel="stylesheet" href="../../css/configuration.css">
     <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/bfdeae7cfe.js" crossorigin="anonymous"></script>
@@ -50,7 +50,7 @@
         </div>
     </header>
     <main>
-        <section class="perfil">
+        <section class="configuration">
             <nav class="sidebar">
                 <ul>
                     <div class="titulo">
@@ -75,74 +75,36 @@
                 </ul>
             </nav>
             <hr>
-            <div class="perfil-content">
-                <div class="perfil-main">
-                    <img id="fotoPerfil" src="../../img/fotoPerfil.png" alt="fotoPerfil">
-                    <a href="#modal-foto"><img id="circuloPerfil" src="../../img/circuloPerfil.png" alt="circuloPerfil">
-                        <img id="agregarFoto" src="../../img/camaraAgreFoto.png" alt="camaraAgreFoto"></a> 
-                        <div id="modal-foto" class="modalDialog">
-                            <div>
-                              <a href="#close" title="Close" class="close"><i class="fa-solid fa-xmark close"></i></a>
-                              <h2>¡Haz que tu perfil sea más <br> personal!</h2>
-                              <p>Sube una foto de perfil para que te reconozcan fácilmente.</p>
-                              <img id="avatarUno" src="../../img/avatarUno.png" alt="avatarUno">
-                              <img id="avatarTres" src="../../img/avatarTres.png" alt="avatarTres">
-                              <img id="avatarDos" src="../../img/avatarDos.png" alt="avatarDos">
-                              <div class="subir-foto" id="seleccionarFoto">
-                                <input type="file" name="seleccionarFoto" aria-label="Subir foto" onchange="handleFileSelection()">
-                              </div>
-                            </div>
-                          </div>
-                          
-                    <div class="nombre-perfil">
-                        <h3>Alfonso Juan</h3>
-                        <span>Popayan, Colombia</span>
-                    </div>
+            <div class="configuration-content">
+                <div class="configuration-header">
+                    <h3>Configuración</h3>
+                    <div class="search-configuration">
+                         <img id="lupa" src="../../img/Lupa.png" alt="Buscar" />
+                        <input type="text" placeholder="" />
+                      </div>
                 </div>
-                <div class="info">
-                    <form name="infouser">
-                        <div class="container">
-                            <div class="form-left">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" name="nombre">
-                                <label for="email">Email</label>
-                                <input type="email" name="email">
-                                <label for="pais">País</label>
-                                <select name="pais" onchange="cambia_provincia()"> 
-                                    <option value="0" selected></option>
-                                    <option value="1">España</option>
-                                    <option value="2">Argentina</option>
-                                    <option value="3">Colombia</option>
-                                    <option value="4">Francia</option>
-                                </select>
+                            <div class="container">
+                                <h4>Herramientas y Recursos</h4>
+                                <p>Configuracion de la cuenta</p>
+                                <p>Permisos</p>
                             </div>
-                            <div class="form-right">
-                                <label for="apellidos">Apellidos</label>
-                                <input type="text" name="apellidos">
-                                <label for="telefono">Teléfono</label>
-                                <input type="text" name="telefono">
-                                <label for="provincia">Ciudad</label>
-                                <select name="provincia"> 
-                                    <option value="-"></option>
-                                </select> 
+                            <div class="container">
+                                <h4>Preferencias</h4>
+                                <a href="../configuracion/configuracionPrivacidad.html"><p>Privacidad</p></a>
+                                <p>Idioma y Region</p>
+                            </div>
+                            <div class="container">
+                                <h4>Normas Comunitarias y Politicas Legales</h4>
+                               <p>Condiciones del servicio</p>
+                                <p>Política de Privacidad</p>
+                                <p>Política de Cookies</p>
+                                <p>Normas Comunitarias</p>
+                            </div>
+                            <div class="container">
+                                <p>Soporte Tecnico</p>
                             </div>
                         </div>
-                        <a id="boton-actualizar" href="../perfil_usuario/editarPerfil.html">Actualizar datos</a>
-                    </form>
-                </div>
-            </div>
         </section>
-        <div class="toast">
-            <div class="toast-content">
-                <img src="../../img/check.png"  class="check" alt="check">
-                <div class="message">
-                    <span class="text text-1">Cambios Guardados</span>
-                    <span class="text text-2">¡Foto guardada exitosamente!</span>
-                </div>
-            </div>
-            <i class="fa-solid fa-xmark close"></i>
-            <div class="progress"></div>
-        </div>
     </main>
     <footer>
         <div class="footer-resources">
