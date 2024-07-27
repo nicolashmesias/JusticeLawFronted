@@ -349,7 +349,7 @@ select:focus {
 .modalDialog > div {
   width: 50rem;
   height: 25rem;
-  position: relative; /* Esto asegura que los elementos posicionados absolutamente estén dentro de este contenedor */
+  position: relative; 
   margin: 10% auto;
   padding: 40px 20px 13px 20px;
   text-align: center;
@@ -361,12 +361,12 @@ select:focus {
 }
 
 #avatarUno, #avatarDos, #avatarTres {
-  display: inline-block; /* Permite que los elementos se alineen horizontalmente uno al lado del otro */
-  vertical-align: top; /* Alinea verticalmente al inicio del contenedor */
+  display: inline-block; 
+  vertical-align: top;
 }
 
 #avatarUno, #avatarDos {
-  margin-top: 10px; /* Ajusta la posición vertical */
+  margin-top: 10px;
   width: 7rem;
   height: 7rem;
 }
