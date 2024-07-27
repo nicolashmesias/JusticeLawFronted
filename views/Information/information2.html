@@ -92,38 +92,78 @@
 
             <div class="contenedor-columnas">
                 <div class="columna-izquierda">
-                    <div class="info5">
-                        <h3>1. Petición ante el tribunal</h3>
-                        <img src="../../img/flechaAbajo.png" alt="flechaAbajo">
-                        
+                    <div class="info-box" onclick="toggleContent('content1')">
+                        <div class="info-header">
+                            <h3>1. Petición ante el tribunal</h3>
+                            <img src="../../img/flechaAbajo.png" alt="flechaAbajo">
+                        </div>
                     </div>
-                    <div class="infor">
-                        <h3>1. El primer paso es presentar una petición ante
-                            el tribunal competente solicitando la tutela de
-                            la persona vulnerable. Esto generalmente se hace
-                            mediante un abogado o representante legal.</h3>
+                    <div id="content1" class="info-content">
+                        <p>El primer paso es presentar una petición
+                            ante el tribunal competente solicitando
+                            la tutela de la persona vulnerable. Esto
+                            generalmente se hace mediante un abogado o
+                            representante legal.</p>
                     </div>
-                    <div class="info7">
-                        <h3>3. Nombramiento de tutor</h3>
-                        <img src="../../img/flechaAbajo.png" alt="flechaAbajo">
+                    <div class="info-box" onclick="toggleContent('content3')">
+                        <div class="info-header">
+                            <h3>3. Nombramiento de tutor</h3>
+                            <img src="../../img/flechaAbajo.png" alt="flechaAbajo">
+                        </div>
                     </div>
-                    <div class="info9">
-                        <h3>5. Informe y supervisión</h3>
-                        <img src="../../img/flechaAbajo.png" alt="flechaAbajo">
+                    <div id="content3" class="info-content">
+                        <p>Nombramiento de tutor: Si el tribunal determina que
+                            la tutela es necesaria, designará a un tutor legal
+                            para cuidar de la persona vulnerable y tomar decisiones
+                            en su nombre.</p>
+                    </div>
+                    <div class="info-box" onclick="toggleContent('content5')">
+                        <div class="info-header">
+                            <h3>5. Informe y supervisión</h3>
+                            <img src="../../img/flechaAbajo.png" alt="flechaAbajo">
+                        </div>
+                    </div>
+                    <div id="content5" class="info-content">
+                        <p>El tutor está obligado a presentar informes periódicos al tribunal
+                            sobre el estado y las necesidades de la persona bajo tutela. El tribunal
+                            supervisará el cumplimiento de la tutela para garantizar que se cumplan
+                            los mejores intereses de la persona tutelada.</p>
                     </div>
                 </div>
                 <div class="columna-derecha">
-                    <div class="info6">
-                        <h3>2. Evaluación de la capacidad</h3>
-                        <img src="../../img/flechaAbajo.png" alt="flechaAbajo">
+                    <div class="info-box" onclick="toggleContent('content2')">
+                        <div class="info-header">
+                            <h3>2. Evaluación de la capacidad</h3>
+                            <img src="../../img/flechaAbajo.png" alt="flechaAbajo">
+                        </div>
                     </div>
-                    <div class="info8">
-                        <h3>4. Desarrollo de un plan</h3>
-                        <img src="../../img/flechaAbajo.png" alt="flechaAbajo">
+                    <div id="content2" class="info-content">
+                        <p>El tribunal realizará una evaluación para determinar
+                            si la persona realmente necesita una tutela y si está
+                            legalmente incapacitada para cuidar de sí misma o gestionar
+                            sus propios asuntos.</p>
                     </div>
-                    <div class="info10">
-                        <h3>6. Revisión periódica</h3>
-                        <img src="../../img/flechaAbajo.png" alt="flechaAbajo">
+                    <div class="info-box" onclick="toggleContent('content4')">
+                        <div class="info-header">
+                            <h3>4. Desarrollo de un plan</h3>
+                            <img src="../../img/flechaAbajo.png" alt="flechaAbajo">
+                        </div>
+                    </div>
+                    <div id="content4" class="info-content">
+                        <p>El tutor trabajará con el tribunal y otros profesionales para
+                            desarrollar un plan de cuidados que satisfaga las necesidades
+                            y el bienestar de la persona bajo tutela.</p>
+                    </div>
+                    <div class="info-box" onclick="toggleContent('content6')">
+                        <div class="info-header">
+                            <h3>6. Revisión periódica</h3>
+                            <img src="../../img/flechaAbajo.png" alt="flechaAbajo">
+                        </div>
+                    </div>
+                    <div id="content6" class="info-content">
+                        <p>La tutela puede ser revisada periódicamente
+                            por el tribunal para asegurarse de que sigue
+                            siendo necesaria y apropiada para la persona tutelada.</p>
                     </div>
                 </div>
             </div>
@@ -174,5 +214,15 @@
             </ul>
         </div>
     </footer>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
