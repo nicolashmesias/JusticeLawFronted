@@ -124,22 +124,23 @@
   display: flex;
   flex-direction: column;
 }
-.datos, .presentation, .practice {
+.datos, .presentation, .practice, .act {
   padding: 20px;
   margin: 10px 0;
   box-sizing: border-box;
 }
-.datos h2, .presentation h2, .practice h2 {
+.datos h2, .presentation h2, .practice h2, .act h2 {
   margin-top: 0;
 }
 .civ {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: left;
 }
 .practice-item {
   text-align: center;
   padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 .practice-item img {
@@ -148,7 +149,7 @@
 .civil {
   background-color: #fffbea;
   border: 1px solid #f1c40f;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 .familiar {
   background-color: #eef7fe;
@@ -158,4 +159,22 @@
 .practice-text {
   text-align: center;
   margin-top: 10px;
+}
+
+.act h4 {
+  display: inline;
+  vertical-align: middle;
+  color:#00A8FF;
+  font-size: 16px;
+  font-weight: lighter;
+  text-decoration:underline;  
+}
+.activity-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.activity-content img {
+  width: 24px;
+  height: 24px;
 }
