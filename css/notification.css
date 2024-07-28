@@ -1,37 +1,77 @@
 .container {
+    margin-top: 3rem !important;
+    margin-bottom: 4rem !important;
     display: flex;
     width: 90%;
-    height: 90%;
-    box-shadow: 5px 5px 5px 5px #739E94;
-    margin: 30px;
-    box-sizing: content-box;
-}
-
-.sect1 {
-    width: 30%;
-    box-sizing: border-box;
-    padding: 20px;
-}
-
-.back, .menu-item, .logout {
-    margin-bottom: 20px;
-}
-
-.menu-item a, .logout button {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #000;
-}
-
-.menu-item a img, .logout button img {
-    margin-right: 10px;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    margin: auto;
 }
 
 .sect2 {
     width: 70%;
     padding: 20px;
     box-sizing: border-box;
+}
+
+.sidebar {
+    position: sticky;
+    top: 20px;
+    width: 300px;
+    background-color: #ffffff;
+    padding: 40px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.titulo {
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+
+.titulo i {
+    padding-right: 1rem;
+}
+
+.sidebar ul li i {
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+}
+
+#cerrarSesion {
+    margin-top: 14rem;
+}
+
+.sidebar ul li a:hover {
+    color: #00a8ff;
+}
+
+hr {
+    height: 90vh;
+    width: 0.1vw;
+    left: 25%;
+    top: 23%;
+    position: absolute;
+    border-width: 0;
+    color: #e9e9e9;
+    background-color: #e9e9e9;
 }
 
 .container1, .container2 {
@@ -114,14 +154,15 @@
 }
 
 .notifications-actions button {
-    padding: 10px 20px;
-    font-size: 18px;
     background-color: #003049;
-    color: white;
+    color: #ffffff;
     border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 25px;
-    font-weight: lighter;
+    border-radius: 20px;
+    width: 168px;
+    height: 48;
 }
 
 .img-flecha {
