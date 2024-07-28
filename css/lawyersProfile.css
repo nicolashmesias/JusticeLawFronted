@@ -1,52 +1,56 @@
 .content {
-  width: 90%;
-  margin: 0 auto;
-  border: 1px solid #ddd;
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.perfil {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  text-align: left;
-}
-
-.banner {
-    background-image: radial-gradient(circle at 17.94% 64.95%, #004265 0, #002f49 50%, #021d2f 100%);  height: 18rem;
-  background-size: cover;
-  display: flex;
-  background-position: center;
-  overflow: hidden;
-}
-
-#fotoPerfil{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .perfil {
+    width: 100%;
+    position: relative;
+    text-align: left;
+  }
+  
+  .banner {
+    background-image: radial-gradient(circle at 17.94% 64.95%, #004265 0, #002f49 50%, #021d2f 100%);
+    height: 18rem;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-position: center;
+ 
+    position: relative;
+  }
+  
+  #fotoPerfil {
     left: 3%;
-    top: 25%;
+    top: 90%;
     position: absolute;
     width: 170px;
     height: 170px;
     border-radius: 170px;
-}
-
-.banner h3{
-    left: 19%;
-    top: 29%;
+    transform: translateY(-50%);
+  }
+  
+  .banner h3 {
+    left: 20%;
+    top: 70%;
     position: absolute;
     color: white;
-}
-
-.stars {
+    transform: translateY(-50%);
+  }
+  
+  .stars {
+    left: 20%;
+    top: 88%;
     position: absolute;
-    top: 37%;
-    left: 19%;
     display: flex;
     gap: 5px;
-}
-
-.profile-nav {
+    transform: translateY(-50%);
+  }
+  
+  .profile-nav {
     display: flex;
     justify-content: center;
     position: relative;
@@ -63,8 +67,6 @@
   }
   
   .profile-nav ul li {
-
-    
     margin: 0 1rem;
     position: relative;
   }
@@ -73,7 +75,7 @@
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    padding: 1.2rem;
+    padding: 1rem;
     display: block;
   }
   
@@ -89,25 +91,8 @@
   .profile-nav .indicator {
     position: absolute;
     bottom: 0;
-    border-radius: 5px;
     height: 4px;
     background-color: #1476A9;
     transition: left 0.3s ease, width 0.3s ease;
   }
   
-.inf {
-  display: flex;
-  justify-content: right;
-  gap: 20px; 
-  margin-top: 20px;
-}
-
-.inf h2 {
-  margin: 0;
-  left: -100px;
-  padding: 0 10px;
-  font-size: 20px;
-  cursor: pointer;
-  position: relative;
-}
-
