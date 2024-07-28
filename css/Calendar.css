@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.calendar {
+    flex: 3;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.calendar h1 {
+    margin-bottom: 20px;
+}
+.months {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.months div {
+    margin: 0 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #666;
+}
+.days {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.day {
+    color: #666;
+    text-align: center;
+}
+.day .date {
+    display: block;
+    font-weight: bold;
+}
+.day .day-name {
+    display: block;
+    font-size: smaller;
+}
+.day.selected .date {
+    font-size: 15px;
+    color: #fff;
+    background-color: #003c74;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.day.selected .day-name {
+    color: #666;
+}
+.day.selected {
+    color: #666;
+}
+.day.selected::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #666;
+    margin: 5px auto 0;
+}
+.schedule {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 5%;
+}
+.hours {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #666;
+}
+.hours div {
+    height: 40px;
+    line-height: 40px;
+}
+.events {
+    position: relative;
+    flex: 1;
+    border-left: 2px solid #ccc;
+    height: 400px;
+}
+.event {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+.event.time {
+    top: 10px;
+    height: 40px;
+    background-color: #fafad2;
+}
+.event.task {
+    top: 140px; 
+    height: 40px;
+    background-color: #DFE6E9;
+}
+.event.last {
+    top: 240px;
+    height: 40px;
+    background-color: #DFE6E9;
+}
+.profile {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-left: 20px;
+}
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.profile h2 {
+    margin: 10px 0 5px 0;
+}
+.profile p {
+    font-size: 14px;
+    color: #666;
+}
+.profile .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.profile .stats div {
+    text-align: center;
+}
+.profile .stats div span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
