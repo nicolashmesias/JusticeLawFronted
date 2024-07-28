@@ -1,0 +1,43 @@
+.content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.perfil {
+    width: 100%;
+    height: 299px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.abogado {
+    position: absolute;
+    top:170px;
+    left: 210px;
+    width: 10px; 
+    height: 10px; 
+    
+}
+.inf {
+    display: flex;
+    justify-content: right; /* Centra horizontalmente los elementos */
+    gap: 20px; /* Espacio entre los elementos */
+    margin-top: 20px;
+}
+
+.inf h2 {
+    margin: 0;
+    left: -100px;
+    padding: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+
+}
