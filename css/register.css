@@ -12,7 +12,7 @@
   width: 500px;
   height: 600px; 
   margin-top: -2rem;
-  margin-left: 5rem;
+  margin-left: 15rem;
   box-sizing: border-box;   
   position: absolute;
 }
@@ -29,7 +29,7 @@
   color: white;
 }
 .law{
-  margin-left: 36.5rem;
+  margin-left: 46.5rem;
   margin-top: 22.8rem;
   font-size: 36.6px;
   color: #CF9E3E;
@@ -42,7 +42,7 @@
 .reg{
     width:100px;
     margin-top: -28rem;
-    margin-left: 50rem;
+    margin-left: 75rem;
     color: #0A3B55;
 }
 .reg input[type=text] {
@@ -81,13 +81,13 @@
   .inf{
     width:500px;
     margin-top: -3rem;
-    margin-left: 50rem;
+    margin-left: 75rem;
     bottom: 4rem;
   }
   .re{
     width:500px;
     margin-top: -2.25rem;
-    margin-left: 63.5rem;
+    margin-left: 88.5rem;
     bottom: 4rem;
     text-decoration: none;
   }
@@ -96,7 +96,7 @@
   }
   .bot{
     margin-top: 1rem;
-    margin-left:50rem;
+    margin-left:75rem;
   }
 
   .bot button{
@@ -109,7 +109,7 @@
   }
   .parrafo{
     margin-top: -4rem;
-    margin-left:63rem;
+    margin-left:89rem;
     color: #0A3B55;
   }
   .parrafo1{
@@ -137,10 +137,10 @@
   .par{
     color: #0A3B55;
     margin-top: -2rem;
-    margin-left:50rem;
+    margin-left:75rem;
   }
   .inicio{
     margin-top: -1rem;
-    margin-left:52rem;
-    margin-bottom: 5rem;
+    margin-left:76.8rem;
+    margin-bottom: 6rem;
   }
