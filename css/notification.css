@@ -81,9 +81,20 @@ hr {
     width: 100%;
 }
 
-.notifications-d {
+.notification {
     display: flex;
     align-items: center;
+    margin-bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+}
+
+.notifications-d {
+    display: flex;
+    align-items:center;
     justify-content: space-between;
     width: 100%;
 }
@@ -96,6 +107,23 @@ hr {
     position: relative;
     display: flex;
     align-items: center;
+}
+
+.user-menu2 .dropdown2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 150px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.user-menu2 input[type="checkbox"]:checked + label + .dropdown2 {
+    display: block;
 }
 
 .user-menu1 .dropdown1, .user-menu2 .dropdown2 {
@@ -168,4 +196,9 @@ hr {
 .img-flecha {
     cursor: pointer;
     height: 20px;
+}
+.notification .user-menu2 .img-3puntos {
+    margin-left: auto;
+    height: 20px;
+    cursor: pointer;
 }
