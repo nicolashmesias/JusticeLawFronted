@@ -17,8 +17,9 @@
     width: 300px;
     background-color: #ffffff;
     padding: 40px;
-    height: 100vh;
+    height: auto;
     overflow-y: auto;
+
   }
   
   .sidebar ul {
@@ -58,7 +59,7 @@
   }
   
   hr {
-    height: 90vh;
+    height: 70vh;
     width: 0.1vw;
     left: 25%;
     top: 23%;
@@ -66,6 +67,7 @@
     border-width: 0;
     color: #e9e9e9;
     background-color: #e9e9e9;
+    position: initial;
   }
   
   .configuration-content {
