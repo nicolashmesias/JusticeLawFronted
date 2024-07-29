@@ -9,6 +9,7 @@ margin: 0px 20px;
     box-sizing: border-box;
     color: #003049;
     margin-bottom: 80px;
+
     
 }
 .guia {
@@ -16,6 +17,7 @@ margin: 0px 20px;
     width: 100%;
     max-width: 800px;
     margin-bottom: 20px;
+    margin-left: 120px;
 }
 
 .guia img {
@@ -222,8 +224,8 @@ button{
     gap:5px;
     width: 300px;
     position: absolute; 
-    top:145%;
-    right: 140px; 
+    top:100%;
+    right: 220px; 
 }
 
 .position-container h1 {

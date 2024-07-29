@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <title>Justice Law Forum</title>
+    <style>
+        
+            
+        
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            margin-bottom: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .welcome {
+            width: 100%;
+            text-align: start;
+            background: url('../../img/foro.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            padding-left: 130px;
+            border-radius: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0;
+        }
+
+        .welcome h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .welcome p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .welcome input {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+
+        .forum {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .forum .post {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        .forum .post h2 {
+            font-size: 0.9em;
+            margin: 0;
+        }
+
+        .forum .post p {
+            font-size: 0.8em;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .forum .post .meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.7em;
+            color: #555;
+        }
+
+        .forum .post .meta .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .forum .post .meta .user-info img {
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .forum .post .meta span {
+            margin: 0 15px;
+        }
+
+        aside {
+            flex: 1;
+        }
+
+        .categories,
+        .ask-question {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .categories {
+            margin-top: 20px;
+        }
+
+        .categories h3,
+        .ask-question h3 {
+            margin-top: 0;
+        }
+
+        .categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .categories ul li {
+            margin: 5px 0;
+        }
+
+        .ask-question input,
+        .ask-question textarea,
+        .ask-question select,
+        .ask-question button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        .ask-question textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        .ask-question select {
+            background-color: white;
+        }
+
+        .ask-question button {
+            background-color: #003049;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .ask-question button:hover {
+            background-color: #002535;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        table::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+            pointer-events: none;
+        }
+
+        table,
+        th,
+        td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 30px;
+            text-align: left;
+            background-color: #ffffff;
+        }
+
+        th {
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .message-col {
+            width: 40%;
+        }
+
+        .responses-col {
+            width: 2%;
+            max-width: 100px;
+            text-align: center;
+        }
+
+        .user-col {
+            width: 8%;
+        }
+
+        .fotoperfil {
+            width: 40px;
+            height: 40px;
+            margin-left: 30%;
+        }
+
+        .name_user {
+            font-size: small;
+            margin-left: 18%;
+        }
+
+        .responses-col a,
+        .categories a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .categories ul li {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+
+        table,
+        th,
+        td,
+        h2,
+        span {
+            color: #003049;
+        }
+
+        .meta .category {
+            padding-left: 250px;
+        }
+
+        .category {
+            font-size: 13px;
+        }
+
+        .date {
+            font-size: 13px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        footer .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer .footer-content .social-media {
+            display: flex;
+            gap: 10px;
+        }
+
+        footer .footer-content .social-media a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body >
+    <header class="header">
+        <div class="logo">
+            <img src="../../img/logo.jpg" alt="JusticeLaw Logo" />
+            <div class="logo-text">
+                <h1>JUSTICE</h1>
+                <p>LAW</p>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="" />
+            <img id="filtroBusqueda" src="../../img/FiltroBusqueda.png" alt="Filtro" />
+            <button>
+                <img src="../../img/Lupa.png" alt="Buscar" />
+            </button>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Iniciar Sesión</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Foro</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h1>¡Bienvenido al foro!</h1>
+            <p>Infórmate y comparte tu opinión con los demás.</p>
+            <input type="text" placeholder="Buscar en el foro..." />
+        </section>
+
+        <div class="content">
+            <div class="forum">
+                <table>
+                    <tr>
+                        <th class="message-col">Mensaje</th>
+                        <th class="responses-col">Respuestas</th>
+                        <th class="user-col">Usuario</th>
+                    </tr>
+                    <tr>
+                        <td class="message-col">
+                            <h2>¿Qué pasos debo seguir en un proceso de divorcio?</h2>
+                            <p>María y Juan están casados desde hace diez años, pero su relación se ha deteriorado. Juan trabaja mucho y apenas están juntos. Discuten frecuentemente y María se siente sola y abandonada emocionalmente. Además, descubrió que Juan tiene una aventura emocional con una compañera de trabajo. Considera el divorcio como la mejor opción para seguir adelante. </p>
+                            <div class="meta">
+                                <span class="date">30 de marzo, 2024</span>
+                                <span class="category">Categoría: Familiar</span>
+                            </div>
+                        </td>
+                        <td class="responses-col"><a href="">2</a></td>
+                        <td class="user-col">
+                            <div class="user-info">
+                                <img src="../../img/fotoPerfil.png" class="fotoperfil" alt="Andrés López" />
+                                <br>
+                                <span class="name_user">Andrés López</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="message-col">
+                            <h2>¿Cómo puedo proteger mis derechos en un divorcio?</h2>
+                            <p>María y Carlos, casados por 12 años con dos hijos, enfrentan una creciente tensión debido a la ausencia de Carlos por su trabajo y sus gastos en juegos de azar en línea. María busca un divorcio para proteger sus derechos y los de sus hijos.</p>                            <div class="meta">
+                                <span class="date">29 de abril, 2024</span>
+                                <span class="category">Categoría: Familiar</span>
+                            </div>
+                        </td>
+                        <td class="responses-col"><a href="">1</a></td>
+                        <td class="user-col">
+                            <div class="user-info">
+                                <img src="../../img/fotoPerfil.png" class="fotoperfil" alt="Andrés López" />
+                                <br>
+                                <span class="name_user">Andrea Solarte</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="message-col">
+                            <h2>¿Qué pasa con mis hijos en proceso de divorcio?</h2>
+                                <p>Juan y María han decidido divorciarse después de años de matrimonio. Tienen dos hijos pequeños, Sofía y Alejandro. Juan está preocupado por el impacto que el divorcio tendrá en sus hijos y quiere asegurarse de que se protejan sus intereses.</p>                            <div class="meta">
+                                <span class="date">15 de abril, 2024</span>
+                                <span class="category">Categoría: Familiar</span>
+                            </div>
+                        </td>
+                        <td class="responses-col"><a href="">3</a></td>
+                        <td class="user-col">
+                            <div class="user-info">
+                                <img src="../../img/fotoPerfil.png" class="fotoperfil" alt="Andrés López" />
+                                <br>
+                                <span class="name_user">Mariana Zambrano </span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <aside>
+                <div class="categories">
+                    <h3>Categorías</h3>
+                    <ul>
+                        <li><a href="#">Familiar</a></li>
+                        <br>
+                        <li><a href="#">Legal</a></li>
+                        <br>
+                        <li><a href="#">Laboral</a></li>
+                        <br>
+                        <li><a href="#">Propiedad</a></li>
+                        <br>
+                        <li><a href="#">Vivienda</a></li>
+                        <br>
+                        <li><a href="#">Negocio</a></li>
+                        <br>
+                        <li><a href="#">Inmigración</a></li>
+                        <br>
+                        <li><a href="#">Consumidor</a></li>
+                        <br>
+                        <li><a href="#">Propiedad Intelectual</a></li>
+                    </ul>
+                </div>
+                <div class="ask-question">
+                    <h3>Escribe tu duda....</h3>
+                    <input type="text" placeholder="Asunto:" />
+                    <textarea placeholder="Contenido:"></textarea>
+                    <select>
+                        <option value="">Categoría</option>
+                        <option value="familiar">Familiar</option>
+                        <option value="legal">Legal</option>
+                        <option value="laboral">Laboral</option>
+                        <option value="propiedad">Propiedad</option>
+                        <option value="vivienda">Vivienda</option>
+                        <option value="negocio">Negocio</option>
+                        <option value="inmigracion">Inmigración</option>
+                        <option value="consumidor">Consumidor</option>
+                        <option value="propiedad-intelectual">Propiedad Intelectual</option>
+                    </select>
+                    <button>Publicar</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-resources">
+          <ul>
+            <h3>Recursos</h3>
+            <div class="linea1"></div>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="contacto">Contacto</a></li>
+            <li><a href="faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-main">
+          <h1>JUSTICE</h1>
+          <h3>LAW</h3>
+          <div class="linea2"></div>
+          <a href="https://www.instagram.com/">
+            <img src="../../img/Instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img src="../../img/Facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.youtube.com/">
+            <img src="../../img/Youtube.png" alt="Youtube" />
+          </a>
+          <a href="https://www.x.com/">
+            <img src="../../img/Twiter.png" alt="Twiter" />
+          </a>
+          <a href="https://www.linkedin.com/">
+            <img src="../../img/Linkedin.png" alt="Linkedin" />
+          </a>
+          <div class="linea3"></div>
+          <p>&copy; 2024 JusticeLaw - Todos los derechos reservados</p>
+        </div>
+        <div class="footer-legal">
+          <ul>
+            <h3>Legal</h3>
+            <div class="linea4"></div>
+            <li><a href="terminos">Términos de uso</a></li>
+            <li><a href="cookies">Política de Cookies</a></li>
+            <li><a href="privacidad">Política de privacidad</a></li>
+          </ul>
+        </div>
+      </footer>
+</body>
+
+</html>

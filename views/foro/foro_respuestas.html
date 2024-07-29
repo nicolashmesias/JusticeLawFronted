@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <title>Justice Law Forum</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            margin-bottom: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .welcome {
+            width: 100%;
+            text-align: start;
+            background: url('../../img/foro.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            padding-left: 130px;
+            border-radius: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0;
+        }
+
+        .welcome h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .welcome p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .welcome input {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+
+        .forum {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .forum .post {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        .forum .post h2 {
+            font-size: 0.9em;
+            margin: 0;
+        }
+
+        .forum .post p {
+            font-size: 0.8em;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .forum .post .meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.7em;
+            color: #555;
+        }
+
+        .forum .post .meta .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .forum .post .meta .user-info img {
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .forum .post .meta span {
+            margin: 0 15px;
+        }
+
+        aside {
+            flex: 1;
+        }
+
+        .categories,
+        .ask-question {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .categories {
+            margin-top: 20px;
+        }
+
+        .categories h3,
+        .ask-question h3 {
+            margin-top: 0;
+        }
+
+        .categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .categories ul li {
+            margin: 5px 0;
+        }
+
+        .ask-question input,
+        .ask-question textarea,
+        .ask-question select,
+        .ask-question button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        .ask-question textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        .ask-question select {
+            background-color: white;
+        }
+
+        .ask-question button {
+            background-color: #003049;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .ask-question button:hover {
+            background-color: #002535;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        table::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+            pointer-events: none;
+        }
+
+        table,
+        th,
+        td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 30px;
+            text-align: left;
+            background-color: #ffffff;
+        }
+
+        th {
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .message-col {
+            width: 40%;
+        }
+
+        .responses-col {
+            width: 2%;
+            max-width: 100px;
+            text-align: center;
+        }
+
+        .user-col {
+            width: 8%;
+        }
+
+        .fotoperfil {
+            width: 40px;
+            height: 40px;
+            margin-left: 30%;
+        }
+
+        .name_user {
+            font-size: small;
+            margin-left: 18%;
+        }
+
+        .responses-col a,
+        .categories a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .categories ul li {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+
+        table,
+        th,
+        td,
+        h2,
+        span {
+            color: #003049;
+        }
+
+        
+
+        .category {
+            font-size: 13px;
+        }
+
+        .date {
+            font-size: 13px;
+            padding-left: 600px;
+
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        footer .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer .footer-content .social-media {
+            display: flex;
+            gap: 10px;
+        }
+
+        footer .footer-content .social-media a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+.post-header, .response-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.date-1{
+    font-size: 13px;
+}
+
+.response-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 20px;
+    max-width: 100%;
+    height: 150px;
+}
+.response-container textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1em;
+}
+.response-container button {
+    background-color: #003049;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../../img/logo.jpg" alt="JusticeLaw Logo" />
+            <div class="logo-text">
+                <h1>JUSTICE</h1>
+                <p>LAW</p>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="" />
+            <img id="filtroBusqueda" src="../../img/FiltroBusqueda.png" alt="Filtro" />
+            <button>
+                <img src="../../img/Lupa.png" alt="Buscar" />
+            </button>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Iniciar Sesión</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Foro</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h1>¡Bienvenido al foro!</h1>
+            <p>Infórmate y comparte tu opinión con los demás.</p>
+            <input type="text" placeholder="Buscar en el foro..." />
+        </section>
+
+        <div class="content">
+            <div class="forum">
+                <div class="post">
+                    <div class="post-header">
+                        <img src="../../img/fotoPerfil.png" class="avatar" alt="Andrés López">
+                        <div class="user-details">
+                            <strong>Andrés López</strong>
+                            <span class="date">12/01/2023</span>
+                        </div>
+                    </div>
+                    <h2>¿Qué pasos debo seguir si me lesiono en un accidente de tráfico y el culpable se da a la fuga?</h2>
+                    <span class="">Recientemente estuve involucrado en un accidente de tráfico donde el otro conductor se dio a la fuga. Sufrí lesiones y daños en mi vehículo. ¿Cuáles son mis opciones legales en esta situación? ¿Cómo puedo buscar compensación por mis lesiones y los daños a mi propiedad si el culpable no ha sido identificado?</span>
+
+                </div>
+        <h2>Respuestas :</h2>
+                <div class="post">
+                    <div class="post-header">
+                        <img src="../../img/fotoPerfil.png" class="avatar" alt="Ana Martínez">
+                        <div class="user-details">
+                            <strong>Ana Martínez</strong>
+                            
+                        </div>
+                    </div>
+                    
+                    <span class="">Lo siento por el accidente que has experimentado. En esta situación, es crucial que tomes medidas rápidas para proteger tus derechos. Primero, asegúrate de buscar atención médica inmediata para tus lesiones. Luego, debes informar el accidente a la policía y presentar un informe detallado del incidente. Este informe será fundamental para cualquier reclamo futuro. Además, considera consultar con un abogado especializado en accidentes de tráfico. Un abogado podrá ayudarte a explorar opciones como presentar un reclamo ante tu compañía de seguros o buscar compensación a través de programas estatales de compensación para víctimas de delitos.</span>
+                   <br><br>
+                    <span class="date-1">10/01/2023</span>
+                   
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <img src="../../img/fotoPerfil.png" class="avatar" alt="Ana Martínez">
+                        <div class="user-details">
+                            <strong>Alfonso Juan</strong>
+                            
+                        </div>
+                    </div>
+                    
+                    <span class="">Primero, busca asistencia médica para tus lesiones de inmediato. Después, llama a la policía y presenta un informe detallado del accidente. Recopila toda la evidencia disponible, como fotografías del lugar del accidente y tus lesiones, así como cualquier testigo presencial.</span>
+                   <br><br>
+                    <span class="date-1">10/01/2023</span>
+                   
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <img src="../../img/fotoPerfil.png" class="avatar" alt="Ana Martínez">
+                        <div class="user-details">
+                            <strong>Mariana Santos</strong>
+                            
+                        </div>
+                    </div>
+                    
+                    <span>En situaciones donde el culpable se da a la fuga, es fundamental actuar con rapidez y eficacia para proteger tus intereses. Primero, asegúrate de buscar atención médica para tus lesiones lo antes posible. Después, informa del accidente a la policía y proporciona toda la información que puedas, incluyendo la descripción del vehículo y cualquier detalle relevante del incidente. Luego, comunica el accidente a tu compañía de seguros y explora si tienes cobertura para este tipo de situación. Finalmente, considera buscar asesoramiento legal de un abogado especializado en accidentes de tráfico. Un abogado podrá evaluar tu caso y ayudarte a determinar las mejores opciones para buscar compensación por tus lesiones y daños a la propiedad.</span>                   <br><br>
+                    <span class="date-1">10/01/2023</span>
+                   
+                </div>
+                <div class="response-container">
+                    <textarea placeholder="Escribe tu respuesta..."></textarea>
+                    <button>Publicar</button>
+                </div>
+            </div>
+
+            <aside>
+
+                <div class="categories">
+                    <h3>Categorías</h3>
+                    <ul>
+                        <li><a href="#">Familiar</a></li>
+                        <br>
+                        <li><a href="#">Legal</a></li>
+                        <br>
+                        <li><a href="#">Laboral</a></li>
+                        <br>
+                        <li><a href="#">Propiedad</a></li>
+                        <br>
+                        <li><a href="#">Vivienda</a></li>
+                        <br>
+                        <li><a href="#">Negocio</a></li>
+                        <br>
+                        <li><a href="#">Inmigración</a></li>
+                        <br>
+                        <li><a href="#">Consumidor</a></li>
+                        <br>
+                        <li><a href="#">Propiedad Intelectual</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div class="ask-question">
+                    <h3>Realiza una pregunta</h3>
+                    <input type="text" placeholder="Título de la pregunta" />
+                    <textarea placeholder="Detalles adicionales..."></textarea>
+                    <select>
+                        <option value="">Seleccione categoría</option>
+                        <option value="abogados">Abogados</option>
+                        <option value="demandas">Demandas</option>
+                    </select>
+                    <button>Enviar pregunta</button>
+                </div>
+
+               
+            </aside>
+           
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2023 Justice Law. Todos los derechos reservados.</p>
+            <div class="social-media">
+                <a href="#"><img src="../../img/Facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="../../img/Twitter.png" alt="Twitter" /></a>
+                <a href="#"><img src="../../img/Instagram.png" alt="Instagram" /></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
