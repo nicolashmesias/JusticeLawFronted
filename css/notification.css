@@ -129,6 +129,10 @@ hr {
     z-index: 10;
 }
 
+.user-menu2 input[type="checkbox"]:checked + label + .dropdown2 {
+    display: block;
+}
+
 .user-menu1 .dropdown1, .user-menu2 .dropdown2 {
     display: none;
     position: absolute;
@@ -140,6 +144,10 @@ hr {
     box-shadow: 0 0 10px black;
     border-radius: 10px;
     z-index: 10;
+}
+
+.user-menu1 .dropdown-checkbox1:checked + label + .dropdown1, .user-menu2 .dropdown-checkbox2:checked + label + .dropdown2 {
+    display: block;
 }
 
 .dropdown-checkbox1, .dropdown-checkbox2 {
