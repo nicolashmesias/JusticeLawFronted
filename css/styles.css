@@ -133,6 +133,7 @@ header {
   right: 0;
   border-radius: 10px;
   padding-bottom: 10px;
+  z-index: 10;
 }
 
 .user-menu .dropdown img {

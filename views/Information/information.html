@@ -6,6 +6,7 @@
     <title>JusticeLaw</title>
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/information.css">
+    <script defer src="../../js/modal.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -43,7 +44,7 @@
                     <li><a href="historial">Historial</a></li>
                     <li><a href="notificaciones">Notificaciones</a></li>
                     <li><a href="configuraciones">Configuraciones</a></li>
-                    <li><a href="cerrarSesion">Cerrar Sesión</a></li>
+                    <li><a href="#" id="openModal">Cerrar Sesión</a></li>
                 </ul>
             </div>
         </div>
@@ -132,6 +133,18 @@
 
     </main>
     <br><br><br>
+    <div id="logoutModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>¿Estás seguro de que deseas cerrar sesión?</h2>
+            <p>Recuerda que siempre estamos aquí para brindarte la mejor asesoría legal cuando lo necesites.</p>
+            <p>¡Esperamos verte pronto de vuelta!</p>
+            <div class="modal-buttons">
+                <button id="confirmLogout">Cerrar sesión</button>
+                <button id="cancelLogout">Cerrar sesión</button>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="footer-resources">
             <ul>
@@ -176,5 +189,6 @@
             </ul>
         </div>
     </footer>
+    <script src="../../js/modal.js"></script>
 </body>
 </html>
