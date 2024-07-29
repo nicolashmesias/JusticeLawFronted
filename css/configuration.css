@@ -19,6 +19,7 @@
     padding: 40px;
     height: auto;
     overflow-y: auto;
+
   }
   
   .sidebar ul {
@@ -65,6 +66,7 @@
     border-width: 0;
     color: #e9e9e9;
     background-color: #e9e9e9;
+    position: initial;
   }
   .configuration-content {
     flex: 1;
