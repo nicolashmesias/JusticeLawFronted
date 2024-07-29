@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JusticeLaw</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/Calendar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+    
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="../../img/logo.jpg" alt="JusticeLaw Logo">
+            <div class="logo-text">
+                <h1>JUSTICE</h1>
+                <p>LAW</p>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="">
+            <img id="filtroBusqueda" src="../../img/FiltroBusqueda.png" alt="Filtro">
+            <button>
+                <img src="../../img/Lupa.png" alt="Buscar">
+            </button>
+        </div>
+        <nav class="nav-links">
+            <a href="../home/homeLogin.html">Home</a>
+            <a href="#">Foro</a>
+            <a href="#">Sobre nosotros</a>
+        </nav>
+        
+        <div class="user-menu">
+            <img class="img-perfil" src="../../img/fotoPerfil.png" alt="foto de Perfil">
+            <span>Alfonso Juan</span>
+            <input type="checkbox" id="dropdownToggle" class="dropdown-checkbox">
+            <label for="dropdownToggle">
+            <img class="img-flecha" src="../../img/flechaPerfil.png" alt="flecha">
+            </label>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="../perfil_usuario/perfil_creado.html">Perfil</a></li>
+                    <li><a href="../historial/historial.html">Historial</a></li>
+                    <li><a href="../notification/notification.html">Notificaciones</a></li>
+                    <li><a href="../configuracion/configuracion.html">Configuraciones</a></li>
+                    <li><a href="../home/home.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <div class="container">
+                <div class="calendar">
+                    <h1>Calendario</h1>
+                    <div class="months">
+                        <div>Enero</div>
+                        <div>Febrero</div>
+                        <div>Marzo</div>
+                        <div>Abril</div>
+                        <div>Mayo</div>
+                        <div>Junio</div>
+                        <div>Julio</div>
+                    </div>
+                    <div class="days">
+                        <div class="day">
+                            <span class="date">1</span>
+                            <span class="day-name">Lun</span>
+                        </div>
+                        <div class="day">
+                            <span class="date">2</span>
+                            <span class="day-name">Mar</span>
+                        </div>
+                        <div class="day">
+                            <span class="date">3</span>
+                            <span class="day-name">Mié</span>
+                        </div>
+                        <div class="day">
+                            <span class="date">4</span>
+                            <span class="day-name">Jue</span>
+                        </div>
+                        <div class="day">
+                            <span class="date">5</span>
+                            <span class="day-name">Vie</span>
+                        </div>
+                        <div class="day">
+                            <span class="date">6</span>
+                            <span class="day-name">Sáb</span>
+                        </div>
+                        <div class="day">
+                            <span class="date">8</span>
+                            <span class="day-name">Lun</span>
+                        </div>
+                        <div class="day">
+                            <span class="date">9</span>
+                            <span class="day-name">Mar</span>
+                        </div>
+                        <div class="day">
+                            <span class="date">10</span>
+                            <span class="day-name">Mié</span>
+                        </div>
+                        <div class="day selected">
+                            <span class="date">11</span>
+                            <span class="day-name">Jue</span>
+                        </div>
+                        <div class="day">
+                            <span class="date">12</span>
+                            <span class="day-name">Vie</span>
+                        </div>
+                        <div class="day">
+                            <span class="date">13</span>
+                            <span class="day-name">Sáb</span>
+                        </div>
+                        <div class="day">
+                            <span class="date">15</span>
+                            <span class="day-name">Lun</span>
+                        </div>
+                        <div class="day">
+                            <span class="date">16</span>
+                            <span class="day-name">Mar</span>
+                        </div>
+                    </div>
+                    <div class="schedule">
+                        <div class="hours">
+                            <div>10:00</div>
+                            <div>11:00</div>
+                            <div>12:00</div>
+                            <div>13:00</div>
+                            <div>14:00</div>
+                            <div>15:00</div>
+                            <div>16:00</div>
+                            <div>17:00</div>
+                            <div>18:00</div>
+                        </div>
+                        <div class="events">
+                            <div class="event time"></div>
+                            <div class="event task"></div>
+                            <div class="event last"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile">
+                    <img src="../../img/fotoPerfil.jfif" alt="David Astrada">
+                    <h2>David Astrada</h2>
+                    <a id="verPerfil" href="../ver_perfil/perfil_abogado.html">Ver perfil</a>
+                    <p>Especializado en derecho civil y familiar, mi objetivo es proporcionar soluciones legales efectivas y comprensibles para mis clientes. Fuera del trabajo, disfruto de la lectura y el tiempo al aire libre. Estoy aquí para ayudarte con tus necesidades legales.</p>
+                    <div class="stats">
+                        <div class="ocupado">
+                            <div class="contenido">
+                                <div class="circulo-ocupado"></div>
+                                <p>Ocupado</p>
+                            </div>
+                            <span class="valor">5</span>
+                        </div>
+                        <hr>
+                        <div class="disponible">
+                            <div class="contenido">
+                                <div class="circulo-disponible"></div>
+                                <p>Disponible</p>
+                            </div>
+                            <span class="valor">7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-resources">
+            <ul>
+                <h3>Recursos</h3>
+                <div class="linea1"></div>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="contacto">Contacto</a></li>
+                <li><a href="faq">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-main">
+            <h1>JUSTICE</h1>
+                <h3>LAW</h3>
+            <div class="linea2"></div>
+            <a href="https://www.instagram.com/" >
+                <img src="../../img/Instagram.png" alt="Instagram">
+            </a> 
+            <a href="https://www.facebook.com/">
+                <img src="../../img/Facebook.png" alt="Facebook">
+            </a>        
+            <a href="https://www.youtube.com/">
+                <img src="../../img/Youtube.png" alt="Youtube">
+            </a>
+            <a href="https://www.x.com/">
+                <img src="../../img/Twiter.png" alt="Twiter">
+            </a>
+            <a href="https://www.linkedin.com/">
+                    <img src="../../img/Linkedin.png" alt="Linkedin">
+            </a>
+            <div class="linea3"></div>
+            <p>&copy; 2024 JusticeLaw - Todos los derechos reservados</p>
+
+
+        </div>
+        <div class="footer-legal">
+            <ul>
+                <h3>Legal</h3>
+                <div class="linea4"></div>
+                <li><a href="terminos">Términos de uso</a></li>
+                <li><a href="cookies">Política de Cookies</a></li>
+                <li><a href="privacidad">Política de privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

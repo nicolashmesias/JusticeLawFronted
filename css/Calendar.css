@@ -1,0 +1,197 @@
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.calendar {
+  flex: 3;
+  text-align: left;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.calendar h1 {
+  margin-bottom: 20px;
+}
+.months {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.months div {
+  margin: 0 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #666;
+}
+.days {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+.day {
+  color: #666;
+  text-align: center;
+}
+.day .date {
+  display: block;
+  font-weight: bold;
+}
+.day .day-name {
+  display: block;
+  font-size: smaller;
+}
+.day.selected .date {
+  font-size: 15px;
+  color: #fff;
+  background-color: #003c74;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.day.selected .day-name {
+  color: #666;
+}
+.day.selected {
+  color: #666;
+}
+.day.selected::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #666;
+  margin: 5px auto 0;
+}
+.schedule {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 5%;
+}
+.hours {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #666;
+}
+.hours div {
+  height: 40px;
+  line-height: 40px;
+}
+.events {
+  position: relative;
+  flex: 1;
+  border-left: 2px solid #ccc;
+  height: 400px;
+}
+.event {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+}
+.event.time {
+  top: 10px;
+  height: 40px;
+  background-color: #f3e6cd;
+}
+.event.task {
+  top: 140px;
+  height: 40px;
+  background-color: #dfe6e9;
+}
+.event.last {
+  top: 240px;
+  height: 40px;
+  background-color: #dfe6e9;
+}
+.profile {
+  width: 270px;
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.profile img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+.profile h2 {
+  margin: 10px 0 5px 0;
+}
+.profile p {
+  font-size: 14px;
+  color: #666;
+}
+.profile .stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.profile .stats div {
+  text-align: center;
+}
+.profile .stats div p {
+  display: block;
+  color: #4d5052;
+  font-size: 16px;
+}
+
+#verPerfil {
+  text-decoration: none;
+  color: #cf9e3e;
+  font-size: 15px;
+}
+
+.ocupado {
+  display: flex;
+  flex-direction: column;
+}
+
+.disponible {
+    display: flex;
+    flex-direction: column;
+  }
+
+.contenido {
+  display: flex;
+  align-items: center;
+}
+.disponible span, .ocupado span{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.circulo-disponible {
+    height: 10px;
+    margin-right: 10px;
+    width: 10px;
+    background: #DFE6E9;
+    border-radius: 50%;
+  }
+
+.circulo-ocupado {
+  height: 10px;
+  margin-right: 10px;
+  width: 10px;
+  background: #f3e6cd;
+  border-radius: 50%;
+}
+
+.stats hr{
+    border: 0.1px solid #cf9e3e;
+    width: 0px;
+}

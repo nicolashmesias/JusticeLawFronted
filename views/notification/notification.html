@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/notification.css">
     <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script defer src="../../js/modal.js"></script>
+    <script defer src="notification.js"></script>
+    <script src="https://kit.fontawesome.com/bfdeae7cfe.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -44,51 +48,37 @@
                     <li><a href="historial">Historial</a></li>
                     <li><a href="notificaciones">Notificaciones</a></li>
                     <li><a href="configuraciones">Configuraciones</a></li>
-                    <li><a href="cerrarSesion">Cerrar Sesión</a></li>
+                    <li><a href="#" id="openModal">Cerrar Sesión</a></li>
                 </ul>
             </div>
         </div>
     </header>
     <main>
         <section class="container">
-            <div class="sect1">
-                <div class="back">
-                    <button>
-                        <img src="path-to-back-icon.png" alt="regresar">
-                        <p>Perfil Usuario</p>
-                    </button>
-                </div>
-                <div class="menu-item">
-                    <a href="">
-                        <img src="path-to-user-info-icon.png" alt="inf-perfil">
-                        Información de Usuario
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="">
-                        <img src="path-to-history-icon.png" alt="historial">
-                        Historial
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="">
-                        <img src="path-to-settings-icon.png" alt="Configuracion">
-                        Configuración
-                    </a>
-                </div>
-                <div class="menu-item">
-                    <a href="">
-                        <img src="path-to-notifications-icon.png" alt="notificacion">
-                        Notificaciones
-                    </a>
-                </div>
-                <div class="logout">
-                    <button>
-                        <img src="path-to-logout-icon.png" alt="cerrarSesion">
-                        Cerrar Sesión
-                    </button>
-                </div>
-            </div>
+            <nav class="sidebar">
+                <ul>
+                    <div class="titulo">
+                        <i class="fa-solid fa-chevron-left" onclick="window.history.back()"></i>
+                        <span>Perfil Usuario</span>
+                    </div>
+                    <li>
+                        <a href="../perfil_usuario/perfil_creado.html"><i class="fa-regular fa-user"></i>Información usuario</a>
+                    </li>
+                    <li>
+                        <a href="../historial/historial.html"><i class="fa-solid fa-clock-rotate-left"></i>Historial</a>
+                    </li>
+                    <li>
+                        <a href="../configuracion/configuracion.html"><i class="fa-solid fa-gear"></i>Configuracion</a>
+                    </li>
+                    <li>
+                        <a href="../notification/notification.html"><i class="fa-regular fa-bell"></i>Notificaciones</a>
+                    </li>
+                    <li id="cerrarSesion">
+                        <a href="#" id="openModal2"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesión</a>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
             <div class="sect2">
                 <div class="container1">
                     <div class="notifications-d">
@@ -101,20 +91,38 @@
                             </label>
                             <div class="dropdown1">
                                 <ul>
-                                    <li><a href="favoritas">Mis favoritas</a></li>
-                                    <li><a href="archivadas">Mis archivadas</a></li>
-                                    <li><a href="noleidas">No leídas</a></li>
-                                    <li><a href="todas">Todas</a></li>
+                                    <li><a href="#" data-filter="favoritas">Mis favoritas</a></li>
+                                    <li><a href="#" data-filter="archivadas">Mis archivadas</a></li>
+                                    <li><a href="#" data-filter="noleidas">No leídas</a></li>
+                                    <li><a href="#" data-filter="todas">Todas</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="notifications-list">
-                    <div class="container2">
+                    <div class="notification favorite container2">
                         <img class="img-perfil" src="../../img/fotoPerfil.png" alt="f-perfil">
-                        <a href="notify">Eder Nicolas ha respondido tu pregunta :”¿Qué pasos debo seguir en un proceso de divorcio?”</a>
-                        <img class="corazon" src="../../img/Like.png" alt="corazon">
+                        <a href="notify">Eder Nicolas ha respondido tu pregunta: "¿Qué pasos debo seguir en un proceso de divorcio?"</a>
+                        <img class="corazon" src="../../img/Like.png" alt="Like">
+                        <div class="user-menu2">
+                            <input type="checkbox" id="dropdownToggle2" class="dropdown-checkbox2">
+                            <label for="dropdownToggle2">
+                                <img class="img-3puntos" src="../../img/trespuntos.png" alt="flecha">
+                            </label>
+                            <div class="dropdown2">
+                                <ul>
+                                    <li><a href="m-leido">Marcar como leído</a></li>
+                                    <li><a href="archivar">Archivar notificación</a></li>
+                                    <li><a href="eliminar">Eliminar notificación</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification archived container2">
+                        <img class="img-perfil" src="../../img/fotoPerfil.png" alt="f-perfil">
+                        <a href="notify">Eder Nicolas ha respondido tu pregunta: "¿Qué pasos debo seguir en un proceso de divorcio?"</a>
+                        <img class="corazon" src="../../img/Like.png" alt="Like">
                         <div class="user-menu2">
                             <input type="checkbox" id="dropdownToggle2" class="dropdown-checkbox2">
                             <label for="dropdownToggle2">
@@ -128,15 +136,15 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>   
-                    <div class="container2">
+                    </div>
+                    <div class="notification unread container2">
                         <img class="img-perfil" src="../../img/fotoPerfil.png" alt="f-perfil">
-                        <a href="notify">Eder Nicolas ha respondido tu pregunta :”¿Qué pasos debo seguir en un proceso de divorcio?”</a>
-                        <img class="corazon" src="../../img/Like.png" alt="corazon">
+                        <a href="notify">Eder Nicolas ha respondido tu pregunta: "¿Qué pasos debo seguir en un proceso de divorcio?"</a>
+                        <img class="corazon" src="../../img/Like.png" alt="Like">
                         <div class="user-menu2">
                             <input type="checkbox" id="dropdownToggle2" class="dropdown-checkbox2">
                             <label for="dropdownToggle2">
-                                <img class="img-flecha" src="../../img/trespuntos.png" alt="flecha">
+                                <img class="img-3puntos" src="../../img/trespuntos.png" alt="flecha">
                             </label>
                             <div class="dropdown2">
                                 <ul>
@@ -146,15 +154,15 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>  
-                    <div class="container2">
+                    </div>
+                    <div class="notification container2">
                         <img class="img-perfil" src="../../img/fotoPerfil.png" alt="f-perfil">
-                        <a href="notify">Eder Nicolas ha respondido tu pregunta :”¿Qué pasos debo seguir en un proceso de divorcio?”</a>
-                        <img class="corazon" src="../../img/Like.png" alt="corazon">
+                        <a href="notify">Eder Nicolas ha respondido tu pregunta: "¿Qué pasos debo seguir en un proceso de divorcio?"</a>
+                        <img class="corazon" src="../../img/Like.png" alt="Like">
                         <div class="user-menu2">
                             <input type="checkbox" id="dropdownToggle2" class="dropdown-checkbox2">
                             <label for="dropdownToggle2">
-                                <img class="img-flecha" src="../../img/trespuntos.png" alt="flecha">
+                                <img class="img-3puntos" src="../../img/trespuntos.png" alt="flecha">
                             </label>
                             <div class="dropdown2">
                                 <ul>
@@ -164,160 +172,28 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>  
-                    <div class="container2">
-                        <img class="img-perfil" src="../../img/fotoPerfil.png" alt="f-perfil">
-                        <a href="notify">Eder Nicolas ha respondido tu pregunta :”¿Qué pasos debo seguir en un proceso de divorcio?”</a>
-                        <img class="corazon" src="../../img/Like.png" alt="corazon">
-                        <div class="user-menu2">
-                            <input type="checkbox" id="dropdownToggle2" class="dropdown-checkbox2">
-                            <label for="dropdownToggle2">
-                                <img class="img-flecha" src="../../img/trespuntos.png" alt="flecha">
-                            </label>
-                            <div class="dropdown2">
-                                <ul>
-                                    <li><a href="m-leido">Marcar como leído</a></li>
-                                    <li><a href="archivar">Archivar notificación</a></li>
-                                    <li><a href="eliminar">Eliminar notificación</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="container2">
-                        <img class="img-perfil" src="../../img/fotoPerfil.png" alt="f-perfil">
-                        <a href="notify">Eder Nicolas ha respondido tu pregunta :”¿Qué pasos debo seguir en un proceso de divorcio?”</a>
-                        <img class="corazon" src="../../img/Like.png" alt="corazon">
-                        <div class="user-menu2">
-                            <input type="checkbox" id="dropdownToggle2" class="dropdown-checkbox2">
-                            <label for="dropdownToggle2">
-                                <img class="img-flecha" src="../../img/trespuntos.png" alt="flecha">
-                            </label>
-                            <div class="dropdown2">
-                                <ul>
-                                    <li><a href="m-leido">Marcar como leído</a></li>
-                                    <li><a href="archivar">Archivar notificación</a></li>
-                                    <li><a href="eliminar">Eliminar notificación</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="container2">
-                        <img class="img-perfil" src="../../img/fotoPerfil.png" alt="f-perfil">
-                        <a href="notify">Eder Nicolas ha respondido tu pregunta :”¿Qué pasos debo seguir en un proceso de divorcio?”</a>
-                        <img class="corazon" src="../../img/Like.png" alt="corazon">
-                        <div class="user-menu2">
-                            <input type="checkbox" id="dropdownToggle2" class="dropdown-checkbox2">
-                            <label for="dropdownToggle2">
-                                <img class="img-flecha" src="../../img/trespuntos.png" alt="flecha">
-                            </label>
-                            <div class="dropdown2">
-                                <ul>
-                                    <li><a href="m-leido">Marcar como leído</a></li>
-                                    <li><a href="archivar">Archivar notificación</a></li>
-                                    <li><a href="eliminar">Eliminar notificación</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="container2">
-                        <img class="img-perfil" src="../../img/fotoPerfil.png" alt="f-perfil">
-                        <a href="notify">Eder Nicolas ha respondido tu pregunta :”¿Qué pasos debo seguir en un proceso de divorcio?”</a>
-                        <img class="corazon" src="../../img/Like.png" alt="corazon">
-                        <div class="user-menu2">
-                            <input type="checkbox" id="dropdownToggle2" class="dropdown-checkbox2">
-                            <label for="dropdownToggle2">
-                                <img class="img-flecha" src="../../img/trespuntos.png" alt="flecha">
-                            </label>
-                            <div class="dropdown2">
-                                <ul>
-                                    <li><a href="m-leido">Marcar como leído</a></li>
-                                    <li><a href="archivar">Archivar notificación</a></li>
-                                    <li><a href="eliminar">Eliminar notificación</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="container2">
-                        <img class="img-perfil" src="../../img/fotoPerfil.png" alt="f-perfil">
-                        <a href="notify">Eder Nicolas ha respondido tu pregunta :”¿Qué pasos debo seguir en un proceso de divorcio?”</a>
-                        <img class="corazon" src="../../img/Like.png" alt="corazon">
-                        <div class="user-menu2">
-                            <input type="checkbox" id="dropdownToggle2" class="dropdown-checkbox2">
-                            <label for="dropdownToggle2">
-                                <img class="img-flecha" src="../../img/trespuntos.png" alt="flecha">
-                            </label>
-                            <div class="dropdown2">
-                                <ul>
-                                    <li><a href="m-leido">Marcar como leído</a></li>
-                                    <li><a href="archivar">Archivar notificación</a></li>
-                                    <li><a href="eliminar">Eliminar notificación</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="container2">
-                        <img class="img-perfil" src="../../img/fotoPerfil.png" alt="f-perfil">
-                        <a href="notify">Eder Nicolas ha respondido tu pregunta :”¿Qué pasos debo seguir en un proceso de divorcio?”</a>
-                        <img class="corazon" src="../../img/Like.png" alt="corazon">
-                        <div class="user-menu2">
-                            <input type="checkbox" id="dropdownToggle2" class="dropdown-checkbox2">
-                            <label for="dropdownToggle2">
-                                <img class="img-flecha" src="../../img/trespuntos.png" alt="flecha">
-                            </label>
-                            <div class="dropdown2">
-                                <ul>
-                                    <li><a href="m-leido">Marcar como leído</a></li>
-                                    <li><a href="archivar">Archivar notificación</a></li>
-                                    <li><a href="eliminar">Eliminar notificación</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="container2">
-                        <img class="img-perfil" src="../../img/fotoPerfil.png" alt="f-perfil">
-                        <a href="notify">Eder Nicolas ha respondido tu pregunta :”¿Qué pasos debo seguir en un proceso de divorcio?”</a>
-                        <img class="corazon" src="../../img/Like.png" alt="corazon">
-                        <div class="user-menu2">
-                            <input type="checkbox" id="dropdownToggle2" class="dropdown-checkbox2">
-                            <label for="dropdownToggle2">
-                                <img class="img-flecha" src="../../img/trespuntos.png" alt="flecha">
-                            </label>
-                            <div class="dropdown2">
-                                <ul>
-                                    <li><a href="m-leido">Marcar como leído</a></li>
-                                    <li><a href="archivar">Archivar notificación</a></li>
-                                    <li><a href="eliminar">Eliminar notificación</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="container2">
-                        <img class="img-perfil" src="../../img/fotoPerfil.png" alt="f-perfil">
-                        <a href="notify">Eder Nicolas ha respondido tu pregunta :”¿Qué pasos debo seguir en un proceso de divorcio?”</a>
-                        <img class="corazon" src="../../img/Like.png" alt="corazon">
-                        <div class="user-menu2">
-                            <input type="checkbox" id="dropdownToggle2" class="dropdown-checkbox2">
-                            <label for="dropdownToggle2">
-                                <img class="img-flecha" src="../../img/trespuntos.png" alt="flecha">
-                            </label>
-                            <div class="dropdown2">
-                                <ul>
-                                    <li><a href="m-leido">Marcar como leído</a></li>
-                                    <li><a href="archivar">Archivar notificación</a></li>
-                                    <li><a href="eliminar">Eliminar notificación</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>  
+                    </div>
                 </div>
                 <div class="notifications-actions">
                     <button>Marcar todo como leído</button>
                     <button>Archivar todo</button>
                 </div>
             </div>
+            
         </section>
     </main>
-    
+    <div id="logoutModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>¿Estás seguro de que deseas cerrar sesión?</h2>
+            <p>Recuerda que siempre estamos aquí para brindarte la mejor asesoría legal cuando lo necesites.</p>
+            <p>¡Esperamos verte pronto de vuelta!</p>
+            <div class="modal-buttons">
+                <button id="confirmLogout">Cerrar sesión</button>
+                <button id="cancelLogout">Cerrar sesión</button>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="footer-resources">
             <ul>
@@ -362,5 +238,7 @@
             </ul>
         </div>
     </footer>
+    <script src="../../js/modal.js"></script>
+    <script src="notification.js"></script>
 </body>
 </html>
