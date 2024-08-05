@@ -117,11 +117,15 @@ header input[type="text"] {
 }
 
 .welcome {
+    display: inline-block;
     background-color: #003049;
+    height: 151px;
+    width: 240px;
     color: white;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .welcome h1 {
@@ -130,12 +134,14 @@ header input[type="text"] {
 }
 
 .welcome p {
-    margin: 5px 0 0;
+    margin-top: 20px;
 }
 
 .stats {
-    display: flex;
+    display:inline-flex;
     justify-content: space-between;
+    width: 700px;
+    height: 300px;
     margin-bottom: 20px;
 }
 
@@ -163,6 +169,16 @@ header input[type="text"] {
 }
 
 .chart {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 48%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.chart2 {
+    display: flex;
+    width: 278px;
+    height: 242px;
     background-color: white;
     border-radius: 10px;
     padding: 20px;
