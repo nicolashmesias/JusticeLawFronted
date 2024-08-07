@@ -1,0 +1,110 @@
+.ti h1{ 
+    margin-top: 150px;
+    margin-left: 55%; 
+    font-size: 45px;
+    color: #0A3B55;
+  }
+
+  .ti p{ 
+    margin-left: 65%; 
+    font-size: 18px;
+    color: #0A3B55;
+  }
+  .justice{
+    background-image: url("../img/image2.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    width: 500px;
+    height: 600px; 
+    margin-top: -10rem;
+    margin-left: 5rem;
+    box-sizing: border-box;   
+    position: absolute;
+  }
+  .justice h1{
+    text-align: right;
+    margin-top: 22rem;
+    font-size: 83px;
+    color: white;
+  }
+  .justice h2{
+    text-align: right;
+    margin-top: -13%;
+    font-size: 30px;
+    color: white;
+  }
+  .law{
+    margin-left: 36.5rem;
+    margin-top: 14rem;
+    font-size: 36.6px;
+    color: #CF9E3E;
+  }
+  .law h2{
+    margin-top: -3.7rem;
+    font-size: 32px;
+    color: #0A3B55;
+  }
+  .reg{
+    text-align: left;
+    width:100px;
+    margin-top: -20rem;
+    margin-left: 53rem;
+    margin-bottom: 10rem;
+    color: #0A3B55;
+}
+.reg button {
+    float: left;
+    max-width: 317px;
+
+  }
+  .reg button{
+    cursor: pointer;
+    float: left;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    width: 317px;
+    font-family: "Faustina", serif;
+    margin: 0.5rem 0px;
+    color: #0A3B55;
+    padding: 10px;
+    padding-left: 1rem;
+    
+  }
+
+  .reg i{
+    color: #0A3B55;
+    margin-right: 1rem;
+  }
+  .re{
+    width:500px;
+    margin-top: -3rem;
+    margin-left: 50rem;
+    bottom: 4rem;
+    text-decoration: none;
+  }
+  .re a{
+    text-decoration: none;
+  }
+  .bot{
+    margin-top: 2.8rem;
+    margin-left:58rem;
+  }
+
+  .bot button{
+    background-color: #0A3B55;
+    text-decoration: none;
+    color: white;
+    padding: 14px 40px;
+    border-radius: 4px;
+    max-width: 317px;
+  }
+  .par{
+    color: #0A3B55;
+    margin-top: 1rem;
+    margin-left:55rem;
+  }
+  
