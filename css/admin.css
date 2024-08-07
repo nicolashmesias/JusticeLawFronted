@@ -6,6 +6,7 @@ body {
 
 .container {
     display: flex;
+    left: 0;
 }
 
 .sidebar {
@@ -117,7 +118,7 @@ header input[type="text"] {
 }
 
 
-        .welcome {
+.welcome {
             background-color: #003049;
             color: white;
             padding: 20px;
@@ -131,122 +132,12 @@ header input[type="text"] {
             margin: 40px;
         }
 
-        .welcome h1 {
+.welcome h1 {
             margin: 0 0 10px;
             font-size: 1.5em;
         }
 
-        .welcome p {
+.welcome p {
             margin: 0;
             font-size: 1em;
         }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .stat {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .stat img {
-            width: 100px;
-        }
-
-        .stat h2 {
-            font-size: 1.2em;
-            margin: 10px 0;
-            color: #333;
-        }
-
-        .stat p {
-            font-size: 1.5em;
-            margin: 10px 0;
-            color: #333;
-        }
-
-        .stat .percentage {
-            font-size: 0.9em;
-            color: green;
-            margin-bottom: 10px;
-        }
-
-        .stat a {
-            color: #007bff;
-            text-decoration: none;
-            font-size: 0.9em;
-            margin-top: auto;
-        }
-
-.charts {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.chart {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 48%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.chart2 {
-    display: flex;
-    width: 278px;
-    height: 242px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 48%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.reports, .recent-activity {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.reports h3, .recent-activity h3 {
-    margin: 0 0 10px;
-}
-
-.reports ul, .recent-activity ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.reports li, .recent-activity li {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.reports li img, .recent-activity li img {
-    height: 20px;
-    margin-right: 10px;
-}
-
-.reports li p, .recent-activity li p {
-    margin: 0;
-}
-
-.recent-activity li input[type="date"] {
-    margin-left: auto;
-    border: none;
-    background-color: transparent;
-}
