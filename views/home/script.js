@@ -3,13 +3,13 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     grabCursor: true,
     centeredSlides: true,
     loop: true,
-    slidesPerView: 2, // Número de slides visibles a la vez
+    slidesPerView: 3, 
     
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
       depth: 100,
-      modifier: 2.5,
+      modifier: 2,
     },
     pagination: {
       el: '.swiper-pagination',

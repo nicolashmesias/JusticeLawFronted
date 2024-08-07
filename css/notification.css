@@ -9,12 +9,14 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow: hidden;
     margin: auto;
+    height: 100%;
 }
 
 .sect2 {
     width: 70%;
     padding: 20px;
     box-sizing: border-box;
+    height: auto;
 }
 
 .sidebar {
@@ -23,7 +25,7 @@
     width: 300px;
     background-color: #ffffff;
     padding: 40px;
-    height: 100vh;
+    height: auto;
     overflow-y: auto;
 }
 
@@ -64,7 +66,7 @@
 }
 
 hr {
-    height: 90vh;
+    height: 70vh;
     width: 0.1vw;
     left: 25%;
     top: 23%;
@@ -72,9 +74,10 @@ hr {
     border-width: 0;
     color: #e9e9e9;
     background-color: #e9e9e9;
+    position: initial;
 }
 
-.container1, .container2 {
+.container1 {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -84,11 +87,11 @@ hr {
 .notification {
     display: flex;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: #f9f9f9;
 }
 
@@ -103,9 +106,15 @@ hr {
     margin-right: 10px;
 }
 
-.user-menu1, .user-menu2 {
+.user-menu1 {
     position: relative;
     display: flex;
+    align-items: center;
+}
+
+.user-menu2 {
+    display: inline-block;
+    position:absolute ;
     align-items: center;
 }
 
@@ -123,10 +132,10 @@ hr {
 }
 
 .user-menu2 input[type="checkbox"]:checked + label + .dropdown2 {
-    display: block;
+    display: absolute;
 }
 
-.user-menu1 .dropdown1, .user-menu2 .dropdown2 {
+.user-menu1 .dropdown1 {
     display: none;
     position: absolute;
     top: 100%;
@@ -149,6 +158,7 @@ hr {
 
 .dropdown1 ul, .dropdown2 ul {
     list-style: none;
+    text-align:initial;
     margin: 0;
     padding: 0;
 }
@@ -165,12 +175,14 @@ hr {
 }
 
 .container2 a {
+    margin-left: 10px;
+    margin-right: 40px;
     text-decoration: none;
     color: #000;
     flex: 1;
 }
 
-.container2 .img-perfil, .container2 .corazon {
+.container2 .corazon {
     margin-right: 10px;
     height: 20px;
 }
@@ -201,4 +213,10 @@ hr {
     margin-left: auto;
     height: 20px;
     cursor: pointer;
+}
+
+.container2 .img-perfil {
+    width: 35px;
+    height: 35px;
+    border-image: none;
 }

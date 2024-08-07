@@ -16,6 +16,7 @@ corazones.forEach(corazon => {
 });
     
 });
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const dropdownItems = document.querySelectorAll('.dropdown1 a');
     const notifications = document.querySelectorAll('.notification');
@@ -53,4 +54,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     filterNotifications('todas');
+
+    
 });
+
+
