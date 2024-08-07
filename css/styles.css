@@ -841,8 +841,9 @@ body {
 .footer-legal .linea4 {
   border-top: 1px solid #cf9e3e;
   margin-bottom: 10px;
-  width: 15%;
+  width: 12%;
   position: relative;
   left: 85%; 
+  padding-left: 60px;
 }
 
