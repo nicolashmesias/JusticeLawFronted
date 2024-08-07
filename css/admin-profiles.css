@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "sidebar header header"
+        "sidebar main-content activity-sidebar";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 250px 1fr 300px;
+    width: 100%;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #003049;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar .logo h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar .menu {
+    list-style: none;
+}
+
+.sidebar .menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar .menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar .menu .section-title {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #003049;
+    color: #fff;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile span {
+    margin-right: 10px;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.main-content {
+    grid-area: main-content;
+    padding: 20px;
+}
+
+.recent-profiles, .report-log, .profile-details {
+    background-color: #f1faee;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.recent-profiles h2,
+.report-log h2 {
+    margin-bottom: 10px;
+}
+
+.profiles-list .profile-item,
+.report-log .report-item,
+.activity-list .activity-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #a8dadc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.profiles-list .profile-item .profile-initials,
+.report-log .report-item .report-icon,
+.activity-list .activity-item .activity-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #457b9d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.report-log .report-item .report-icon.error {
+    background-color: #e63946;
+}
+
+.report-log .report-item .report-icon.verification {
+    background-color: #f4a261;
+}
+
+.profile-details .profile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-details .profile-info .avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-details .profile-info .info {
+    flex: 1;
+}
+
+.profile-details .profile-info .info .name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-details .profile-info .info .email {
+    margin-bottom: 10px;
+}
+
+.profile-details .profile-info .info .pdf-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #457b9d;
+}
+
+.profile-details .profile-info .info .pdf-link img {
+    margin-right: 5px;
+}
+
+.profile-details .account-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-details .account-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.profile-details .account-info p {
+    flex: 1;
+}
+
+.profile-details .account-info span {
+    margin-right: 10px;
+}
+
+.profile-details .block-button {
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.activity-sidebar {
+    grid-area: activity-sidebar;
+    padding: 20px;
+    background-color: #f1faee;
+}
+
+.search-profiles input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-profiles button {
+    background-color: #457b9d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.recent-activity h3 {
+    margin-bottom: 10px;
+}

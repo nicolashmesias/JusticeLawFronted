@@ -81,18 +81,17 @@ body {
 
 .main-content {
     margin-left: 250px;
-    padding: 20px;
     width: calc(100% - 250px);
 }
 
 header {
+    grid-area: header;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #003049;
     padding: 10px 45px;
     color: white;
-    z-index: 9000;
 }
 
 header input[type="text"] {
@@ -120,6 +119,8 @@ header input[type="text"] {
     background-color: #003049;
     color: white;
     padding: 20px;
+    width: 300px;
+    margin: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
