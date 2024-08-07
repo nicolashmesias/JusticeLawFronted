@@ -50,6 +50,15 @@ body {
     cursor: pointer;
   }
 
+  .header-small a {
+    display: flex;
+    text-decoration: none;
+  }
+
+  .header-small a:nth-of-type(1) {
+    margin-left: auto;
+  }
+
   .header-small i {
     color: #003049;
     font-size: 25px;
@@ -57,16 +66,109 @@ body {
     cursor: pointer;
   }
 
-  .header-small i:not(:first-child) {
-    margin-left: auto;
-  }
-
-  .header-small img {
+  .header-small a img {
     max-width: 40px;
-    text-align: right;
     max-height: 40px;
     padding: 0;
+    margin-right: 1.5rem;
+    text-align: right;
+  }
+
+  .dropdownMovil {
+    box-shadow: 0 0 10px black;
+    background-color: #0a3b55;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    height: 100%;
+    width: 60%;
+    color: white;
+    padding: 1.5rem;
+  }
+
+  .dropdownMovil i {
+    color: white;
+    font-size: 18px;
+  }
+  .dropdownMovil img {
+    margin-top: 5px;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .dropdownMovil ul {
+    list-style-type: none;
+    margin: 6px 0 0 17px;
+    padding: 0;
+  }
+
+  .dropdownMovil ul li {
+    padding: 0.8rem;
+  }
+
+  .dropdownMovil ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .dropdownMovil ul li i {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0;
+    margin-right: 0.8rem;
+    text-decoration: none;
+  }
+
+  .dropdownMovil-checkbox {
+    display: none;
+  }
+
+  .dropdownMovil-checkbox:checked + label + .dropdownMovil {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-info {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+
+  #fotoPerfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-details  a{
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .profile-details span {
+    font-size: 16px;
+  }
+
+  .profile-details h3 {
+    font-size: 18px;
     margin: 0;
+  }
+
+  .header-small hr {
+    margin: 1rem;
+    width: 70%;
   }
 }
 
@@ -843,7 +945,6 @@ body {
   margin-bottom: 10px;
   width: 12%;
   position: relative;
-  left: 85%; 
+  left: 85%;
   padding-left: 60px;
 }
-

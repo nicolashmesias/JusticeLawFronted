@@ -1,116 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JusticeLaw</title>
-    <link rel="stylesheet" href="../../css/styles.css">
-    <script src="https://kit.fontawesome.com/bfdeae7cfe.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/bfdeae7cfe.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header-large">
-        <div class="logo">
-            <img src="../../img/logo.jpg" alt="JusticeLaw Logo">
-            <div class="logo-text">
-                <h1>JUSTICE</h1>
-                <p>LAW</p>
-            </div>
+      <div class="logo">
+        <img src="../../img/logo.jpg" alt="JusticeLaw Logo" />
+        <div class="logo-text">
+          <h1>JUSTICE</h1>
+          <p>LAW</p>
         </div>
-        <div class="search-bar">
-            <input type="text" placeholder="">
-            <img id="filtroBusqueda" src="../../img/FiltroBusqueda.png" alt="Filtro">
-            <button>
-                <img src="../../img/Lupa.png" alt="Buscar">
-            </button>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="" />
+        <img
+          id="filtroBusqueda"
+          src="../../img/FiltroBusqueda.png"
+          alt="Filtro"
+        />
+        <button>
+          <img src="../../img/Lupa.png" alt="Buscar" />
+        </button>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Foro</a>
+        <a href="#">Sobre nosotros</a>
+      </nav>
+      <div class="user-menu">
+        <img
+          class="img-perfil"
+          src="../../img/fotoPerfil.png"
+          alt="foto de Perfil"
+        />
+        <span>Alfonso Juan</span>
+        <input type="checkbox" id="dropdownToggle" class="dropdown-checkbox" />
+        <label for="dropdownToggle">
+          <img
+            class="img-flecha"
+            src="../../img/flechaPerfil.png"
+            alt="flecha"
+          />
+        </label>
+        <div class="dropdown">
+          <ul>
+            <li><a href="../perfil_usuario/crearPerfil.html">Perfil</a></li>
+            <li><a href="../historial/historial.html">Historial</a></li>
+            <li>
+              <a href="../notification/notification.html">Notificaciones</a>
+            </li>
+            <li>
+              <a href="../configuracion/configuracion.html">Configuraciones</a>
+            </li>
+            <li><a href="#" id="openModal">Cerrar Sesión</a></li>
+          </ul>
         </div>
-        <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Foro</a>
-            <a href="#">Sobre nosotros</a>
-        </nav>
-        <div class="user-menu">
-            <img class="img-perfil" src="../../img/fotoPerfil.png" alt="foto de Perfil">
-            <span>Alfonso Juan</span>
-            <input type="checkbox" id="dropdownToggle" class="dropdown-checkbox">
-            <label for="dropdownToggle">
-                <img class="img-flecha" src="../../img/flechaPerfil.png" alt="flecha">
-            </label>
-            <div class="dropdown">
-                <ul>
-                    <li><a href="../perfil_usuario/crearPerfil.html">Perfil</a></li>
-                    <li><a href="../historial/historial.html">Historial</a></li>
-                    <li><a href="../notification/notification.html">Notificaciones</a></li>
-                    <li><a href="../configuracion/configuracion.html">Configuraciones</a></li>
-                    <li><a href="#" id="openModal">Cerrar Sesión</a></li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </header>
 
     <header class="header-small">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-regular fa-bell"></i>
-            <img class="img-perfil" src="../../img/fotoPerfil.png" alt="foto de Perfil">
+        <input type="checkbox" id="dropdownMenu" class="dropdownMovil-checkbox" />
+      <label for="dropdownMenu">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <div class="dropdownMovil">
+
+        <i class="fa-solid fa-chevron-left"></i>
+    
+        <div class="profile-info">
+            <img id="fotoPerfil" src="../../img/fotoPerfil.png" alt="fotoPerfil" />
+            <div class="profile-details">
+              <h3>Alfonso Juan</h3>
+              <span>Popayan, Colombia</span>
+            </div>
+
+          </div>
+  
+        <ul>
+            <hr>
+          <li>
+            <a href="../home/homeLogin.html">
+              <i class="fa-solid fa-house"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="../perfil_usuario/perfil_creado.html"><i class="fa-regular fa-user"></i>Perfil</a>
+        </li>
+        <li>
+            <a href="../notification/notification.html"><i class="fa-regular fa-bell"></i>Notificaciones</a>
+        </li>
+        <li>
+            <a href="../historial/historial.html"><i class="fa-solid fa-clock-rotate-left"></i>Historial</a>
+        </li>
+        <hr>
+        <li>
+            <a href="../configuracion/configuracion.html"><i class="fa-solid fa-gear"></i>Configuracion</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-circle-info"></i></i>Quienes somos</a>
+        </li>
+        <li>
+            <a href="#"><i class="fa-solid fa-question"></i></i>Ayuda</a>
+        </li>
+        <hr>
+        </ul>
+      </div>
+      <a href="../notification/notification.html"
+        ><i class="fa-regular fa-bell"></i
+      ></a>
+      <a href="../perfil_usuario/crearPerfil.html"
+        ><img
+          class="img-perfil"
+          src="../../img/fotoPerfil.png"
+          alt="foto de Perfil"
+      /></a>
     </header>
     <main>
-        <section class="content">
-            <h2>Contenido</h2>
-           <p>Contenido de las vistas</p>
-        </section>
-        <section class="logout">
-            <button>boton</button>
-        </section>
+      <section class="content">
+        <h2>Contenido</h2>
+        <p>Contenido de las vistas</p>
+      </section>
+      <section class="logout">
+        <button>boton</button>
+      </section>
     </main>
     <footer class="footer-large">
-        <div class="footer-resources">
-            <ul>
-                <h3>Recursos</h3>
-                <div class="linea1"></div>
-                <li><a href="blog">Blog</a></li>
-                <li><a href="contacto">Contacto</a></li>
-                <li><a href="faq">FAQ</a></li>
-            </ul>
-        </div>
-        <div class="footer-main">
-            <h1>JUSTICE</h1>
-                <h3>LAW</h3>
+      <div class="footer-resources">
+        <ul>
+          <h3>Recursos</h3>
+          <div class="linea1"></div>
+          <li><a href="blog">Blog</a></li>
+          <li><a href="contacto">Contacto</a></li>
+          <li><a href="faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-main">
+        <h1>JUSTICE</h1>
+        <h3>LAW</h3>
         <div class="linea2"></div>
-        <a href="https://www.instagram.com/" >
-            <img src="../../img/Instagram.png" alt="Instagram">
-        </a> 
+        <a href="https://www.instagram.com/">
+          <img src="../../img/Instagram.png" alt="Instagram" />
+        </a>
         <a href="https://www.facebook.com/">
-            <img src="../../img/Facebook.png" alt="Facebook">
-        </a>        
+          <img src="../../img/Facebook.png" alt="Facebook" />
+        </a>
         <a href="https://www.youtube.com/">
-            <img src="../../img/Youtube.png" alt="Youtube">
+          <img src="../../img/Youtube.png" alt="Youtube" />
         </a>
         <a href="https://www.x.com/">
-            <img src="../../img/Twiter.png" alt="Twiter">
+          <img src="../../img/Twiter.png" alt="Twiter" />
         </a>
         <a href="https://www.linkedin.com/">
-                <img src="../../img/Linkedin.png" alt="Linkedin">
+          <img src="../../img/Linkedin.png" alt="Linkedin" />
         </a>
-            <div class="linea3"></div>
-            <p>&copy; 2024 JusticeLaw - Todos los derechos reservados</p>
-            
-        </div>
-        <div class="footer-legal">
-            <ul>
-                <h3>Legal</h3>
-                <div class="linea4"></div>
-                <li><a href="terminos">Términos de uso</a></li>
-                <li><a href="cookies">Política de Cookies</a></li>
-                <li><a href="privacidad">Política de privacidad</a></li>
-            </ul>
-        </div>
+        <div class="linea3"></div>
+        <p>&copy; 2024 JusticeLaw - Todos los derechos reservados</p>
+      </div>
+      <div class="footer-legal">
+        <ul>
+          <h3>Legal</h3>
+          <div class="linea4"></div>
+          <li><a href="terminos">Términos de uso</a></li>
+          <li><a href="cookies">Política de Cookies</a></li>
+          <li><a href="privacidad">Política de privacidad</a></li>
+        </ul>
+      </div>
     </footer>
 
     <footer class="footer-small">
-        <i class="fa-solid fa-house"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-users"></i>
+      <a href="../home/homeLogin.html"> <i class="fa-solid fa-house"></i></a>
+      <a href="../Information/information.html">
+        <i class="fa-solid fa-magnifying-glass"></i
+      ></a>
+      <a href="../foro/foro.html"><i class="fa-solid fa-users"></i></a>
     </footer>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
