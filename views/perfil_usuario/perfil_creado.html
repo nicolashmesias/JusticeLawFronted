@@ -117,12 +117,7 @@
         <a href="../notification/notification.html"
           ><i class="fa-regular fa-bell"></i
         ></a>
-        <a href="../perfil_usuario/crearPerfil.html"
-          ><img
-            class="img-perfil"
-            src="../../img/fotoPerfil.png"
-            alt="foto de Perfil"
-        /></a>
+        
       </header>
     <main>
         <section class="perfil">
@@ -172,6 +167,9 @@
                     <div class="nombre-perfil">
                         <h3>Alfonso Juan</h3>
                         <span>Popayan, Colombia</span>
+                           <div class="tabletModal">
+                          <a href="#modal-foto">Agregar foto</a> 
+                        </div>
                     </div>
                 </div>
                 <div class="info">
@@ -207,6 +205,35 @@
                 </div>
             </div>
         </section>
+        <section class="perfil-movil">
+          <div class="perfil-main">
+            <img id="fotoPerfil" src="../../img/fotoPerfil.png" alt="fotoPerfil">
+            <a href="#modal-foto">
+              <img id="circuloPerfil" src="../../img/circuloPerfil.png" alt="circuloPerfil">
+              <img id="agregarFoto" src="../../img/camaraAgreFoto.png" alt="camaraAgreFoto">
+            </a>
+            <div id="modal-foto" class="modalDialog">
+              <div>
+                <a href="#close" title="Close" class="close"><i class="fa-solid fa-xmark close"></i></a>
+                <h2>¡Haz que tu perfil sea más <br> personal!</h2>
+                <p>Sube una foto de perfil para que te reconozcan fácilmente.</p>
+                <img id="avatarUno" src="../../img/avatarUno.png" alt="avatarUno">
+                <img id="avatarTres" src="../../img/avatarTres.png" alt="avatarTres">
+                <img id="avatarDos" src="../../img/avatarDos.png" alt="avatarDos">
+                <div class="subir-foto" id="seleccionarFoto">
+                  <input type="file" name="seleccionarFoto" aria-label="Subir foto" onchange="handleFileSelection()">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nombre-perfil">
+            <h3>Alfonso Juan</h3>
+          </div>
+          <div class="content-movil">
+            <i class="fa-regular fa-user">Mi perfil</i>
+          </div>
+        </section>
+        
         <div class="toast">
             <div class="toast-content">
                 <img src="../../img/check.png"  class="check" alt="check">
