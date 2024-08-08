@@ -1,18 +1,49 @@
-.recent-profiles, .report-log, .profile-details {
+.activity-sidebar {
     background-color: #f1faee;
     padding: 20px;
-    margin-bottom: 20px;
     border-radius: 10px;
 }
 
-.recent-profiles h2,
-.report-log h2 {
+.search-profiles input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-profiles button {
+    background-color: #457b9d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.recent-activity h3 {
     margin-bottom: 10px;
 }
 
-.profiles-list .profile-item,
-.report-log .report-item,
 .activity-list .activity-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #a8dadc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.recent-profiles, .report-log, .profile-details {
+    background-color: #f1faee;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.recent-profiles h2, .report-log h2, .profile-details h3 {
+    margin-bottom: 10px;
+}
+
+.profiles-list .profile-item, .report-log .report-item {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -21,9 +52,7 @@
     border-radius: 5px;
 }
 
-.profiles-list .profile-item .profile-initials,
-.report-log .report-item .report-icon,
-.activity-list .activity-item .activity-icon {
+.profiles-list .profile-item .profile-initials, .report-log .report-item .report-icon {
     width: 40px;
     height: 40px;
     background-color: #457b9d;
@@ -45,7 +74,6 @@
 
 .profile-details .profile-info {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -109,30 +137,4 @@
     border: none;
     padding: 10px;
     border-radius: 5px;
-}
-
-.activity-sidebar {
-    grid-area: activity-sidebar;
-    padding: 20px;
-    background-color: #f1faee;
-}
-
-.search-profiles input {
-    width: calc(100% - 40px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.search-profiles button {
-    background-color: #457b9d;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.recent-activity h3 {
-    margin-bottom: 10px;
 }

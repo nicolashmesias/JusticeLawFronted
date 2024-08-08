@@ -220,3 +220,106 @@ hr {
     height: 35px;
     border-image: none;
 }
+
+/* mas grandes */
+@media (min-width: 1200px) {
+    .container {
+        width: 80%;
+        max-width: 1200px;
+        margin-top: 3rem !important;
+        margin-bottom: 4rem !important;
+    }
+
+    .sect2 {
+        width: 75%;
+    }
+
+    .sidebar {
+        width: 25%;
+        padding: 30px;
+    }
+
+    .notifications-actions button {
+        width: 200px;
+    }
+}
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        margin-top: 2rem !important;
+        margin-bottom: 3rem !important;
+        flex-direction: row;
+    }
+
+    .sect2 {
+        width: 70%;
+        padding: 15px;
+    }
+
+    .sidebar {
+        width: 30%;
+        padding: 25px;
+    }
+
+    .notifications-actions button {
+        width: 180px;
+    }
+}
+
+/* celulares */
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 1rem !important;
+        margin-bottom: 2rem !important;
+        flex-direction: column;
+    }
+
+    .sect2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        top: 0;
+        padding: 20px;
+    }
+
+    hr {
+        height: auto;
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .container1,
+    .notification,
+    .notifications-d,
+    .user-menu1,
+    .user-menu2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .notifications-actions {
+        flex-direction: column;
+    }
+
+    .notifications-actions button {
+        width: 80%;
+    }
+
+    .container2 a {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        width: 80%;
+    }
+}
