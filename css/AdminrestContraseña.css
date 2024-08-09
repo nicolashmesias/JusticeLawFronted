@@ -1,0 +1,50 @@
+.breadcrumb{
+    padding-left: 60px;
+}
+.breadcrumb h1{
+    font-size: 24px;
+}
+.breadcrumb h4{
+    position: absolute;
+    top:105px;
+    left: 37%;
+    font-size: 16px;
+    font-weight:inherit;
+}
+.breadcrumb p{
+    position: absolute;
+    top:110px;
+    left: 51%;
+}
+.form-container{
+    width: calc(400% - 100px);
+    padding-left: 90px;
+}
+form input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #f8f9fa;
+    width: calc(110% - 100px);
+}
+
+form input::placeholder {
+    color: #adb5bd;
+}
+
+form button {
+    display: flex;
+    background-color: #073642;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 14px;
+    
+}
+form button:hover {
+    background-color: #064153;
+}
