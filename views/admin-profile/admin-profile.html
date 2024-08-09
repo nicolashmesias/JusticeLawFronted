@@ -52,81 +52,92 @@
             </div>
         </header>
         <main class="main-content">
-            <aside class="activity-sidebar">
-                <div class="search-profiles">
-                    <input type="text" placeholder="Ingresa un nombre de usuario o su Id">
-                    <button>Buscar</button>
-                </div>
-                <div class="recent-activity">
-                    <h3>Actividad Reciente</h3>
-                    <div class="activity-list">
-                        <div class="activity-item">
-                            <span>Mario ha iniciado sesión</span>
-                            <span>hace 2 horas</span>
-                        </div>
-                        <div class="activity-item">
-                            <span>Pedro ha subido un archivo</span>
-                            <span>hace 3 horas</span>
-                        </div>
-                    </div>
-                </div>
-            </aside>
-            <section class="recent-profiles">
-                <h2>Perfiles Recientes</h2>
-                <div class="profiles-list">
-                    <div class="profile-item">
-                        <div class="profile-initials">MP</div>
-                        <div class="profile-info">
-                            <p>Mario Perez</p>
-                            <p>mario.perez@example.com</p>
-                        </div>
-                    </div>
-                    <div class="profile-item">
-                        <div class="profile-initials">PP</div>
-                        <div class="profile-info">
-                            <p>Pedro Perez</p>
-                            <p>pedro.perez@example.com</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="report-log">
-                <h2>Registros de Reporte</h2>
-                <div class="report-list">
-                    <div class="report-item">
-                        <div class="report-icon error">!</div>
-                        <div class="report-info">
-                            <p>Error en el sistema</p>
-                            <span>hace 1 hora</span>
-                        </div>
-                    </div>
-                    <div class="report-item">
-                        <div class="report-icon verification">V</div>
-                        <div class="report-info">
-                            <p>Verificación de datos</p>
-                            <span>hace 3 horas</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="profile-details">
-                <h3>Detalles del Perfil</h3>
-                <div class="profile-info">
-                    <div class="avatar"></div>
-                    <div class="info">
-                        <p class="name">Juan Perez</p>
-                        <p class="email">juan.perez@example.com</p>
-                        <a href="#" class="pdf-link"><img src="../../img/admin/descargarPDF.png" alt="descargarPDF">Descargar PDF</a>
-                    </div>
-                </div>
+        <section class="title-recent-profiles">
+                <h3>Perfiles creados reciente</h3>
+                <p>Aqui podras revisar los datos de los perfiles</p>
+        </section>
+
+        <!-- Registro reportes -->
+        <section class="registro-reportes">
+            <h3>Registro reportes</h3>
+            <ul>
+                <li>Martina Zapata ha solicitado ayuda con un error del sistema</li>
+                <li>Martina Santos ha solicitado una verificación de abogado</li>
+                <li>Sofía Mendez ha solicitado una verificación de usuario</li>
+                <li>Martina Zapata ha solicitado ayuda con un error del sistema</li>
+                <li>Martina Santos ha solicitado una verificación de abogado</li>
+                <li>Sofía Mendez ha solicitado una verificación de usuario</li>
+                <li>Martina Zapata ha solicitado ayuda con un error del sistema</li>
+                <li>Martina Santos ha solicitado una verificación de abogado</li>
+                <li>Sofía Mendez ha solicitado una verificación de usuario</li>
+            </ul>
+        </section>
+    <section class="central">
+        <!-- Perfiles creados reciente -->
+        <section class="recent-profiles">
+            <div class="profiles-list">
+                <div class="profile-item">Jesus Lopez - Abogado - Mar 20, 2024 - 10:24 pm</div>
+                <div class="profile-item">Julian Estupiñan - Abogado - Mar 20, 2024 - 10:24 pm</div>
+                <div class="profile-item">María Gomez - Abogado - Mar 20, 2024 - 10:20 pm</div>
+                <div class="profile-item">Carlos Agredo - Cliente - Mar 20, 2024 - 10:19 pm</div>
+                <div class="profile-item">Andrea Benavides - Cliente - Mar 20, 2024 - 10:15 pm</div>
+                <div class="profile-item">Juan Martínez - Cliente - Mar 19, 2024 - 10:24 pm</div>
+                <div class="profile-item">Juan Martínez - Cliente - Mar 18, 2024 - 10:24 pm</div>
+                <div class="profile-item">David Astrada - Cliente - Mar 17, 2024 - 10:24 pm</div>
+                <a href="#">Mostrar más</a>
+            </div>
+        </section>
+
+        <!-- Perfil -->
+        <section class="profile-details">
+            <h3>Perfil</h3>
+            <div class="profile-overview">
+                <img src="default-avatar.png" alt="Avatar">
+                <h4>Jesus Lopez</h4>
+                <p>example@gmail.com</p>
+                <a href="#" class="pdf-link">Hoja de Vida.pdf</a>
                 <div class="account-details">
-                    <div class="account-info">
-                        <p>Estado:</p>
-                        <span>Activo</span>
-                        <button class="block-button">Bloquear</button>
+                    <div>
+                        <span>Reportes: 0</span>
+                        <a href="#">Ver</a>
+                    </div>
+                    <div>
+                        <span>Comentarios: 2</span>
+                        <a href="#">Ver</a>
+                    </div>
+                    <div>
+                        <span>Reseñas: 4</span>
+                        <a href="#">Ver</a>
                     </div>
                 </div>
-            </section>
+                <a href="#" class="btn">Ver perfil completo</a>
+                <a href="#" class="btn">Bloquear</a>
+            </div>
+        </section>
+    </section>
+         <!-- Buscar perfiles -->
+         <aside class="search-profiles">
+            <h3>Buscar perfiles</h3>
+            <input type="text" placeholder="Ingresa un nombre de usuario o su Id">
+            <h4>O busca por categorías</h4>
+            <ul>
+                <li><a href="#">Últimos Reportes</a></li>
+                <li><a href="#">Respuestas reportadas</a></li>
+                <li><a href="#">Reseñas</a></li>
+                <li><a href="#">Usuarios Reportados</a></li>
+            </ul>
+            </aside>
+
+        <!-- Actividad reciente -->
+        <section class="recent-activity">
+            <h3>Actividad reciente</h3>
+            <ul>
+                <li>Respondió una solicitud de soporte - 19, marzo - 6:28 pm</li>
+                <li>Agregó la información "¿Cómo hacer una demanda por alimentos?" - 17, marzo - 6:28 pm</li>
+                <li>Respondió una solicitud de soporte - 19, marzo - 6:28 pm</li>
+                <li>Agregó la información "¿Cómo hacer una demanda por alimentos?" - 17, marzo - 6:28 pm</li>
+            </ul>
+        </section>
         </main>
     </div>
 </body>
