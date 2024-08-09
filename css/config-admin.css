@@ -1,3 +1,4 @@
+
 .header-container {
     display: flex;
     padding-left: 60px;
@@ -12,18 +13,14 @@
    .header-container h4{
     font-size: 16px;
    }
-   .header-container h4{
-    position:absolute;
-    top:107px;
-    left: 37%;
-   }
+
    .search-bar {
     flex: 1;
-    margin-left: 200px;
+    margin-left: 10px;
    }
 
    .search-bar input {
-    width: 100px;
+    width: 680px;
     padding: 10px;
     font-size: 15px;
     border: 1px solid #ccc;
@@ -32,7 +29,7 @@
 
    .sections {
     margin-top: 40px;
-    padding-left: 60px;
+    padding-left: 70px;
     display: grid;
     gap: 20px;
     width: 100%;
@@ -44,6 +41,6 @@
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: calc(180% - 100px);
+    width: calc(105% - 100px);
     box-sizing: border-box;
    }
