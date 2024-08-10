@@ -1,22 +1,22 @@
-.breadcrumb{
+.breadcrumb {
     padding-left: 60px;
 }
-.breadcrumb h1{
+.breadcrumb h1 {
     font-size: 24px;
 }
-.breadcrumb h4{
+.breadcrumb h4 {
     position: absolute;
-    top:105px;
-    left: 37%;
+    top: 85px;
+    left: 36%;
     font-size: 16px;
-    font-weight:inherit;
+    font-weight: inherit;
 }
-.breadcrumb p{
+.breadcrumb p {
     position: absolute;
-    top:110px;
-    left: 51%;
+    top: 91px;
+    left: 50%;
 }
-.form-container{
+.form-container {
     width: calc(400% - 100px);
     padding-left: 90px;
 }
@@ -29,11 +29,9 @@ form input {
     background-color: #f8f9fa;
     width: calc(110% - 100px);
 }
-
 form input::placeholder {
     color: #adb5bd;
 }
-
 form button {
     display: flex;
     background-color: #073642;
@@ -43,8 +41,49 @@ form button {
     border-radius: 24px;
     cursor: pointer;
     font-size: 14px;
-    
 }
 form button:hover {
     background-color: #064153;
+}
+
+/* Estilo para el toast */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0D384A;
+    color: #fff;
+    padding: 16px 24px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateY(100%);
+    visibility: hidden;
+    z-index: 1000;
+}
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+.toast .check {
+    width: 50px; 
+    height: 50px;
+    margin-right: 12px; 
+}
+.toast .message {
+    display: flex;
+    flex-direction: column;
+}
+.toast .text-1 {
+    font-weight: bold;
+    font-size: 20px; 
+}
+.toast .text-2 {
+    font-size: 16px; 
+    margin-top: 4px; 
+    font-weight: lighter;
 }
