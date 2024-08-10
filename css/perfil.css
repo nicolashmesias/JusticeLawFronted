@@ -11,9 +11,8 @@
   margin: auto;
 }
 
-@media only screen and (max-width: 600px){
-
-  .perfil{
+@media only screen and (max-width: 600px) {
+  .perfil {
     display: none;
   }
   .perfil-movil {
@@ -21,7 +20,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 1rem; /* Añadido padding para evitar que el contenido toque los bordes */
   }
 
   .perfil-main {
@@ -32,158 +30,169 @@
     position: relative; /* Asegura que los elementos absolutos se posicionen en relación con este contenedor */
   }
 
-  #fotoPerfil {
-    width: 100px; /* Ajuste del tamaño de la imagen */
-    height: 100px; /* Ajuste del tamaño de la imagen */
-  }
-
-  #circuloPerfil, #agregarFoto {
-    position: absolute;
-    width: 35px;
-    height: 35px;
+  #fotoIcon {
+    width: 150px; /* Ajuste del tamaño de la imagen */
+    height: 150px; /* Ajuste del tamaño de la imagen */
   }
 
   #circuloPerfil {
-    top: 0; /* Alinea el círculo en la parte superior */
-    left: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+
+  #agregarFoto {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+  }
+
+  #circuloPerfil {
+    top: 100px; /* Alinea el círculo en la parte superior */
+    left: 61%;
     transform: translateX(-50%); /* Centra horizontalmente */
   }
 
   #agregarFoto {
-    top: 40px; /* Ajusta la posición del icono para agregar foto */
-    left: 50%;
+    top: 108px; /* Ajusta la posición del icono para agregar foto */
+    left: 61%;
     transform: translateX(-50%); /* Centra horizontalmente */
-  }
-
-  .nombre-perfil {
-    margin-top: 120px; /* Ajusta el margen superior para evitar que quede debajo de la foto de perfil */
-    text-align: center;
   }
 
   .content-movil {
-    margin-top: 1rem;
     text-align: center;
   }
 
+  .content-movil h3{
+    font-size: 22px;
+  }
 
-.modalDialog {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 99999;
-  opacity: 0;
-  -webkit-transition: opacity 200ms ease-in;
-  -moz-transition: opacity 200ms ease-in;
-  transition: opacity 200ms ease-in;
-  pointer-events: none;
-}
+  .content-movil i{
+        font-size: 22px
+  }
+  
+  .mi-perfil{
+    display: inline-block;
+  }
 
-.modalDialog:target {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modalDialog > div {
-  width: 5rem;
-  height: 2rem;
-  position: relative; 
-  margin: 10% auto;
-  padding: 40px 20px 13px 20px;
-  text-align: center;
-  border-radius: 10px;
-  background: #fff;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-}
-
-#avatarUno, #avatarDos, #avatarTres {
-  display: inline-block; 
-  vertical-align: top;
-}
-
-#avatarUno, #avatarDos {
-  margin-top: 10px;
-  width: 7rem;
-  height: 7rem;
-}
-
-#avatarTres {
-  width: 11rem;
-  height: 10rem;
-}
-
-.subir-foto {
-  position: absolute;
-  bottom: 20px; 
-  right: 20px; 
-  cursor: pointer;
-}
-
-.subir-foto::before {
-  background-color: #003049;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  content: 'Seleccionar'; 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-.subir-foto input[type="file"] {
-  opacity: 0;
-  width: 170px;
-  height: 32px;
-  display: inline-block;
-}
-
-#seleccionarFoto::before {
-  content: 'Subir foto';
-}
-
-
-.close {
-
-  position: absolute;
-  left: 15px; 
-  top: 10;
-  color: black;
-  width: 30px; 
-  text-decoration: none;
-}
-
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1200px){
-
-  .perfil-movil{
+  hr {
     display: none;
   }
-  #circuloPerfil ,
+  .modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+  }
+
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modalDialog > div {
+    width: 5rem;
+    height: 2rem;
+    position: relative;
+    margin: 10% auto;
+    padding: 40px 20px 13px 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+  }
+
+  #avatarUno,
+  #avatarDos,
+  #avatarTres {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #avatarUno,
+  #avatarDos {
+    margin-top: 10px;
+    width: 7rem;
+    height: 7rem;
+  }
+
+  #avatarTres {
+    width: 11rem;
+    height: 10rem;
+  }
+
+  .subir-foto {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .subir-foto::before {
+    background-color: #003049;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    content: "Seleccionar";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .subir-foto input[type="file"] {
+    opacity: 0;
+    width: 170px;
+    height: 32px;
+    display: inline-block;
+  }
+
+  #seleccionarFoto::before {
+    content: "Subir foto";
+  }
+
+  .close {
+    position: absolute;
+    left: 15px;
+    top: 10;
+    color: black;
+    width: 30px;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .perfil-movil {
+    display: none;
+  }
+  #circuloPerfil,
   #agregarFoto {
     display: none;
   }
 
-  .tabletModal a{
+  .tabletModal a {
     text-decoration: none;
     color: #003049;
     font-weight: 600;
     padding: 0;
-
   }
-
 }
 
-@media only screen and (min-width: 1201px){
-  .tabletModal{
+@media only screen and (min-width: 1201px) {
+  .tabletModal {
     display: none;
   }
   #circuloPerfil {
@@ -193,7 +202,7 @@
     height: 35px;
     position: absolute;
   }
-  
+
   #agregarFoto {
     top: 4.44rem;
     left: 11%;
@@ -201,11 +210,14 @@
     height: 20px;
     position: absolute;
   }
-  .perfil-movil{
+  .perfil-movil {
     display: none;
   }
-}
 
+  .perfil-main {
+    position: relative;
+  }
+}
 
 .sidebar {
   position: sticky;
@@ -268,10 +280,6 @@ hr {
   padding: 3.5rem 6rem;
   position: relative;
   height: auto;
-}
-
-.perfil-main {
-  position: relative;
 }
 
 #fotoPerfil {
@@ -505,7 +513,6 @@ select:focus {
   pointer-events: none;
 }
 
-
 .modalDialog {
   position: fixed;
   top: 0;
@@ -529,7 +536,7 @@ select:focus {
 .modalDialog > div {
   width: 50rem;
   height: 25rem;
-  position: relative; 
+  position: relative;
   margin: 10% auto;
   padding: 40px 20px 13px 20px;
   text-align: center;
@@ -540,12 +547,15 @@ select:focus {
   transition: opacity 400ms ease-in;
 }
 
-#avatarUno, #avatarDos, #avatarTres {
-  display: inline-block; 
+#avatarUno,
+#avatarDos,
+#avatarTres {
+  display: inline-block;
   vertical-align: top;
 }
 
-#avatarUno, #avatarDos {
+#avatarUno,
+#avatarDos {
   margin-top: 10px;
   width: 7rem;
   height: 7rem;
@@ -558,8 +568,8 @@ select:focus {
 
 .subir-foto {
   position: absolute;
-  bottom: 20px; 
-  right: 20px; 
+  bottom: 20px;
+  right: 20px;
   cursor: pointer;
 }
 
@@ -570,7 +580,7 @@ select:focus {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  content: 'Seleccionar'; 
+  content: "Seleccionar";
   position: absolute;
   left: 0;
   right: 0;
@@ -586,17 +596,14 @@ select:focus {
 }
 
 #seleccionarFoto::before {
-  content: 'Subir foto';
+  content: "Subir foto";
 }
-
 
 .close {
-
   position: absolute;
-  left: 15px; 
+  left: 15px;
   top: 10;
   color: black;
-  width: 30px; 
+  width: 30px;
   text-decoration: none;
 }
-
