@@ -36,10 +36,15 @@ const progress = document.querySelector(".progress");
 
 let timer1, timer2;
 
-button.addEventListener("click", () => {
 
+
+if (button && toast) {
+
+
+button.addEventListener("click", () => {
     toast.classList.add("active");
     progress.classList.add("active");
+
 
     timer1 = setTimeout(() => {
         toast.classList.remove("active");
@@ -50,11 +55,58 @@ button.addEventListener("click", () => {
     timer2 = setTimeout(() => {
         progress.classList.remove("active");
     }, 5300); 
-});
+   
+});}
+
+const buttonMovil = document.querySelector("#boton-movil");
+const toastMovil = document.querySelector(".toast");
+const progressMovil = document.querySelector(".progress");
+
+let timerM1, timerM2;
+
+
+
+if (buttonMovil && toastMovil) {
+
+
+  buttonMovil.addEventListener("click", () => {
+  toastMovil.classList.add("active");
+  progressMovil.classList.add("active");
+
+
+  timerM1 = setTimeout(() => {
+      toastMovil.classList.remove("active");
+        
+        window.location.href = '../perfil_usuario/perfil_creado.html';
+    }, 5000); 
+
+    timerM2 = setTimeout(() => {
+      progressMovil.classList.remove("active");
+    }, 5300); 
+   
+});}
+
 
 function handleFileSelection() {
 
   document.getElementById("modal-foto").style.display = "none";
+
+  const toast = document.querySelector('.toast');
+  toast.classList.add('active');
+
+  setTimeout(() => {
+    toast.classList.remove('active');
+    window.location.hash = '';
+    window.location.reload();
+  }, 3000);
+
+}
+
+
+
+function handleFileSelection() {
+
+  document.getElementById("modal-movil").style.display = "none";
 
   const toast = document.querySelector('.toast');
   toast.classList.add('active');

@@ -107,6 +107,9 @@
     outline: none;
   }
 
+  .select-time option{
+    font-size: 12px;
+  }
   .fa-clock {
     font-size: 25px;
     margin-right: 1.5rem;
@@ -187,28 +190,7 @@
     margin-top: 1rem;
   }
 
-  .confirmado {
-    position: fixed;
-    bottom: 2rem;
-    right: 0rem;
-    border-radius: 12px;
-    background: #003049;
-    padding: 28px 25px 20px 25px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    z-index: 2000;
-    transform: translateX(100%);
-    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
-  }
-  
-  .confirmado.active ~ #confirmar-eliminar {
-    pointer-events: none;
-  }
 
-  
-  .confirmado.active {
-    transform: translateX(0);
-  }
 }
 
 @media only screen and (min-width: 601px) {
