@@ -6,6 +6,8 @@
     <title>Justice Law - Seguridad</title>
     <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/AdminrestContraseña.css">
+    
 </head>
 <body>
     <div class="container">
@@ -63,11 +65,30 @@
         </aside>
         <main class="main-content">
             <section class="content">
-                  <div class="dashboard">
-        <div class="welcome">
-            <h1>¡Bienvenido al Dashboard!</h1>
-            <p>Ha alcanzado sus objetivos de métricas mensuales.</p>
-        </div>
+                <div class="container-font">
+                    <div class="breadcrumb">
+                       <h1> Configuracion ></h1>
+                       <h4>configuracion de la cuenta ></h4>
+                       <p>Restablecer contraseña</p>
+                    </div>
+                
+                    <div class="form-container">
+                        <h2>Restablecer Contraseña</h2>
+                        <p>La contraseña debe tener un mínimo de 8 dígitos, una letra mayúscula, un número, y un carácter especial incluidos.</p>
+                
+                        <form action="#" method="post">
+                            <label for="current-password">*Contraseña Actual</label>
+                            <input type="password" id="current-password" name="current-password" placeholder="Contraseña Actual" required>
+                
+                            <label for="new-password">*Nueva Contraseña</label>
+                            <input type="password" id="new-password" name="new-password" placeholder="Nueva Contraseña" required>
+                
+                            <label for="confirm-password">*Confirmar Contraseña</label>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmar Contraseña" required>
+                
+                            <button type="submit">Guardar</button>
+                        </form>
+                    </div>
             </section>
         </main>
     </div>
