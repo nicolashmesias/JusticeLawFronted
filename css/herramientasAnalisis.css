@@ -1,0 +1,88 @@
+
+.columnas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+}
+
+
+.actividad-sospechosa a, .tabla a{
+    margin-left: 5%;
+    text-decoration: none;
+}
+
+.actividad-sospechosa img, .tabla img{
+    width: 8%;
+    height: 8%;
+
+}
+
+.columna-izquierda,
+.columna-derecha {
+    flex: 1;
+}
+
+.actividad-sospechosa{
+    height: auto;
+    overflow-y: auto; 
+
+}
+
+.tabla{
+    height: auto;
+    overflow-y: auto; 
+
+}
+
+.graficas {
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+
+}
+
+.grafica {
+    flex: 25%; 
+    text-align: center;
+}
+
+.grafica img {
+    width: 100%;
+    height: auto; 
+}
+
+.actividad-sospechosa, .tabla, .grafica{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+table{
+    margin: 0 auto;
+}
+
+
+
+table i{
+    margin-right: 0.2rem;
+}
+
+table th{
+    font-size: 13px;
+    background-color: #F3F3F3;
+}
+
+
+table td{
+    padding: 0.6rem;
+
+    font-size: 12px;
+    text-align: center;
+}
