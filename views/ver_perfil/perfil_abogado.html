@@ -10,8 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM5ef8r5PZ6pTtXJzwczR5F8HQUqxbv69k9jG7H" crossorigin="anonymous">
-  </head>
+    <script src="https://kit.fontawesome.com/bfdeae7cfe.js" crossorigin="anonymous"></script>
+   </head>
   <body>
     <header class="header-large">
       <div class="logo">
@@ -67,70 +67,12 @@
         </div>
       </div>
     </header>
-
-    <header class="header-small">
-        <input type="checkbox" id="dropdownMenu" class="dropdownMovil-checkbox" />
-      <label for="dropdownMenu">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-
-      <div class="dropdownMovil">
-
-        <i class="fa-solid fa-chevron-left"></i>
-    
-        <div class="profile-info">
-            <img id="fotoPerfil" src="../../img/fotoPerfil.png" alt="fotoPerfil" />
-            <div class="profile-details">
-              <h3>Alfonso Juan</h3>
-              <span>Popayan, Colombia</span>
-            </div>
-
-          </div>
-  
-        <ul>
-            <hr>
-          <li>
-            <a href="../home/homeLogin.html">
-              <i class="fa-solid fa-house"></i>Home</a
-            >
-          </li>
-          <li>
-            <a href="../perfil_usuario/perfil_creado.html"><i class="fa-regular fa-user"></i>Perfil</a>
-        </li>
-        <li>
-            <a href="../notification/notification.html"><i class="fa-regular fa-bell"></i>Notificaciones</a>
-        </li>
-        <li>
-            <a href="../historial/historial.html"><i class="fa-solid fa-clock-rotate-left"></i>Historial</a>
-        </li>
-        <hr>
-        <li>
-            <a href="../configuracion/configuracion.html"><i class="fa-solid fa-gear"></i>Configuracion</a>
-        </li>
-        <li>
-            <a href="#"><i class="fa-solid fa-circle-info"></i></i>Quienes somos</a>
-        </li>
-        <li>
-            <a href="#"><i class="fa-solid fa-question"></i></i>Ayuda</a>
-        </li>
-        <hr>
-        </ul>
-      </div>
-      <a href="../notification/notification.html"
-        ><i class="fa-regular fa-bell"></i
-      ></a>
-      <a href="../perfil_usuario/crearPerfil.html"
-        ><img
-          class="img-perfil"
-          src="../../img/fotoPerfil.png"
-          alt="foto de Perfil"
-      /></a>
-    </header>
     <main>
       <section class="content">
         <div class="perfil">
           <div class="banner">
           <img id="fotoPerfil" src="../../img/fotoPerfil.jfif" alt="foto" />
+          <div class="content-abogado">
           <h3>David Astrada</h3>
           <div class="stars">
             <img src="../../img/star-solid.svg" alt="star">
@@ -139,7 +81,7 @@
             <img src="../../img/star-solid.svg" alt="star">
             <img src="../../img/star-solid-white.svg" alt="star white">
           </div>
-
+          </div>
           </div>
           <nav class="profile-nav">
             <ul>
@@ -203,7 +145,8 @@
         </section>
 
         <section id="hoja-de-vida" class="section">
-          <h1>hoja de vida</h1>
+      <iframe class="iframeLarge" src="https://drive.google.com/file/d/1hCQs9GVqTZRmz5LOQNM8-HLn9M25Dblk/preview" frameborder="0"></iframe>
+
         </section>
 
       <section id="reseñas" class="section">
@@ -221,8 +164,9 @@
             </div>
 
             <input type="text" name="inputReseña" id="inputReseña" placeholder="Escribe tu reseña...">
-            <a id="boton-publicar" href="../ver_perfil/reseñaPublicada.html">Publicar</a>
+        
           </div>
+          <a id="boton-publicar" href="../ver_perfil/reseñaPublicada.html">Publicar</a>
           </div>
 
           <div class="comment-section">
@@ -367,6 +311,255 @@
       </section>
 
       </section>
+ 
+      <section class="abogado-small">
+        <div class="perfil-abogado">
+        <div class="banner-small">
+          <i class="fa-solid fa-chevron-left" onclick="window.history.back()"></i>
+          <img id="fotoIcon" src="../../img/fotoPerfil.jfif" alt="foto" />
+          <div class="content-abogado">
+          <h3>David Astrada</h3>
+          <div class="stars">
+            <img src="../../img/star-solid.svg" alt="star">
+            <img src="../../img/star-solid.svg" alt="star">
+            <img src="../../img/star-solid.svg" alt="star">
+            <img src="../../img/star-solid.svg" alt="star">
+            <img src="../../img/star-solid-white.svg" alt="star white">
+          </div>
+          </div>
+          </div>
+          <nav class="profile-nav-sm">
+            <ul>
+              <li><a href="#sobre-mi"  data-target="sobre-mi" class="active">Sobre mi</a></li>
+          <li><a href="#hoja-de-vida" data-target="hoja-de-vida">Hoja de vida</a></li>
+          <li><a href="#reseñas" data-target="reseñas" >Reseñas</a></li>
+            </ul>
+            <div class="indicator"></div>
+          </nav>
+
+          <section class="section-mov" id="sobre-mi">
+            
+            <div class="presentation">
+              <p>Especializado en derecho civil y familiar, mi objetivo
+                es proporcionar soluciones legales efectivas y comprensibles
+                para mis clientes. Fuera del trabajo, disfruto de la lectura y
+                el tiempo al aire libre. Estoy aquí para ayudarte con tus necesidades
+                legales.</p>
+          </div>
+          <div class="container">
+
+            <div class="left-movil">
+                <div class="datos-movil">
+                    <h2>Información Personal</h2>
+                    <p>Contacto: &ensp;&ensp;+57 3132307635</p>
+                    <p>DNI: &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;1061702424</p>
+                    <p>Email: &ensp;&ensp;&ensp;&ensp;davidastr45@gmail.com</p>
+                    <p>País: &ensp;&ensp;&ensp;&ensp;&ensp;Colombia</p>
+                    <p>Ciudad: &ensp;&ensp;&ensp;Popayán</p>
+                    <p>Nombre <br> Consultorio: &ensp;&ensp;LeyEs</p>
+                </div>
+            </div>
+            <hr>
+            <div class="right-movil">
+               
+                <div class="practice-movil">
+                    <h2>Áreas de práctica</h2>
+                    <div class="civ-movil">
+                        <div class="box-movil">
+                            <div class="practice-movil civil">
+                                <img src="../../img/logoCivil.png" alt="Derecho civil">
+                            </div>
+                            <p class="practice-text">Derecho civil</p>
+                        </div>
+                        <div class="box-movil">
+                            <div class="practice-movil familiar">
+                                <img src="../../img/derechofamiliar.png" alt="Derecho familiar">
+                            </div>
+                            <p class="practice-text">Derecho familiar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="act-movil">
+          <h2>Actividad</h2>
+          <div class="activity-movil">
+              <img src="../../img/mas.png" alt="más">
+              <h4>Ver el historial de asesoramiento legal</h4>
+          </div>
+          <p>Las preguntas que el abogado responda en el foro aparecerán aquí.</p>
+          </div>
+        </section>
+      </div>
+
+      
+      <section id="hoja-de-vida" class="section-mov">
+        <iframe class="iframeMov" src="https://drive.google.com/file/d/1hCQs9GVqTZRmz5LOQNM8-HLn9M25Dblk/preview" frameborder="0"></iframe>
+  
+          </section>
+  
+
+      <section id="reseñas" class="section-mov">
+        <div class="movil-reseñas">
+         <h4>Reseñas</h4>
+         <img id="fotoReseña" src="../../img/fotoPerfil.png" alt="Perfil" class="profile-img">
+         <div class="review-container">
+           <div class="input">
+             <div class="star-container">
+               <span class="star" data-value="1">&#9733;</span>
+               <span class="star" data-value="2">&#9733;</span>
+               <span class="star" data-value="3">&#9733;</span>
+               <span class="star" data-value="4">&#9733;</span>
+               <span class="star" data-value="5">&#9733;</span>
+             </div>
+ 
+             <input type="text" name="inputReseña" id="inputReseña" placeholder="Escribe tu reseña...">
+         
+           </div>
+           <a id="boton-publicar" href="../ver_perfil/reseñaPublicada.html">Publicar</a>
+           </div>
+ 
+           <div class="comment-section">
+             <div class="comment">
+                 <div class="comment-header">
+                     <img src="../../img/fotoPerfil.png" alt="Foto de perfil" class="profile-img">
+                     <div class="user-info">
+                         <strong>Alfonso Juan</strong>
+                         <p>17 de marzo del 2024</p>
+                     </div>
+                 </div>
+                 <div class="comment-body">
+                     <div class="stars-review">
+                         <span class="star-review">&#9733;</span>
+                         <span class="star-review">&#9733;</span>
+                         <span class="star-review">&#9733;</span>
+                         <span class="star-review">&#9733;</span>
+                         <span class="star empty">&#9733;</span>
+                     </div>
+                     <p>Recomendado totalmente para temas legales. Brinda buen servicio, aunque la respuesta fue lenta.</p>
+                 </div>
+                 <div class="comment-footer">
+                     <p>¿Te parece útil el comentario? 
+                         <a href="#" class="useful">Sí (0)</a> 
+                         <a href="#" class="not-useful">No (0)</a>
+                     </p>
+                 </div>
+             </div>
+           </div>
+             <div class="comment-section">
+               <div class="comment">
+                   <div class="comment-header">
+                       <img src="../../img/fotoPerfil.png" alt="Foto de perfil" class="profile-img">
+                       <div class="user-info">
+                           <strong>Alfonso Juan</strong>
+                           <p>17 de marzo del 2024</p>
+                       </div>
+                   </div>
+                   <div class="comment-body">
+                       <div class="stars-review">
+                           <span class="star-review">&#9733;</span>
+                           <span class="star-review">&#9733;</span>
+                           <span class="star-review">&#9733;</span>
+                           <span class="star-review">&#9733;</span>
+                           <span class="star empty">&#9733;</span>
+                       </div>
+                       <p>Recomendado totalmente para temas legales. Brinda buen servicio, aunque la respuesta fue lenta.</p>
+                   </div>
+                   <div class="comment-footer">
+                       <p>¿Te parece útil el comentario? 
+                           <a href="#" class="useful">Sí (0)</a> 
+                           <a href="#" class="not-useful">No (0)</a>
+                       </p>
+                   </div>
+               </div>
+             </div>
+               <div class="comment-section">
+                 <div class="comment">
+                     <div class="comment-header">
+                         <img src="../../img/fotoPerfil.png" alt="Foto de perfil" class="profile-img">
+                         <div class="user-info">
+                             <strong>Alfonso Juan</strong>
+                             <p>17 de marzo del 2024</p>
+                         </div>
+                     </div>
+                     <div class="comment-body">
+                         <div class="stars-review">
+                             <span class="star-review">&#9733;</span>
+                             <span class="star-review">&#9733;</span>
+                             <span class="star-review">&#9733;</span>
+                             <span class="star-review">&#9733;</span>
+                             <span class="star empty">&#9733;</span>
+                         </div>
+                         <p>Recomendado totalmente para temas legales. Brinda buen servicio, aunque la respuesta fue lenta.</p>
+                     </div>
+                     <div class="comment-footer">
+                         <p>¿Te parece útil el comentario? 
+                             <a href="#" class="useful">Sí (0)</a> 
+                             <a href="#" class="not-useful">No (0)</a>
+                         </p>
+                     </div>
+                 </div>
+               </div>
+                 <div class="comment-section">
+                   <div class="comment">
+                       <div class="comment-header">
+                           <img src="../../img/fotoPerfil.png" alt="Foto de perfil" class="profile-img">
+                           <div class="user-info">
+                               <strong>Alfonso Juan</strong>
+                               <p>17 de marzo del 2024</p>
+                           </div>
+                       </div>
+                       <div class="comment-body">
+                           <div class="stars-review">
+                               <span class="star-review">&#9733;</span>
+                               <span class="star-review">&#9733;</span>
+                               <span class="star-review">&#9733;</span>
+                               <span class="star-review">&#9733;</span>
+                               <span class="star empty">&#9733;</span>
+                           </div>
+                           <p>Recomendado totalmente para temas legales. Brinda buen servicio, aunque la respuesta fue lenta.</p>
+                       </div>
+                       <div class="comment-footer">
+                           <p>¿Te parece útil el comentario? 
+                               <a href="#" class="useful">Sí (0)</a> 
+                               <a href="#" class="not-useful">No (0)</a>
+                           </p>
+                       </div>
+                   </div>
+                 </div>
+                   <div class="comment-section">
+                     <div class="comment">
+                         <div class="comment-header">
+                             <img src="../../img/fotoPerfil.png" alt="Foto de perfil" class="profile-img">
+                             <div class="user-info">
+                                 <strong>Alfonso Juan</strong>
+                                 <p>17 de marzo del 2024</p>
+                             </div>
+                         </div>
+                         <div class="comment-body">
+                             <div class="stars-review">
+                                 <span class="star-review">&#9733;</span>
+                                 <span class="star-review">&#9733;</span>
+                                 <span class="star-review">&#9733;</span>
+                                 <span class="star-review">&#9733;</span>
+                                 <span class="star empty">&#9733;</span>
+                             </div>
+                             <p>Recomendado totalmente para temas legales. Brinda buen servicio, aunque la respuesta fue lenta.</p>
+                         </div>
+                         <div class="comment-footer">
+                             <p>¿Te parece útil el comentario? 
+                                 <a href="#" class="useful">Sí (0)</a> 
+                                 <a href="#" class="not-useful">No (0)</a>
+                             </p>
+                         </div>
+                     </div>
+                   </div>
+         </div>
+         
+         </div>
+        </div>
+       </section>
+      </section>
     </main>
     <footer class="footer-large">
       <div class="footer-resources">
@@ -418,6 +611,7 @@
       ></a>
       <a href="../foro/foro.html"><i class="fa-solid fa-users"></i></a>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
