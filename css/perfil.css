@@ -18,7 +18,7 @@
   .perfil-movil {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    color: #003049;
     width: 100%;
   }
 
@@ -27,12 +27,12 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    position: relative; /* Asegura que los elementos absolutos se posicionen en relación con este contenedor */
+    position: relative;
   }
 
   #fotoIcon {
-    width: 150px; /* Ajuste del tamaño de la imagen */
-    height: 150px; /* Ajuste del tamaño de la imagen */
+    width: 150px;
+    height: 150px;
   }
 
   #circuloPerfil {
@@ -48,31 +48,179 @@
   }
 
   #circuloPerfil {
-    top: 100px; /* Alinea el círculo en la parte superior */
+    top: 100px;
     left: 61%;
-    transform: translateX(-50%); /* Centra horizontalmente */
+    transform: translateX(-50%);
   }
 
   #agregarFoto {
-    top: 108px; /* Ajusta la posición del icono para agregar foto */
+    top: 108px;
     left: 61%;
-    transform: translateX(-50%); /* Centra horizontalmente */
+    transform: translateX(-50%);
   }
 
   .content-movil {
     text-align: center;
   }
 
-  .content-movil h3{
+  .content-movil h3 {
     font-size: 22px;
   }
 
-  .content-movil i{
-        font-size: 22px
+  .content-movil i {
+    font-size: 22px;
   }
-  
-  .mi-perfil{
-    display: inline-block;
+
+  .contenido-usuario {
+    text-align: left;
+    margin-left: 4rem;
+  }
+
+  .label-user {
+    margin-bottom: 1rem;
+  }
+  .mi-perfil {
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+  }
+
+  .mi-perfil i {
+    padding-right: 1rem;
+  }
+
+  .input-user {
+    display: flex;
+    align-items: center;
+  }
+
+  .input-user input {
+    border: none;
+    font-size: 20px;
+    outline: none;
+    font-weight: 500;
+    margin-left: 2rem;
+    font-family: "Faustina", serif;
+  }
+
+  .input-user a:nth-of-type(1) {
+    margin-left: auto;
+  }
+
+  .input-user a {
+    text-decoration: none;
+    color: #003049;
+    margin-right: 2.5rem;
+  }
+
+  #boton-movil {
+    background-color: #003049;
+    color: white;
+    border-radius: 20px;
+    padding: 7px 0;
+    margin-right: 2rem;
+    font-size: 22px;
+    width: 25%;
+    text-align: center;
+    margin-top: 3rem;
+    float: right;
+    text-decoration: none;
+    transition: 0.3s;
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .toast {
+    position: fixed;
+    bottom: 7rem;
+    right: 0rem;
+    border-radius: 12px;
+    background: #003049;
+    padding: 28px 25px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 2000;
+
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  }
+
+  .toast.active {
+    transform: translateX(0%);
+  }
+  .toast .toast-content {
+    display: flex;
+    align-items: center;
+  }
+  .toast-content .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+
+  .toast .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    color: #003049;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  .toast .close:hover {
+    opacity: 1;
+  }
+  .toast-content .message {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+  }
+  .message .text {
+    font-size: 20px;
+    font-weight: 200;
+    color: #ffffff;
+  }
+  .message .text.text-1 {
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .toast .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+  }
+
+  .toast .progress:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #2c354e;
+    transition: width 5s linear;
+  }
+
+  .progress.active:before {
+    width: 100%;
+  }
+  @keyframes progress {
+    100% {
+      right: 100%;
+    }
+  }
+
+  .toast.active ~ #boton-movil {
+    pointer-events: none;
   }
 
   hr {
@@ -99,8 +247,239 @@
   }
 
   .modalDialog > div {
-    width: 5rem;
-    height: 2rem;
+    width: 90%;
+    height: 42%;
+    position: relative;
+    margin: 50% auto;
+    padding: 40px 20px 13px 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+  }
+
+  .modal-contenido h2,
+  .modal-contenido p {
+    font-size: 20px;
+  }
+  #avatarUno,
+  #avatarDos,
+  #avatarTres {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #avatarUno,
+  #avatarDos {
+    margin-top: 10px;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  #avatarTres {
+    width: 11rem;
+    height: 10rem;
+  }
+
+  .subir-foto {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .subir-foto::before {
+    background-color: #003049;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    content: "Seleccionar";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .subir-foto input[type="file"] {
+    opacity: 0;
+    width: 170px;
+    height: 32px;
+
+    display: inline-block;
+  }
+
+  #seleccionarFoto::before {
+    content: "Subir foto";
+  }
+
+  .close {
+    position: absolute;
+    left: 15px;
+    top: 10;
+    color: black;
+    width: 30px;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .perfil-movil {
+    display: none;
+  }
+  #circuloPerfil,
+  #agregarFoto {
+    display: none;
+  }
+
+  .tabletModal a {
+    text-decoration: none;
+    color: #003049;
+    font-weight: 600;
+    padding: 0;
+  }
+
+  #trash {
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #boton-guardar {
+    background-color: #003049;
+    color: white;
+    border-radius: 20px;
+    padding: 7px 0;
+    margin-right: 8.5rem;
+    font-size: 15px;
+    width: 25%;
+    text-align: center;
+    margin-top: 3rem;
+    float: right;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .toast {
+    position: fixed;
+    bottom: 2rem;
+    right: 0rem;
+    border-radius: 12px;
+    background: #003049;
+    padding: 28px 25px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 2000;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  }
+
+  .toast.active {
+    transform: translateX(0);
+  }
+  .toast .toast-content {
+    display: flex;
+    align-items: center;
+  }
+  .toast-content .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+
+  .toast .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    color: #003049;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  .toast .close:hover {
+    opacity: 1;
+  }
+  .toast-content .message {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+  }
+  .message .text {
+    font-size: 16px;
+    font-weight: 200;
+    color: #ffffff;
+  }
+  .message .text.text-1 {
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .toast .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+  }
+
+  .toast .progress:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #2c354e;
+    transition: width 5s linear;
+  }
+
+  .progress.active:before {
+    width: 100%;
+  }
+  @keyframes progress {
+    100% {
+      right: 100%;
+    }
+  }
+
+  .toast.active ~ #boton-guardar {
+    pointer-events: none;
+  }
+
+  .modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+  }
+
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modalDialog > div {
+    width: 80%;
+    height: 50%;
     position: relative;
     margin: 10% auto;
     padding: 40px 20px 13px 20px;
@@ -172,22 +551,11 @@
     width: 30px;
     text-decoration: none;
   }
-}
 
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
-  .perfil-movil {
-    display: none;
-  }
-  #circuloPerfil,
-  #agregarFoto {
-    display: none;
-  }
-
-  .tabletModal a {
-    text-decoration: none;
-    color: #003049;
-    font-weight: 600;
-    padding: 0;
+  #fotoPerfil {
+    width: 100px;
+    height: 100px;
+    position: absolute;
   }
 }
 
@@ -216,6 +584,221 @@
 
   .perfil-main {
     position: relative;
+  }
+
+  #trash {
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #boton-guardar {
+    background-color: #003049;
+    color: white;
+    border-radius: 20px;
+    padding: 7px 0;
+    margin-right: 8.5rem;
+    font-size: 15px;
+    width: 25%;
+    text-align: center;
+    margin-top: 3rem;
+    float: right;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .toast {
+    position: fixed;
+    bottom: 2rem;
+    right: 0rem;
+    border-radius: 12px;
+    background: #003049;
+    padding: 28px 25px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 2000;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+  }
+
+  .toast.active {
+    transform: translateX(0);
+  }
+  .toast .toast-content {
+    display: flex;
+    align-items: center;
+  }
+  .toast-content .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+
+  .toast .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    color: #003049;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  .toast .close:hover {
+    opacity: 1;
+  }
+  .toast-content .message {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+  }
+  .message .text {
+    font-size: 16px;
+    font-weight: 200;
+    color: #ffffff;
+  }
+  .message .text.text-1 {
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .toast .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+  }
+
+  .toast .progress:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #2c354e;
+    transition: width 5s linear;
+  }
+
+  .progress.active:before {
+    width: 100%;
+  }
+  @keyframes progress {
+    100% {
+      right: 100%;
+    }
+  }
+
+  .toast.active ~ #boton-guardar {
+    pointer-events: none;
+  }
+
+  .modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
+  }
+
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modalDialog > div {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    margin: 10% auto;
+    padding: 40px 20px 13px 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+  }
+
+  #avatarUno,
+  #avatarDos,
+  #avatarTres {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #avatarUno,
+  #avatarDos {
+    margin-top: 10px;
+    width: 7rem;
+    height: 7rem;
+  }
+
+  #avatarTres {
+    width: 11rem;
+    height: 10rem;
+  }
+
+  .subir-foto {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .subir-foto::before {
+    background-color: #003049;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    content: "Seleccionar";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .subir-foto input[type="file"] {
+    opacity: 0;
+    width: 170px;
+    height: 32px;
+    display: inline-block;
+  }
+
+  #seleccionarFoto::before {
+    content: "Subir foto";
+  }
+
+  .close {
+    position: absolute;
+    left: 15px;
+    top: 10;
+    color: black;
+    width: 30px;
+    text-decoration: none;
+  }
+
+  #fotoPerfil {
+    width: 100px;
+    height: 100px;
+    position: absolute;
   }
 }
 
@@ -280,12 +863,6 @@ hr {
   padding: 3.5rem 6rem;
   position: relative;
   height: auto;
-}
-
-#fotoPerfil {
-  width: 100px;
-  height: 100px;
-  position: absolute;
 }
 
 .nombre-perfil {
@@ -357,12 +934,6 @@ label {
   top: 50%;
   transform: translateY(-50%);
 }
-#trash {
-  position: absolute;
-  right: -15px;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 .form-left,
 .form-right {
@@ -392,22 +963,6 @@ select:focus {
   outline: none;
 }
 
-#boton-guardar {
-  background-color: #003049;
-  color: white;
-  border-radius: 20px;
-  padding: 7px 0;
-  margin-right: 8.5rem;
-  font-size: 15px;
-  width: 25%;
-  text-align: center;
-  margin-top: 3rem;
-  float: right;
-  text-decoration: none;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
 #boton-actualizar {
   background-color: #003049;
   color: white;
@@ -419,191 +974,5 @@ select:focus {
   text-align: center;
   margin-top: 3rem;
   float: right;
-  text-decoration: none;
-}
-
-.toast {
-  position: fixed;
-  bottom: 2rem;
-  right: 0rem;
-  border-radius: 12px;
-  background: #003049;
-  padding: 28px 25px 20px 25px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  z-index: 2000;
-  transform: translateX(100%);
-  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
-}
-
-.toast.active {
-  transform: translateX(0);
-}
-.toast .toast-content {
-  display: flex;
-  align-items: center;
-}
-.toast-content .check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  font-size: 20px;
-  border-radius: 50%;
-}
-
-.toast .close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  padding: 5px;
-  color: #003049;
-  cursor: pointer;
-  opacity: 0.7;
-}
-.toast .close:hover {
-  opacity: 1;
-}
-.toast-content .message {
-  margin-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-  margin: 0 25px;
-}
-.message .text {
-  font-size: 16px;
-  font-weight: 200;
-  color: #ffffff;
-}
-.message .text.text-1 {
-  font-weight: 600;
-  color: #ffffff;
-}
-.toast .progress {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 100%;
-  background: #ddd;
-}
-
-.toast .progress:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  background-color: #2c354e;
-  transition: width 5s linear;
-}
-
-.progress.active:before {
-  width: 100%;
-}
-@keyframes progress {
-  100% {
-    right: 100%;
-  }
-}
-
-.toast.active ~ #boton-guardar {
-  pointer-events: none;
-}
-
-.modalDialog {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 99999;
-  opacity: 0;
-  -webkit-transition: opacity 200ms ease-in;
-  -moz-transition: opacity 200ms ease-in;
-  transition: opacity 200ms ease-in;
-  pointer-events: none;
-}
-
-.modalDialog:target {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modalDialog > div {
-  width: 50rem;
-  height: 25rem;
-  position: relative;
-  margin: 10% auto;
-  padding: 40px 20px 13px 20px;
-  text-align: center;
-  border-radius: 10px;
-  background: #fff;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-}
-
-#avatarUno,
-#avatarDos,
-#avatarTres {
-  display: inline-block;
-  vertical-align: top;
-}
-
-#avatarUno,
-#avatarDos {
-  margin-top: 10px;
-  width: 7rem;
-  height: 7rem;
-}
-
-#avatarTres {
-  width: 11rem;
-  height: 10rem;
-}
-
-.subir-foto {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-}
-
-.subir-foto::before {
-  background-color: #003049;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  content: "Seleccionar";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-.subir-foto input[type="file"] {
-  opacity: 0;
-  width: 170px;
-  height: 32px;
-  display: inline-block;
-}
-
-#seleccionarFoto::before {
-  content: "Subir foto";
-}
-
-.close {
-  position: absolute;
-  left: 15px;
-  top: 10;
-  color: black;
-  width: 30px;
   text-decoration: none;
 }

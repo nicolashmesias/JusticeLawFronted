@@ -116,12 +116,7 @@
         <a href="../notification/notification.html"
           ><i class="fa-regular fa-bell"></i
         ></a>
-        <a href="../perfil_usuario/crearPerfil.html"
-          ><img
-            class="img-perfil"
-            src="../../img/fotoPerfil.png"
-            alt="foto de Perfil"
-        /></a>
+       
       </header>
     <main>
         <section class="perfil">
@@ -170,6 +165,10 @@
                     <div class="nombre-perfil">
                         <h3>Alfonso Juan</h3>
                         <span>Popayan, Colombia</span>
+                        
+                        <div class="tabletModal">
+                          <a href="#modal-foto">Agregar foto</a> 
+                        </div>
                     </div>
                 </div>
                 <div class="info">
@@ -224,6 +223,71 @@
                     </form>
                 </div>
             </div>
+        </section>
+
+        <section class="perfil-movil">
+          <div class="perfil-main">
+            <img id="fotoIcon" src="../../img/fotoPerfil.png" alt="fotoPerfil">
+            <a href="#modal-movil">
+              <img id="circuloPerfil" src="../../img/circuloPerfil.png" alt="circuloPerfil">
+              <img id="agregarFoto" src="../../img/camaraAgreFoto.png" alt="camaraAgreFoto">
+            </a>
+            <div id="modal-movil" class="modalDialog">
+              <div class="modal-contenido">
+                <a href="#close" title="Close" class="close"><i class="fa-solid fa-xmark close"></i></a>
+                <h2>¡Haz que tu perfil sea más <br> personal!</h2>
+                <p>Sube una foto de perfil para que te reconozcan fácilmente.</p>
+                <img id="avatarUno" src="../../img/avatarUno.png" alt="avatarUno">
+                <img id="avatarTres" src="../../img/avatarTres.png" alt="avatarTres">
+                <img id="avatarDos" src="../../img/avatarDos.png" alt="avatarDos">
+                <div class="subir-foto" id="seleccionarFoto">
+                  <input type="file" name="seleccionarFoto" aria-label="Subir foto" onchange="handleFileSelection()">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-movil">
+            <h3>Alfonso Juan</h3>
+            <div class="mi-perfil">
+            <i class="fa-regular fa-user"></i><h3>Mi perfil</h3>
+          </div>
+
+          <div class="contenido-usuario">
+            <div class="label-user">
+            <h3>Nombre Completo:</h3>
+            <div class="input-user">
+            <input type="text" value="Alfonso Juan"><a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+          </div>
+        </div>
+        <div class="label-user">
+          <h3>E-mail:</h3>
+          <div class="input-user">
+          <input type="text" value="alfonsojuan@gmail.com"><a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+        </div>
+      </div>
+      <div class="label-user">
+        <h3>Numero telefonico:</h3>
+        <div class="input-user">
+        <input id="inputTelefono" type="text" value="+ 57 3135548084"><a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+        <a href="#"  id="trash" ><i class="fa-regular fa-trash-can"></i></a> 
+      </div>
+    </div>
+    <div class="label-user">
+      <h3>Genero:</h3>
+      <div class="input-user">
+      <input type="text" value="Masculino"><a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+    </div>
+  </div>
+  <div class="label-user">
+    <h3>Fecha de nacimiento:</h3>
+    <div class="input-user">
+    <input type="text" value="10/04/1998"><a href="#"><i class="fa-regular fa-pen-to-square"></i></a>
+  </div>
+</div>
+          </div>
+
+          <a id="boton-movil">Guardar</a>
+          </div>
         </section>
         <div class="toast">
             <div class="toast-content">
@@ -288,5 +352,6 @@
       <a href="../foro/foro.html"><i class="fa-solid fa-users"></i></a>
     </footer>
     <script src="script.js"></script>
+    <script src="../layouts/script.js"></script>
 </body>
 </html>

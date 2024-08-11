@@ -208,12 +208,12 @@
         <section class="perfil-movil">
           <div class="perfil-main">
             <img id="fotoIcon" src="../../img/fotoPerfil.png" alt="fotoPerfil">
-            <a href="#modal-foto">
+            <a href="#modal-movil">
               <img id="circuloPerfil" src="../../img/circuloPerfil.png" alt="circuloPerfil">
               <img id="agregarFoto" src="../../img/camaraAgreFoto.png" alt="camaraAgreFoto">
             </a>
-            <div id="modal-foto" class="modalDialog">
-              <div>
+            <div id="modal-movil" class="modalDialog">
+              <div class="modal-contenido">
                 <a href="#close" title="Close" class="close"><i class="fa-solid fa-xmark close"></i></a>
                 <h2>¡Haz que tu perfil sea más <br> personal!</h2>
                 <p>Sube una foto de perfil para que te reconozcan fácilmente.</p>
@@ -230,6 +230,40 @@
             <h3>Alfonso Juan</h3>
             <div class="mi-perfil">
             <i class="fa-regular fa-user"></i><h3>Mi perfil</h3>
+          </div>
+
+          <div class="contenido-usuario">
+            <div class="label-user">
+            <h3>Nombre Completo:</h3>
+            <div class="input-user">
+            <input type="text" value="Alfonso Juan"><a href="../perfil_usuario/editarPerfil.html"><i class="fa-regular fa-pen-to-square"></i></a>
+          </div>
+        </div>
+        <div class="label-user">
+          <h3>E-mail:</h3>
+          <div class="input-user">
+          <input type="text" value="alfonsojuan@gmail.com"><a href="../perfil_usuario/editarPerfil.html"><i class="fa-regular fa-pen-to-square"></i></a>
+        </div>
+      </div>
+      <div class="label-user">
+        <h3>Numero telefonico:</h3>
+        <div class="input-user">
+        <input id="inputTelefono" type="text" value="+ 57 3135548084"><a href="../perfil_usuario/editarPerfil.html"><i class="fa-regular fa-pen-to-square"></i></a>
+        <a href="#"  id="trash" ><i class="fa-regular fa-trash-can"></i></a> 
+      </div>
+    </div>
+    <div class="label-user">
+      <h3>Genero:</h3>
+      <div class="input-user">
+      <input type="text" value="Masculino"><a href="../perfil_usuario/editarPerfil.html"><i class="fa-regular fa-pen-to-square"></i></a>
+    </div>
+  </div>
+  <div class="label-user">
+    <h3>Fecha de nacimiento:</h3>
+    <div class="input-user">
+    <input type="text" value="10/04/1998"><a href="../perfil_usuario/editarPerfil.html"><i class="fa-regular fa-pen-to-square"></i></a>
+  </div>
+</div>
           </div>
           </div>
         </section>
@@ -296,5 +330,6 @@
       ></a>
       <a href="../foro/foro.html"><i class="fa-solid fa-users"></i></a>
     </footer>
+    <script src="../layouts/script.js"></script>
 </body>
 </html>
