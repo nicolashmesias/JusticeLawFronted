@@ -120,14 +120,3 @@ header input[type="text"] {
     background-color: #f5f7fa;
     align-items: start;
 }
-
-.welcome {
-            background-color: #003049;
-            color: white;
-            border-radius: 10px;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            align-items: center;
-            
-        }
