@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JusticeLaw</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/loginl.css" />
+    <script
+      src="https://kit.fontawesome.com/bfdeae7cfe.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-large">
+      <div class="logo">
+        <img src="../../img/logo.jpg" alt="JusticeLaw Logo" />
+        <div class="logo-text">
+          <h1>JUSTICE</h1>
+          <p>LAW</p>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="" />
+        <img
+          id="filtroBusqueda"
+          src="../../img/FiltroBusqueda.png"
+          alt="Filtro"
+        />
+        <button>
+          <img src="../../img/Lupa.png" alt="Buscar" />
+        </button>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Foro</a>
+        <a href="#">Sobre nosotros</a>
+      </nav>
+      <div class="user-menu">
+        <img
+          class="img-perfil"
+          src="../../img/fotoPerfil.png"
+          alt="foto de Perfil"
+        />
+        <span>Alfonso Juan</span>
+        <input type="checkbox" id="dropdownToggle" class="dropdown-checkbox" />
+        <label for="dropdownToggle">
+          <img
+            class="img-flecha"
+            src="../../img/flechaPerfil.png"
+            alt="flecha"
+          />
+        </label>
+        <div class="dropdown">
+          <ul>
+            <li><a href="../perfil_usuario/crearPerfil.html">Perfil</a></li>
+            <li><a href="../historial/historial.html">Historial</a></li>
+            <li>
+              <a href="../notification/notification.html">Notificaciones</a>
+            </li>
+            <li>
+              <a href="../configuracion/configuracion.html">Configuraciones</a>
+            </li>
+            <li><a href="#" id="openModal">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+        <section class="loginlweb">
+        <div class="ti"><h1>Registro Abogado</h1></div>
+        <div class="justice">
+        <h1>Justice</h1>
+        <h2>Leyes claras</h2>
+        </div>
+        <div class="law">
+            <h1>Law</h1>
+            <h2>justicia real</h2>
+            </div>
+        <div class="reg">
+        
+        <label for="nombre">Nombres</label>
+        <input id="nombre" type="text" name="nombre">
+        
+        <label for="apellido">Apellidos</label>
+        <input id="apellido" type="text" name="apellido">
+        
+        <label for="tip_doc">Tipo de Documento</label>
+        <input id="tip_doc" type="text" name="tip_doc">
+        
+        <label for="num_doc">Numero de Documento</label>
+        <select id="num_doc" name="num_doc">
+              <option value="tarjeta_identidad">Tarjeta de identidad</option>
+              <option value="cedula_ciudadania">Cedula</option>
+              <option value="cedula_extranjera">Cedula Extranjera</option>
+              <option value="pasaporte">Pasaporte</option>
+        </select class="loginlweb">
+        
+        <label for="gmial">Email</label>
+        <input id="gmail" type="email" name="gmail">
+        
+        <label for="contraseña">Contraseña</label>
+        <input id="contraseña" type="password" name="contraseña">
+        <br><br><br><br>
+        </div>
+        <div class="bot"><button type="submit">Registrarse</button></div>
+        <div class="parrafo">
+        <div class="parrafo1"><p>Al crear la cuenta, aceptas los</p></div>
+        <div class="parrafo2"><p>Terminos de Uso</p></div>
+        <div class="parrafo3"><p>y la</p></div>
+        <div class="parrafo4"><p>Politica de Privacidad</p></div>
+        <div class="parrafo5"><p>de justicelaw.com</p></div>
+        </div>
+        <div class="par"><p>¿Ya tienes una cuenta?</p></div>
+        <div class="inicio"><a href="iniciar_sesion">Iniciar sesion</a></div>
+    </section>
+        <section class="loginlmovil">
+            <div class="tit">
+            <div class="titulo1"><h1>Justice</h1></div>
+            <div class="titulo2"><h1>Law</h1></div>
+        </div>
+            <div class="subt"><h2>Leyes claras, justicia real</h2></div>
+            <div class="contenedor">
+            <button class="btn1" type="submit">Iniciar sesion</button>
+            <button class="btn2" type="submit">Registrarse</button>
+        </div>
+        <div class="re">
+        
+            <label for="nombre">Nombres</label>
+            <input id="nombre" type="text" name="nombre">
+            
+            <label for="apellido">Apellidos</label>
+            <input id="apellido" type="text" name="apellido">
+            
+            <label for="tip_doc">Tipo de Documento</label>
+            <input id="tip_doc" type="text" name="tip_doc">
+            
+            <label for="num_doc">Numero de Documento</label>
+            <select id="num_doc" name="num_doc">
+                  <option value="tarjeta_identidad">Tarjeta de identidad</option>
+                  <option value="cedula_ciudadania">Cedula</option>
+                  <option value="cedula_extranjera">Cedula Extranjera</option>
+                  <option value="pasaporte">Pasaporte</option>
+            </select class="loginlweb">
+            
+            <label for="gmial">Email</label>
+            <input id="gmail" type="email" name="gmail">
+            
+            <label for="contraseña">Contraseña</label>
+            <input id="contraseña" type="password" name="contraseña">
+            <label for="concontraseña">Confirmar Contraseña</label>
+            <input id="concontraseña" type="password" name="concontraseña">
+            </div>
+            <div class="bt"><button class="btn3" type="submit">Registrarme</button></div>
+            <div class="parrafo">
+                <div class="parrafo1"><p>Al crear la cuenta, aceptas los</p></div>
+                <div class="parrafo2"><p>Terminos de Uso</p></div>
+                <div class="parrafo3"><p>y la</p></div>
+                <div class="parrafo4"><p>Politica de Privacidad</p></div>
+                <div class="parrafo5"><p>de justicelaw.com</p></div>
+                </div>
+        </section>
+    </main>
+    <footer class="footer-large">
+      <div class="footer-resources">
+        <ul>
+          <h3>Recursos</h3>
+          <div class="linea1"></div>
+          <li><a href="blog">Blog</a></li>
+          <li><a href="contacto">Contacto</a></li>
+          <li><a href="faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-main">
+        <h1>JUSTICE</h1>
+        <h3>LAW</h3>
+        <div class="linea2"></div>
+        <a href="https://www.instagram.com/">
+          <img src="../../img/Instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/">
+          <img src="../../img/Facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.youtube.com/">
+          <img src="../../img/Youtube.png" alt="Youtube" />
+        </a>
+        <a href="https://www.x.com/">
+          <img src="../../img/Twiter.png" alt="Twiter" />
+        </a>
+        <a href="https://www.linkedin.com/">
+          <img src="../../img/Linkedin.png" alt="Linkedin" />
+        </a>
+        <div class="linea3"></div>
+        <p>&copy; 2024 JusticeLaw - Todos los derechos reservados</p>
+      </div>
+      <div class="footer-legal">
+        <ul>
+          <h3>Legal</h3>
+          <div class="linea4"></div>
+          <li><a href="terminos">Términos de uso</a></li>
+          <li><a href="cookies">Política de Cookies</a></li>
+          <li><a href="privacidad">Política de privacidad</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
