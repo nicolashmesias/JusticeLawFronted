@@ -362,7 +362,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 701px) and (max-width: 900px) {
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
   .header-small,
   .footer-small {
     display: none;
@@ -553,7 +553,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1001px) {
   .logo {
     display: flex;
     align-items: center;
