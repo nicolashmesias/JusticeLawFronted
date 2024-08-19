@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JusticeLaw</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/information.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bfdeae7cfe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header-large">
+      <div class="logo">
+        <img src="../../img/logo.jpg" alt="JusticeLaw Logo" />
+        <div class="logo-text">
+          <h1>JUSTICE</h1>
+          <p>LAW</p>
+        </div>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="" />
+        <img
+          id="filtroBusqueda"
+          src="../../img/FiltroBusqueda.png"
+          alt="Filtro"
+        />
+        <button>
+          <img src="../../img/Lupa.png" alt="Buscar" />
+        </button>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Foro</a>
+        <a href="#">Sobre nosotros</a>
+      </nav>
+      <div class="user-menu">
+        <img
+          class="img-perfil"
+          src="../../img/fotoPerfil.png"
+          alt="foto de Perfil"
+        />
+        <span>Alfonso Juan</span>
+        <input type="checkbox" id="dropdownToggle" class="dropdown-checkbox" />
+        <label for="dropdownToggle">
+          <img
+            class="img-flecha"
+            src="../../img/flechaPerfil.png"
+            alt="flecha"
+          />
+        </label>
+        <div class="dropdown">
+          <ul>
+            <li><a href="../perfil_usuario/crearPerfil.html">Perfil</a></li>
+            <li><a href="../historial/historial.html">Historial</a></li>
+            <li>
+              <a href="../notification/notification.html">Notificaciones</a>
+            </li>
+            <li>
+              <a href="../configuracion/configuracion.html">Configuraciones</a>
+            </li>
+            <li><a href="#" id="openModal">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <header class="header-small">
+      <i
+        id="small"
+        class="fa-solid fa-chevron-left"
+        onclick="window.history.back()"
+      ></i>
+
+      <i id="small" class="fa-solid fa-magnifying-glass"></i>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="news-column">
+          <h2 class="titulo-informacion">El divorcio</h2>
+          <span>14 agosto 2024</span>
+          <span class="categoria">Categoria: familiar</span>
+
+          <div class="informacion-contenido">
+            <img
+              src="../../img/Divorcio.jpg"
+              alt="Divorcio"
+              class="imagen-arriba-derecha"
+            />
+
+            <p>
+              El divorcio es un proceso legal que pone fin a un matrimonio,
+               disolviendo el vínculo civil entre los cónyuges. Este 
+               procedimiento implica la separación formal y definitiva de 
+               las partes, permitiéndoles volver a casarse si lo desean. 
+               El divorcio puede ser de mutuo acuerdo, donde ambas partes
+               consensúan los términos de la separación, o contencioso, 
+               cuando una de las partes no está de acuerdo o no acepta 
+               los términos propuestos. Además de la disolución del 
+               matrimonio, el divorcio también abarca aspectos como 
+               la custodia de los hijos, la división de bienes y la manutención
+            </p>
+
+            <h3>Presentación de un divorcio</h3>
+
+            <p>
+
+              La presentación de un divorcio implica varios pasos clave. 
+              Primero, se recomienda consultar con un abogado para comprender
+              los derechos y obligaciones. Luego, se prepara una demanda 
+              de divorcio que incluye la información básica del matrimonio, 
+              el motivo del divorcio, y las solicitudes específicas, como 
+              la custodia de los hijos y la división de bienes. Esta demanda
+              se presenta en el tribunal correspondiente, y se notifica al 
+              otro cónyuge. Si ambas partes están de acuerdo, negocian los 
+              términos; de lo contrario, el caso puede ir a juicio. Finalmente, 
+              el juez emite un decreto que formaliza la disolución del matrimonio.
+            </p>
+
+            <h3>Requisitos y Proceso</h3>
+            <p>
+              
+              Para presentar una solicitud de divorcio, es necesario cumplir
+              con ciertos requisitos básicos. Primero, uno de los cónyuges debe
+              cumplir con el requisito de residencia, es decir, haber vivido 
+              en la jurisdicción donde se presentará la solicitud por un período 
+              de tiempo específico, que varía según la región. Segundo, se debe 
+              presentar una demanda de divorcio que incluya información detallada 
+              sobre el matrimonio, como la fecha y lugar de la boda, así como los 
+              nombres de ambos cónyuges. Tercero, es necesario establecer una causa 
+              legal para el divorcio, que puede ser de mutuo acuerdo, diferencias 
+              irreconciliables, abandono, adulterio, entre otros motivos reconocidos 
+              por la ley. Además, se deben cumplir con las obligaciones financieras 
+              correspondientes, como el pago de las tarifas de presentación en el 
+              tribunal. Finalmente, es importante notificar formalmente al otro 
+              cónyuge sobre la presentación de la demanda de divorcio, garantizando 
+              que ambas partes estén al tanto del proceso legal en curso.
+            </p>
+
+            <h3>Sentencia y Revisión</h3>
+            <p>
+                Sentencia de Divorcio: La sentencia es la decisión final 
+                del juez sobre el divorcio. Una vez que se han presentado todos 
+                los documentos, se han escuchado las pruebas y se han considerado 
+                los argumentos de ambas partes, el juez emite una sentencia que pone 
+                fin oficialmente al matrimonio. Esta sentencia incluye las disposiciones 
+                sobre la custodia de los hijos, la manutención conyugal, la división 
+                de bienes y cualquier otra cuestión relevante. En casos donde ambas 
+                partes han llegado a un acuerdo, la sentencia reflejará los términos 
+                acordados. Si no hubo acuerdo, el juez tomará decisiones 
+                sobre los aspectos en disputa.
+
+                Revisión del Divorcio: Después de emitida la sentencia, cualquiera 
+                de las partes puede solicitar una revisión si cree que hubo un error 
+                en la decisión o si surgen nuevas circunstancias que lo ameriten. 
+                Esta revisión puede llevarse a cabo ante el mismo tribunal que emitió 
+                la sentencia original o ante una instancia superior. El objetivo es 
+                evaluar si la sentencia fue justa y acorde a la ley. Durante la revisión, 
+                el tribunal puede confirmar, modificar o incluso anular la sentencia 
+                original, dependiendo de los argumentos presentados.
+            </p>
+
+            <h3>Tipos de divorcio:</h3>
+            <ol>
+              <li><strong>Divorcio de Mutuo Acuerdo</strong></li>
+              <ul>
+                <li>
+                    Ocurre cuando ambos cónyuges están de acuerdo en divorciarse
+                    y consensúan los términos de la separación, como la custodia 
+                    de los hijos, la división de bienes y la manutención.
+
+                    Es generalmente un proceso más rápido y menos costoso, 
+                    ya que se evita un juicio prolongado.
+                </li>
+              </ul>
+              <li><strong>Divorcio Contencioso</strong></li>
+              <ul>
+                <li>
+                    Se da cuando uno de los cónyuges no está de acuerdo
+                    con el divorcio o no acepta los términos propuestos por el otro.
+
+                    Este tipo de divorcio suele ser más complicado y largo, 
+                    ya que puede implicar un juicio donde el juez tomará 
+                    decisiones sobre los términos del divorcio.
+                    
+                </li>
+                <li>
+                  El nombramiento del tutor generalmente recae en un familiar
+                  cercano del menor, como un tío, abuelo o hermano mayor. Sin
+                  embargo, si no hay familiares adecuados disponibles o si la
+                  situación lo requiere, el juez puede designar a una persona
+                  que considere idónea para el rol de tutor. Esta designación se
+                  realiza tras una evaluación detallada de la situación del
+                  menor para asegurar que el tutor elegido sea el más adecuado
+                  para proteger sus intereses.
+                </li>
+              </ul>
+              <li><strong>Divorcio por Causales</strong></li>
+              <ul>
+                <li>
+                    En este tipo de divorcio, una de las partes solicita 
+                    la disolución del matrimonio basándose en una causa 
+                    específica reconocida por la ley, como el adulterio, la 
+                    violencia doméstica, el abandono, entre otros.
+                    Es necesario probar la causa alegada ante el tribunal, 
+                    lo que puede requerir evidencia y testigos.
+                    
+                </li>
+                <li>
+                    Es un tipo de divorcio donde no es necesario demostrar la 
+                    culpa de uno de los cónyuges. Basta con que uno de los 
+                    cónyuges declare que el matrimonio es irreparable.
+                    Es un proceso más sencillo en términos de pruebas, ya que no 
+                    requiere demostrar un motivo específico más allá de la 
+                    irreconciliabilidad de las diferencias.
+                </li>
+              </ul>
+            </ol>
+          </div>
+        </div>
+        <div class="recommendations-column">
+          <h3>Recomendaciones de informaciones</h3>
+          <div class="tab-container">
+            <div class="filter">
+              <button class="filter-button active">Último</button>
+              <button class="filter-button">Más Recomendado</button>
+              <button class="filter-button">Más Visto</button>
+            </div>
+
+            <div id="latest" class="tab-content">
+              <ul class="article-list">
+                <a href="#">
+                  <li class="article">
+                    <img src="../../img/Divorcio.jpg" alt="Artículo 1" />
+                    <div class="article-content">
+                      <div class="article-title">Guía sobre divorcio</div>
+                      <p class="article-description">
+                        La guía sobre divorcio brinda información sobre cómo
+                        proceder durante la separación matrimonial.
+                      </p>
+                    </div>
+                  </li>
+                </a>
+
+                <a href="#">
+                  <li class="article">
+                    <img
+                      src="../../img/Derechosdeinquilinos.png"
+                      alt="Artículo 2"
+                    />
+                    <div class="article-content">
+                      <div class="article-title">
+                        Cómo enfrentar problemas de arrendamiento y derechos del
+                        inquilino
+                      </div>
+                      <p class="article-description">
+                        Obtén información sobre tus derechos como inquilino.
+                      </p>
+                    </div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="article">
+                    <img
+                      src="../../img/AccidenteTrafico.jpeg"
+                      alt="Artículo 1"
+                    />
+                    <div class="article-content">
+                      <div class="article-title">
+                        Guía después de un accidente de tráfico
+                      </div>
+                      <p class="article-description">
+                        Qué hacer inmediatamente después de verse involucrado en
+                        un accidente de tráfico y cómo buscar ayuda legal si es
+                        necesario.
+                      </p>
+                    </div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="article">
+                    <img
+                      src="../../img/Derechosdelconsumidor.png"
+                      alt="Artículo 2"
+                    />
+                    <div class="article-content">
+                      <div class="article-title">
+                        Los derechos del consumidor
+                      </div>
+                      <p class="article-description">
+                        Conoce tus derechos como consumidor y aprende cómo
+                        protegerte contra el fraude y las prácticas comerciales
+                        injustas.
+                      </p>
+                    </div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="article">
+                    <img src="../../img/Despido.jpg" alt="Artículo 1" />
+                    <div class="article-content">
+                      <div class="article-title">
+                        Qué hacer en caso de despido injustificado
+                      </div>
+                      <p class="article-description">
+                        Explora tus opciones legales y los pasos a seguir si te
+                        enfrentas a un despido injustificado.
+                      </p>
+                    </div>
+                  </li>
+                </a>
+                <a href="#">
+                  <li class="article">
+                    <img src="../../img/IniciarNegocio.jpg" alt="Artículo 2" />
+                    <div class="article-content">
+                      <div class="article-title">
+                        Aspectos legales para iniciar un negocio
+                      </div>
+                      <p class="article-description">
+                        Aprende los aspectos legales fundamentales al iniciar un
+                        negocio
+                      </p>
+                    </div>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const botones = document.querySelectorAll(".filter-button");
+
+        botones.forEach((boton) => {
+          boton.addEventListener("click", () => {
+            botones.forEach((btn) => btn.classList.remove("active"));
+
+            boton.classList.add("active");
+          });
+        });
+      </script>
+    </main>
+    <footer class="footer-large">
+      <div class="footer-resources">
+        <ul>
+          <h3>Recursos</h3>
+          <div class="linea1"></div>
+          <li><a href="blog">Blog</a></li>
+          <li><a href="contacto">Contacto</a></li>
+          <li><a href="faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-main">
+        <h1>JUSTICE</h1>
+        <h3>LAW</h3>
+        <div class="linea2"></div>
+        <a href="https://www.instagram.com/">
+          <img src="../../img/Instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/">
+          <img src="../../img/Facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.youtube.com/">
+          <img src="../../img/Youtube.png" alt="Youtube" />
+        </a>
+        <a href="https://www.x.com/">
+          <img src="../../img/Twiter.png" alt="Twiter" />
+        </a>
+        <a href="https://www.linkedin.com/">
+          <img src="../../img/Linkedin.png" alt="Linkedin" />
+        </a>
+        <div class="linea3"></div>
+        <p>&copy; 2024 JusticeLaw - Todos los derechos reservados</p>
+      </div>
+      <div class="footer-legal">
+        <ul>
+          <h3>Legal</h3>
+          <div class="linea4"></div>
+          <li><a href="terminos">Términos de uso</a></li>
+          <li><a href="cookies">Política de Cookies</a></li>
+          <li><a href="privacidad">Política de privacidad</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <footer class="footer-small">
+      <a href="../home/homeLogin.html"> <i class="fa-solid fa-house"></i></a>
+      <a href="../Information/information.html">
+        <i class="fa-solid fa-magnifying-glass"></i
+      ></a>
+      <a href="../foro/foro.html"><i class="fa-solid fa-users"></i></a>
+    </footer>
+  </body>
+</html>
