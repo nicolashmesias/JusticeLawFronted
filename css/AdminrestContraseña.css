@@ -128,33 +128,3 @@ form button:hover {
     font-weight: lighter;
 }
 
-
-@media (max-width: 480px) {
-    .breadcrumb h1, .breadcrumb h4, .breadcrumb p {
-        font-size: 12px; 
-    }
-
-    form input, form button {
-        padding: 10px;
-        font-size: 12px; 
-    }
-
-    .toast {
-        bottom: 10px;
-        right: 10px;
-        padding: 12px 16px; 
-    }
-
-    .toast .check {
-        width: 30px; 
-        height: 30px;
-    }
-
-    .toast .text-1 {
-        font-size: 16px; 
-    }
-
-    .toast .text-2 {
-        font-size: 12px; 
-    }
-}
