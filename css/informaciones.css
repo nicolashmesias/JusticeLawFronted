@@ -1,0 +1,114 @@
+
+.informaciones-home {
+    display: grid;
+    grid-template-columns: 5fr 1fr; 
+    gap: 20px; 
+    max-width: 100%;
+    box-sizing: border-box; 
+    padding: 2rem 4rem; 
+    padding-bottom: 0;
+    margin-bottom: 0;
+    justify-content: center;
+    text-align: center;
+    color: #003049;
+}
+
+.columna-izquierda,
+.columna-derecha {
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+}
+
+button{
+    border-radius: 2rem;
+    background-color: #003049;
+    color: #fff;
+    padding: 1rem;
+}
+
+.encabezado {
+    margin-bottom: 20px;
+}
+
+.encabezado img {
+    width: 100%;
+    height: auto;
+}
+
+.encabezado p{
+    width: 90%;
+    margin: 0 auto; 
+    padding-block:0.5rem 2rem;
+}
+
+.informaciones-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-informacion {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.info-informacion img {
+    width: 100%;
+    height: auto;
+}
+.info-informacion h3{
+    padding: 1.5rem;
+    margin: 0;
+}
+
+.info-informacion p{
+    width: 90%;
+    margin: 0 auto; 
+    padding-bottom:1rem;
+}
+
+.sobre-nosotros img{
+    width: 70%; 
+    height: 70%; 
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sobre-nosotros p{
+    width: 80%;
+    padding-block:1.5rem;
+    margin: 0 auto;
+}
+
+.imagen-container{
+    position: relative;
+    display: inline-block; 
+}
+
+.imagen-container img{
+    display: block; /* Evita el espacio adicional debajo de la imagen */
+    width: 100%; /* O ajusta a un tamaño específico */
+    height: auto;
+}
+
+.texto-superpuesto{
+    position: absolute;
+    top: 50%; /* Ajusta verticalmente */
+    left: 50%; /* Ajusta horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color: #fff; /* Ajusta el color del texto para asegurar contraste */
+    background-color:#4D5052; /* Fondo semitransparente para mejorar la legibilidad */
+    padding: 10px; /* Espaciado alrededor del texto */
+    border-radius: 5px; /* Opcional: bordes redondeados */
+}
+@media (max-width: 768px) {
+    .informaciones-home {
+        grid-template-columns: 1fr;
+    }
+}

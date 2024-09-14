@@ -1,371 +1,527 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JusticeLaw</title>
-    <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="../../css/historial.css">
-    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/historial.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/bfdeae7cfe.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/bfdeae7cfe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header-large">
-        <div class="logo">
-          <img src="../../img/logo.jpg" alt="JusticeLaw Logo" />
-          <div class="logo-text">
-            <h1>JUSTICE</h1>
-            <p>LAW</p>
-          </div>
+      <div class="logo">
+        <img src="../../img/logo.jpg" alt="JusticeLaw Logo" />
+        <div class="logo-text">
+          <h1>JUSTICE</h1>
+          <p>LAW</p>
         </div>
-        <div class="search-bar">
-          <input type="text" placeholder="" />
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="" />
+        <img
+          id="filtroBusqueda"
+          src="../../img/FiltroBusqueda.png"
+          alt="Filtro"
+        />
+        <button>
+          <img src="../../img/Lupa.png" alt="Buscar" />
+        </button>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Foro</a>
+        <a href="#">Sobre nosotros</a>
+      </nav>
+      <div class="user-menu">
+        <img
+          class="img-perfil"
+          src="../../img/fotoPerfil.png"
+          alt="foto de Perfil"
+        />
+        <span>Alfonso Juan</span>
+        <input type="checkbox" id="dropdownToggle" class="dropdown-checkbox" />
+        <label for="dropdownToggle">
           <img
-            id="filtroBusqueda"
-            src="../../img/FiltroBusqueda.png"
-            alt="Filtro"
+            class="img-flecha"
+            src="../../img/flechaPerfil.png"
+            alt="flecha"
           />
-          <button>
-            <img src="../../img/Lupa.png" alt="Buscar" />
-          </button>
+        </label>
+        <div class="dropdown">
+          <ul>
+            <li><a href="../perfil_usuario/crearPerfil.html">Perfil</a></li>
+            <li><a href="../historial/historial.html">Historial</a></li>
+            <li>
+              <a href="../notification/notification.html">Notificaciones</a>
+            </li>
+            <li>
+              <a href="../configuracion/configuracion.html">Configuraciones</a>
+            </li>
+            <li><a href="#" id="openModal">Cerrar Sesión</a></li>
+          </ul>
         </div>
-        <nav class="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Foro</a>
-          <a href="#">Sobre nosotros</a>
-        </nav>
-        <div class="user-menu">
-          <img
-            class="img-perfil"
-            src="../../img/fotoPerfil.png"
-            alt="foto de Perfil"
-          />
-          <span>Alfonso Juan</span>
-          <input type="checkbox" id="dropdownToggle" class="dropdown-checkbox" />
-          <label for="dropdownToggle">
-            <img
-              class="img-flecha"
-              src="../../img/flechaPerfil.png"
-              alt="flecha"
-            />
-          </label>
-          <div class="dropdown">
-            <ul>
-              <li><a href="../perfil_usuario/crearPerfil.html">Perfil</a></li>
-              <li><a href="../historial/historial.html">Historial</a></li>
-              <li>
-                <a href="../notification/notification.html">Notificaciones</a>
-              </li>
-              <li>
-                <a href="../configuracion/configuracion.html">Configuraciones</a>
-              </li>
-              <li><a href="#" id="openModal">Cerrar Sesión</a></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-  
-      <header class="header-small">
-        <i id="small" class="fa-solid fa-chevron-left" onclick="window.history.back()"></i>
-         <h3 id="encabezado">Historial</h3>
-        <i id="small" class="fa-solid fa-magnifying-glass"></i>
-      </header>
+      </div>
+    </header>
+
+    <header class="header-small">
+      <i
+        id="small"
+        class="fa-solid fa-chevron-left"
+        onclick="window.history.back()"
+      ></i>
+      <h3 id="encabezado">Historial</h3>
+      <i id="small" class="fa-solid fa-magnifying-glass"></i>
+    </header>
     <main>
-        <section class="historial">
-            <nav class="sidebar">
-                <ul>
-                    <div class="titulo">
-                        <i class="fa-solid fa-chevron-left" onclick="window.history.back()"></i>
-                        <span>Perfil Usuario</span>
-                    </div>
-                    <li>
-                        <a href="../perfil_usuario/perfil_creado.html"><i class="fa-regular fa-user"></i>Información usuario</a>
-                    </li>
-                    <li>
-                        <a href="../historial/historial.html"><i class="fa-solid fa-clock-rotate-left"></i>Historial</a>
-                    </li>
-                    <li>
-                        <a href="../configuracion/configuracion.html"><i class="fa-solid fa-gear"></i>Configuracion</a>
-                    </li>
-                    <li>
-                        <a href="../notification/notification.html"><i class="fa-regular fa-bell"></i>Notificaciones</a>
-                    </li>
-                    <li id="cerrarSesion">
-                        <a href="../home/home.html"><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesión</a>
-                    </li>
-                </ul>
-            </nav>
-            <hr>
-            <div class="historial-content">
-                <div class="historial-header">
-                    <h3>Historial</h3>
-                    <div class="search-historial">
-                         <img id="lupa" src="../../img/Lupa.png" alt="Buscar" />
-                        <input type="text" placeholder="" />
-                      </div>
+      <section class="historial">
+        <nav class="sidebar">
+          <ul>
+            <div class="titulo">
+              <i
+                class="fa-solid fa-chevron-left"
+                onclick="window.history.back()"
+              ></i>
+              <span>Perfil Usuario</span>
+            </div>
+            <li>
+              <a href="../perfil_usuario/perfil_creado.html"
+                ><i class="fa-regular fa-user"></i>Información usuario</a
+              >
+            </li>
+            <li>
+              <a href="../historial/historial.html"
+                ><i class="fa-solid fa-clock-rotate-left"></i>Historial</a
+              >
+            </li>
+            <li>
+              <a href="../configuracion/configuracion.html"
+                ><i class="fa-solid fa-gear"></i>Configuracion</a
+              >
+            </li>
+            <li>
+              <a href="../notification/notification.html"
+                ><i class="fa-regular fa-bell"></i>Notificaciones</a
+              >
+            </li>
+            <li id="cerrarSesion">
+              <a href="../home/home.html"
+                ><i class="fa-solid fa-right-from-bracket"></i>Cerrar sesión</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <div class="historial-content">
+          <div class="historial-header">
+            <h3>Historial</h3>
+            <div class="search-historial">
+              <img id="lupa" src="../../img/Lupa.png" alt="Buscar" />
+              <input type="text" placeholder="" />
+            </div>
+          </div>
+          <div class="container">
+            <div class="container-fecha">
+              <p>31 de marzo, 2024</p>
+            </div>
+            <hr />
+            <div class="container-visitas">
+              <div class="visita">
+                <div class="checkbox-wrapper-21">
+                  <label class="control control--checkbox">
+                    <input type="checkbox" />
+                    <div class="control__indicator"></div>
+                  </label>
                 </div>
-                            <div class="container">
-                                <div class="container-fecha">
-                                    <p>31 de marzo, 2024</p>
-                                </div>
-                                <hr>
-                                <div class="container-visitas">
-                                    <div class="visita">
-                                    <div class="checkbox-wrapper-21">
-                                        <label class="control control--checkbox">
-                                          <input type="checkbox" />
-                                          <div class="control__indicator"></div>
-                                        </label>
-                                      </div>
-                                <p>2:40 p.m.</p>
-                                <p>Se ha visitado</p>
-                                <a href="../Information/information2.html">La tutela</a>
-                                <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="tres-puntos-label">
-        <img src="../../img/trespuntos.png" alt="tres puntos" class="tres-puntos">
-    </label>
-    
-    <div class="menu-desplegable">
-        <a href="../Information/information2.html">Visitar esta información</a>
-        <a href="../historial/historialEliminado.html" class="eliminar">Eliminar del historial</a>
-    </div>
-                                </div>
-                                <div class="visita">
-                                    <div class="checkbox-wrapper-21">
-                                        <label class="control control--checkbox">
-                                          <input type="checkbox" />
-                                          <div class="control__indicator"></div>
-                                        </label>
-                                      </div>
-                                <p>2:30 p.m.</p>
-                                <p>Se ha visitado</p>
-                                <a href="../Information/information2.html">La tutela</a>
-                                <img src="../../img/trespuntos.png" alt="tres puntos">
-                                </div>
-                                <div class="visita">
-                                    <div class="checkbox-wrapper-21">
-                                        <label class="control control--checkbox">
-                                          <input type="checkbox" />
-                                          <div class="control__indicator"></div>
-                                        </label>
-                                      </div>
-                                <p>2:20 p.m.</p>
-                                <p>Se ha visitado</p>
-                                <a href="../Information/information2.html">La tutela</a>
-                                <img src="../../img/trespuntos.png" alt="tres puntos">
-                                </div>
-                                <div class="visita">
-                                    <div class="checkbox-wrapper-21">
-                                        <label class="control control--checkbox">
-                                          <input type="checkbox" />
-                                          <div class="control__indicator"></div>
-                                        </label>
-                                      </div>
-                                <p>2:10 p.m.</p>
-                                <p>Se ha visitado</p>
-                                <a href="../Information/information2.html">La tutela</a>
-                                <img src="../../img/trespuntos.png" alt="tres puntos">
-                                </div>
-                                <div class="visita">
-                                    <div class="checkbox-wrapper-21">
-                                        <label class="control control--checkbox">
-                                          <input type="checkbox" />
-                                          <div class="control__indicator"></div>
-                                        </label>
-                                      </div>
-                                <p>2:00 p.m.</p>
-                                <p>Se ha visitado</p>
-                                <a href="../Information/information2.html">La tutela</a>
-                                <img src="../../img/trespuntos.png" alt="tres puntos">
-                                </div>
-                            </div>
-                            </div>
-                            <div class="container">
-                                <div class="container-fecha">
-                                    <p>30 de marzo, 2024</p>
-                                </div>
-                                <hr>
-                                <div class="container-visitas">
-                                    <div class="visita">
-                                    <div class="checkbox-wrapper-21">
-                                        <label class="control control--checkbox">
-                                          <input type="checkbox" />
-                                          <div class="control__indicator"></div>
-                                        </label>
-                                      </div>
-                                <p>2:40 p.m.</p>
-                                <p>Se ha visitado</p>
-                                <a href="../Information/information2.html">La tutela</a>
-                                <img src="../../img/trespuntos.png" alt="tres puntos">
-                                </div>
-                                <div class="visita">
-                                    <div class="checkbox-wrapper-21">
-                                        <label class="control control--checkbox">
-                                          <input type="checkbox" />
-                                          <div class="control__indicator"></div>
-                                        </label>
-                                      </div>
-                                <p>2:30 p.m.</p>
-                                <p>Se ha visitado</p>
-                                <a href="../Information/information2.html">La tutela</a>
-                                <img src="../../img/trespuntos.png" alt="tres puntos">
-                                </div>
-                                <div class="visita">
-                                    <div class="checkbox-wrapper-21">
-                                        <label class="control control--checkbox">
-                                          <input type="checkbox" />
-                                          <div class="control__indicator"></div>
-                                        </label>
-                                      </div>
-                                <p>2:20 p.m.</p>
-                                <p>Se ha visitado</p>
-                                <a href="../Information/information2.html">La tutela</a>
-                                <img src="../../img/trespuntos.png" alt="tres puntos">
-                                </div>
-                              
-                            </div>
-                            </div>
-                        </div>         
-        </section>
-        <section class="historial-small">
-          <div class="borrar-datos">
-            <a href="../historial/historialEliminado.html">Borrar datos de navegación</a>
+                <p>2:40 p.m.</p>
+                <p>Se ha visitado</p>
+                <a href="../Information/informacion_tutela.html">La tutela</a>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                <label for="menu-toggle" class="tres-puntos-label">
+                  <img
+                    src="../../img/trespuntos.png"
+                    alt="tres puntos"
+                    class="tres-puntos"
+                  />
+                </label>
 
-            
-          </div>
-
-          <div class="historial-container">
-            <div class="visita-small">
-              <span class="fecha-visita">12 de abril, 2024</span>
-              
-              <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">La tutela</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">Todo acerca de las tutelas</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">La tutela</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">La tutela</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">La tutela</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            </div>
-
-            <div class="visita-small">
-              <span class="fecha-visita">11 de abril, 2024</span>
-              
-              <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">La tutela</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">Todo acerca de las tutelas</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">La tutela</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">La tutela</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">La tutela</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            </div>
-
-            <div class="visita-small">
-              <span class="fecha-visita">12 de abril, 2024</span>
-              
-              <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">La tutela</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">Todo acerca de las tutelas</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">La tutela</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">La tutela</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
-            <div class="detalle-visita">
-              <span class="icon-visita">T</span>
-              <p>Se ha visitado</p>
-              <a class="link-informacion" href="../Information/information2.html">La tutela</a>
-              <a class="icon-eliminar" href="../historial/historialEliminado.html"><i class="fa-regular fa-circle-xmark"></i></a>
-            </div>
+                <div class="menu-desplegable">
+                  <a href="../Information/.html">Visitar esta información</a>
+                  <a
+                    href="../historial/historialEliminado.html"
+                    class="eliminar"
+                    >Eliminar del historial</a
+                  >
+                </div>
+              </div>
+              <div class="visita">
+                <div class="checkbox-wrapper-21">
+                  <label class="control control--checkbox">
+                    <input type="checkbox" />
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <p>2:30 p.m.</p>
+                <p>Se ha visitado</p>
+                <a href="../Information/informacion_tutela.html">La tutela</a>
+                <img src="../../img/trespuntos.png" alt="tres puntos" />
+              </div>
+              <div class="visita">
+                <div class="checkbox-wrapper-21">
+                  <label class="control control--checkbox">
+                    <input type="checkbox" />
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <p>2:20 p.m.</p>
+                <p>Se ha visitado</p>
+                <a href="../Information/informacion_tutela.html">La tutela</a>
+                <img src="../../img/trespuntos.png" alt="tres puntos" />
+              </div>
+              <div class="visita">
+                <div class="checkbox-wrapper-21">
+                  <label class="control control--checkbox">
+                    <input type="checkbox" />
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <p>2:10 p.m.</p>
+                <p>Se ha visitado</p>
+                <a href="../Information/informacion_tutela.html">La tutela</a>
+                <img src="../../img/trespuntos.png" alt="tres puntos" />
+              </div>
+              <div class="visita">
+                <div class="checkbox-wrapper-21">
+                  <label class="control control--checkbox">
+                    <input type="checkbox" />
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <p>2:00 p.m.</p>
+                <p>Se ha visitado</p>
+                <a href="../Information/informacion_tutela.html">La tutela</a>
+                <img src="../../img/trespuntos.png" alt="tres puntos" />
+              </div>
             </div>
           </div>
-        </section>
+          <div class="container">
+            <div class="container-fecha">
+              <p>30 de marzo, 2024</p>
+            </div>
+            <hr />
+            <div class="container-visitas">
+              <div class="visita">
+                <div class="checkbox-wrapper-21">
+                  <label class="control control--checkbox">
+                    <input type="checkbox" />
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <p>2:40 p.m.</p>
+                <p>Se ha visitado</p>
+                <a href="../Information/informacion_tutela.html">La tutela</a>
+                <img src="../../img/trespuntos.png" alt="tres puntos" />
+              </div>
+              <div class="visita">
+                <div class="checkbox-wrapper-21">
+                  <label class="control control--checkbox">
+                    <input type="checkbox" />
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <p>2:30 p.m.</p>
+                <p>Se ha visitado</p>
+                <a href="../Information/informacion_tutela.html">La tutela</a>
+                <img src="../../img/trespuntos.png" alt="tres puntos" />
+              </div>
+              <div class="visita">
+                <div class="checkbox-wrapper-21">
+                  <label class="control control--checkbox">
+                    <input type="checkbox" />
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <p>2:20 p.m.</p>
+                <p>Se ha visitado</p>
+                <a href="../Information/informacion_tutela.html">La tutela</a>
+                <img src="../../img/trespuntos.png" alt="tres puntos" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="historial-small">
+        <div class="borrar-datos">
+          <a href="../historial/historialEliminado.html"
+            >Borrar datos de navegación</a
+          >
+        </div>
+
+        <div class="historial-container">
+          <div class="visita-small">
+            <span class="fecha-visita">12 de abril, 2024</span>
+
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >La tutela</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >Todo acerca de las tutelas</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >La tutela</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >La tutela</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >La tutela</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="visita-small">
+            <span class="fecha-visita">11 de abril, 2024</span>
+
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >La tutela</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >Todo acerca de las tutelas</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >La tutela</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >La tutela</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >La tutela</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="visita-small">
+            <span class="fecha-visita">12 de abril, 2024</span>
+
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >La tutela</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >Todo acerca de las tutelas</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >La tutela</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >La tutela</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+            <div class="detalle-visita">
+              <span class="icon-visita">T</span>
+              <p>Se ha visitado</p>
+              <a
+                class="link-informacion"
+                href="../Information/informacion_tutela.html"
+                >La tutela</a
+              >
+              <a
+                class="icon-eliminar"
+                href="../historial/historialEliminado.html"
+                ><i class="fa-regular fa-circle-xmark"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <div id="logoutModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>¿Estás seguro de que deseas cerrar sesión?</h2>
-            <p>Recuerda que siempre estamos aquí para brindarte la mejor asesoría legal cuando lo necesites.</p>
-            <p>¡Esperamos verte pronto de vuelta!</p>
-            <div class="modal-buttons">
-                <button id="confirmLogout">Cerrar sesión</button>
-                <button id="cancelLogout">Cerrar sesión</button>
-            </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>¿Estás seguro de que deseas cerrar sesión?</h2>
+        <p>
+          Recuerda que siempre estamos aquí para brindarte la mejor asesoría
+          legal cuando lo necesites.
+        </p>
+        <p>¡Esperamos verte pronto de vuelta!</p>
+        <div class="modal-buttons">
+          <button id="confirmLogout">Cerrar sesión</button>
+          <button id="cancelLogout">Cerrar sesión</button>
         </div>
+      </div>
     </div>
     <div id="logoutModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>¿Estás seguro de que deseas cerrar sesión?</h2>
-            <p>Recuerda que siempre estamos aquí para brindarte la mejor asesoría legal cuando lo necesites.</p>
-            <p>¡Esperamos verte pronto de vuelta!</p>
-            <div class="modal-buttons">
-                <button id="confirmLogout">Cerrar sesión</button>
-                <button id="cancelLogout">Cerrar sesión</button>
-            </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>¿Estás seguro de que deseas cerrar sesión?</h2>
+        <p>
+          Recuerda que siempre estamos aquí para brindarte la mejor asesoría
+          legal cuando lo necesites.
+        </p>
+        <p>¡Esperamos verte pronto de vuelta!</p>
+        <div class="modal-buttons">
+          <button id="confirmLogout">Cerrar sesión</button>
+          <button id="cancelLogout">Cerrar sesión</button>
         </div>
+      </div>
     </div>
     <footer class="footer-large">
       <div class="footer-resources">
@@ -419,5 +575,5 @@
     </footer>
 
     <script src="../../js/modal.js"></script>
-</body>
+  </body>
 </html>
