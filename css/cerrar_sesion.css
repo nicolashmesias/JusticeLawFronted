@@ -1,0 +1,357 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Faustina', serif;
+    background-color: #f0f0f0;
+}
+
+.notificacion-img {
+    width: 25px;    
+    margin-right: 20px; 
+    vertical-align: middle; 
+    filter: brightness(0) saturate(100%) invert(1);
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.plus-icon {
+    width: 15px;
+    height: 16px;
+    margin-left: 10px; 
+    cursor: pointer; 
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e3c57;
+    color: white;
+    padding: 10px 20px;
+    height: 50px; 
+}
+
+.top-bar .logo h2 {
+    font-size: 24px;
+    margin: 0;
+    margin-left: 30px;
+}
+
+.top-bar .logo span {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-bar .search-icon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px; 
+    margin-left: 80px;
+    filter: brightness(0) saturate(100%) invert(1);
+}
+
+.search-bar input {
+    border: none;
+    background: none; 
+    color: #ffffff !important; 
+    padding: 0; 
+    margin: 0; 
+    font-size: 16px; 
+    width: 100%; 
+    outline: none; 
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.user-info span {
+    display: block; 
+    font-size: 10px;
+    color: #ccc;
+    margin-left: 40px;
+    align-self: 10px;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1e3c57;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li.logout {
+    margin-bottom: 70px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #2a496f;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.faqs {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.faqs h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #1e3c57;
+}
+
+.faq-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.faq-category {
+    width: 45%;
+    margin-bottom: 20px; 
+}
+
+.faq-category h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-size: 22px;
+    color: #333;
+}
+
+.faq-category ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.faq-category ul li {
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-category ul li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 1200px) {
+    .faq-category {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-info {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+    
+    .faq-sections {
+        flex-direction: column;
+    }
+
+    .faq-category {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        width: 100%;
+        position: absolute;
+        z-index: 1000;
+        top: 50px;
+        left: -250px;
+        transition: all 0.3s ease;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .faq-sections {
+        flex-direction: column;
+    }
+
+    .faq-category {
+        width: 100%;
+    }
+
+    .top-bar {
+        height: auto;
+        padding: 50px;
+        flex-direction: column;
+    }
+
+    .search-bar {
+        margin-left: 0;
+    }
+
+    .user-info {
+        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: #ffffff; 
+    margin: 10% auto; 
+    padding: 40px; 
+    border: 1px solid #4d4949; 
+    width: 80%; 
+    max-width: 600px; 
+    height: auto; 
+    max-height: 80%; 
+    position: relative; 
+    box-shadow: 0 2px 10px rgba(88, 84, 84, 0.2); 
+    text-align: center; 
+    overflow-y: auto; 
+    margin-left: calc(10% + 350px); 
+}
+
+.close {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    width: 40px; 
+    height: 40px; 
+    background: url('../../img/X-icon.png') no-repeat center center; 
+    background-size: contain; 
+    border: none; 
+    cursor: pointer; 
+    text-indent: -9999px; 
+}
+
+.close:hover,
+.close:focus {
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+button {
+    background-color: #1e3c57; 
+    color: white; 
+    border: none; 
+    padding: 10px 30px; 
+    margin: 15px; 
+    cursor: pointer; 
+    border-radius: 20px;
+    margin-left: calc(10% + 200px);
+}
+
+button:hover {
+    background-color: #2a496f; 
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        margin-left: 5%; 
+        width: 90%; 
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-content {
+        margin-left: 0; 
+        width: 100%; 
+        max-width: none; 
+        height: auto; 
+    }
+
+    .close {
+        width: 30px; 
+    }
+}
