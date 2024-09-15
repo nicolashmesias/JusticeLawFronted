@@ -6,6 +6,8 @@
     <title>JusticeLaw</title>
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/informaciones.css">
+    <script
+      src="https://kit.fontawesome.com/bfdeae7cfe.js" crossorigin="anonymous"></script>
     <script defer src="../../js/modal.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
@@ -225,7 +227,120 @@
         </div>
       </div>
         </section>
+        <div class="buscador-container">
+          <div class="search-bar">
+            <input type="text" placeholder="">
+            <button><img src="../../img/Lupa.png" alt="Buscar"></button>
+          </div>
+          
+          <div class="filter-menu">
+            <button class="active" data-category="todos">Todos</button>
+            <button data-category="comercial">Comercial</button>
+            <button data-category="laboral">Laboral</button>
+            <button data-category="familiar">Familiar</button>
+            <button data-category="penal">Penal</button>
+            <button data-category="civil">Civil</button>
+            <button data-category="inmobiliario">Inmobiliario</button>
+          </div>
+        </div>
+        
+        <div class="articles-list">
+          <div class="article">
+            <img src="../../img/Accidente.png" alt="Artículo">
+            <div class="article-info">
+                <h3>Guía completa sobre los pasos a seguir...</h3>
+                <p>Entra y descubre la información necesaria...</p>
+                <span>12 Sept, 2023</span>
+            </div>
+        </div>
+        <div class="article">
+          <img src="../../img/Derechosdelconsumidor.png" alt="Artículo">
+          <div class="article-info">
+              <h3>Los derechos del consumidor</h3>
+              <p>Conoce tus derechos como consumidor y aprende cómo...</p>
+              <span>11 Sept, 2023</span>
+          </div>
+        </div>
+        <div class="article">
+          <img src="../../img/Iniciarunnegocio.png" alt="Artículo">
+          <div class="article-info">
+              <h3>Aspectos legales para iniciar ...</h3>
+              <p>Aprende los aspectos legales fundamentales al iniciar un negocio...</p>
+              <span>11 Sept, 2023</span>
+          </div>
+      </div>
+      <div class="article">
+          <img src="../../img/Despidoinjustificado.png" alt="Artículo">
+          <div class="article-info">
+              <h3>Qué hacer en caso de  un despido ... </h3>
+              <p>Explora tus opciones legales y los pasos a ...</p>
+              <span>11 Sept, 2023</span>
+          </div>
+      </div>
+      <div class="article">
+        <img src="../../img/Derechosdeinquilinos.png" alt="Artículo">
+        <div class="article-info">
+            <h3>Cómo enfrentar problemas de ...</h3>
+            <p>Obtén información sobre tus derechos como inquilino...</p>
+            <span>11 Sept, 2023</span>
+        </div>
+    </div>
+    <div class="article">
+              <img src="../../img/Iniciarunnegocio.png" alt="Artículo">
+              <div class="article-info">
+                  <h3>Aspectos legales para iniciar ...</h3>
+                  <p>Aprende los aspectos legales fundamentales al iniciar un negocio...</p>
+                  <span>11 Sept, 2023</span>
+              </div>
+          </div>
+          <div class="article">
+              <img src="../../img/Despidoinjustificado.png" alt="Artículo">
+              <div class="article-info">
+                  <h3>Qué hacer en caso de  un despido ... </h3>
+                  <p>Explora tus opciones legales y los pasos a ...</p>
+                  <span>11 Sept, 2023</span>
+              </div>
+          </div>
+          <div class="article">
+            <img src="../../img/Derechosdeinquilinos.png" alt="Artículo">
+            <div class="article-info">
+                <h3>Cómo enfrentar problemas de ...</h3>
+                <p>Obtén información sobre tus derechos como inquilino...</p>
+                <span>11 Sept, 2023</span>
+            </div>
+        </div>
+        <div class="article">
+          <img src="../../img/PensionAliemnticia.jpg" alt="Artículo">
+          <div class="article-info">
+              <h3>Pensión alimenticia</h3>
+              <p>Comprende tus derechos y responsabilidades en relación..</p>
+              <span>11 Sept, 2023</span>
+          </div>
+      </div>
+      <div class="article">
+        <img src="../../img/Divorcio.jpg" alt="Artículo">
+        <div class="article-info">
+            <h3>Guía sobre divorcio</h3>
+            <p>La guía sobre divorcio brinda información sobre..</p>
+            <span>11 Sept, 2023</span>
+        </div>
+    </div>
+      </div>
+      
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.filter-menu button').forEach(button => {
+  button.addEventListener('click', function() {
+    document.querySelectorAll('.filter-menu button').forEach(btn => {
+      btn.style.color = '';
+    });
+    
+    this.style.color = '#CF9E3E';
+  });
+});
 
+  </script>
     </main>
     <br><br><br>
     <div id="logoutModal" class="modal">
