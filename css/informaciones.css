@@ -92,22 +92,22 @@ button{
 }
 
 .imagen-container img{
-    display: block; /* Evita el espacio adicional debajo de la imagen */
-    width: 100%; /* O ajusta a un tamaño específico */
+    display: block; 
+    width: 100%; 
     height: auto;
 }
 
 .texto-superpuesto{
     position: absolute;
-    top: 50%; /* Ajusta verticalmente */
-    left: 50%; /* Ajusta horizontalmente */
-    transform: translate(-50%, -50%); /* Centra el texto */
-    color: #fff; /* Ajusta el color del texto para asegurar contraste */
-    background-color:#4D5052; /* Fondo semitransparente para mejorar la legibilidad */
-    padding: 10px; /* Espaciado alrededor del texto */
-    border-radius: 5px; /* Opcional: bordes redondeados */
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    background-color:#4D5052; 
+    padding: 10px; 
+    border-radius: 5px; 
 }
-/* Contenedor del buscador y lista de artículos ocultos por defecto */
+
 .buscador-container, .articles-list {
     display: none;
 }
@@ -121,8 +121,8 @@ button{
     border-radius: 50px;
     padding: 10px;
     background-color: white;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Sombras suaves */
-    margin: 10px auto; /* Centrar y agregar espaciado */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); 
+    margin: 10px auto; 
 }
 
 .search-bar input {
@@ -172,7 +172,6 @@ button{
     color: black;
 }
 
-/* Contenedor de la lista de artículos */
 .articles-list {
     margin: 10px 0;
 }
@@ -211,7 +210,7 @@ button{
     color: #666;
 }
   
-  /* Media query para mostrar el contenedor solo en pantallas menores a 600px */
+
   @media (max-width: 600px) {
     .buscador-container, .articles-list {
       display: block;
@@ -231,7 +230,7 @@ button{
     }
   
     .header .time {
-      font-size: 0.9em; /* Tamaño más pequeño */
+      font-size: 0.9em;
       font-weight: bold;
     }
   
@@ -321,9 +320,9 @@ button{
     }
   }
   
-/* Responsive para pantallas menores a 600px */
+
 @media (max-width: 600px) {
     .informaciones-home {
-        display: none; /* Oculta el contenedor en pantallas menores a 600px */
+        display: none; 
     }
 }
