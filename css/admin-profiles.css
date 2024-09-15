@@ -19,9 +19,10 @@
 .registro-reportes {
     /* Registro reportes */
     grid-column: 1 / 2;
-    background-color: white;
+    background-color: #f5f5f9;
     padding: 10px;
     border-radius: 10px;
+    margin-top: -260px;
     margin-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -119,53 +120,117 @@
 }
 
 .profile-details {
-    /* detalles del perfil */
-    background-color: #ffff;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.profile-details h3 {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .profile-overview {
-   
+    grid-column: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
 }
 
 .profile-overview img {
-   height: 154px;
-   width: 154px;
-   object-fit: cover;
-   filter: grayscale(100%) brightness(50%);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 .profile-overview h4 {
-   
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 .profile-overview p {
-    
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
 }
 
 .pdf-link {
-   
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
+.pdf-link:hover {
+    background-color: #eee;
+}
+
+
 .account-details {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    grid-column: 3 / 3;
 }
 
 .account-details div {
-   
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .account-details div span {
-   
+    font-size: 16px;
+    color: #333;
 }
 
 .account-details div a {
-    
+    text-decoration: none;
+    background-color: #004080;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+    min-width: 50px;
+    cursor: pointer;
+}
+
+.account-details div a:hover {
+    background-color: #003060;
+}
+
+.account-details .btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    grid-column: 1 / 2;
+}
+
+.account-details .btn {
+    display: inline-block;
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.account-details .btn:hover {
+    background-color: #003060;
 }
 
 .recent-activity {
@@ -173,7 +238,7 @@
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     background-color: white;
-    margin-top: 90px;
+    margin-top: -120px;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -196,7 +261,22 @@
     padding: 10px 0;
     font-size: 12px;
     border-bottom: 1px solid #f0f0f0;
+    position: relative;
+  padding-left: 25px; 
 }
+
+.recent-activity ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px; 
+    height: 12px;
+    background-color: blue; 
+    border-radius: 50%; 
+  }
+
 .recent-activity ul li a {
     font-size: 12px;
     text-decoration: none;
