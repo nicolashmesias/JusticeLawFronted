@@ -6,7 +6,10 @@
     <title>JusticeLaw</title>
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/Calendar.css">
+    <link rel="stylesheet" href="../../css/agendar.css">
     <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    
     <style>
     
     </style>
@@ -211,10 +214,42 @@
                             <div>18:00</div>
                         </div>
                         <div class="events">
-                            <div class="event time"></div>
-                            <div class="event task"></div>
-                            <div class="event last"></div>
-                        </div>
+                            <div class="event time" id="aa"></div>
+                            <div class="event task" id="aa"></div>
+                            <div class="event last" id="aa"></div>
+                            </div>
+
+                           <div id="myModal" class="modal-wrapper">
+    <div class="modal-content-custom">
+        <span class="close">&times;</span>
+        <h3 class="modal-title">Agendar asesoría</h3>
+        
+        <div class="modal-info-custom">
+            <div class="modal-date-time">
+                <span class="icon">📅</span>
+                <p>Jueves, 11 abril</p>
+                <span class="icon">🕒</span>
+                <p>12:00pm - 13:00pm</p>
+            </div>
+            
+            <div class="modal-notification">
+                <span class="icon">🔔</span>
+                <label>Notificar</label>
+                <select class="modal-select">
+                    <option>1 hora antes</option>
+                    <option>2 horas antes</option>
+                    <option>1 día antes</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="modal-footer-custom">
+            <button class="modal-save-btn">Guardar</button>
+        </div>
+    </div>
+</div>
+
+                          
                     </div>
                 </div>
                 <div class="profile">
@@ -293,6 +328,7 @@
       ></a>
       <a href="../foro/foro.html"><i class="fa-solid fa-users"></i></a>
     </footer>
-
+    <script src="calendar.js"></script>
 </body>
+
 </html>
