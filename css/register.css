@@ -1,146 +1,428 @@
-.ti h1{ 
-  margin-top: 50px;
-  margin-left: 65%; 
-  font-size: 50px;
-  color: #0A3B55;
-}
-.justice{
-  background-image: url("../img/image2.png");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  width: 500px;
-  height: 600px; 
-  margin-top: -2rem;
-  margin-left: 15rem;
-  box-sizing: border-box;   
-  position: absolute;
-}
-.justice h1{
-  text-align: right;
-  margin-top: 22rem;
-  font-size: 83px;
-  color: white;
-}
-.justice h2{
-  text-align: right;
-  margin-top: -13%;
-  font-size: 30px;
-  color: white;
-}
-.law{
-  margin-left: 46.5rem;
-  margin-top: 22.8rem;
-  font-size: 36.6px;
+@media only screen and (max-width: 600px){
+  .loginlweb{
+    display: none;
+  }
+  .titulo1 h1{
+      font-size: 28px;
+margin-top: 6rem;
+margin-left: 18rem;
+  }
+  .titulo2 h1{
+      font-size: 28px;
+  margin-top: -3.85rem;
+  margin-left: 23.8rem;
   color: #CF9E3E;
-}
-.law h2{
-  margin-top: -3.7rem;
-  font-size: 32px;
-  color: #0A3B55;
-}
-.reg{
-    width:100px;
-    margin-top: -28rem;
-    margin-left: 75rem;
-    color: #0A3B55;
-}
-.reg input[type=text] {
-    border: none;
-    margin: 10px 0px;
-    padding: 0px 100px;
-    border-bottom: 2px solid #0A3B55;
-    box-sizing: border-box;
-    outline: none;
   }
-  .reg select{
-    border: none;
-    margin: 8px 0px;
-    padding: 0px 100px;
-    border-bottom: 2px solid #0A3B55;
-    box-sizing: border-box;
-    outline: none;
+  .subt h2{
+      font-size:19px;
+      margin-top:-1rem;
+      margin-left:15.5rem;
   }
-  .reg input[type=password] {
-    border: none;
-    margin: 8px 0px;
-    padding: 0px 100px;
-    border-bottom: 2px solid #0A3B55;
-    box-sizing: border-box;
-    outline: none;
-  }
-  .reg input[type=email] {
-    border: none;
-    margin: 8px 0px;
-    padding: 0px 100px;
-    border-bottom: 2px solid #0A3B55;
-    box-sizing: border-box;
-    outline: none;
+  .contenedor {
+      margin-top:2rem;
+      margin-left:9rem;
+      display: flex;
   }
 
-  .inf{
-    width:500px;
-    margin-top: -3rem;
-    margin-left: 75rem;
-    bottom: 4rem;
+  .btn1{
+      background-color: #0A3B55;
+      text-decoration: none;
+      color: white;
+      font-size:24px;
+      padding: 14px 46px;
+      border-radius:34px;
+      transition-duration: 0.4s;
   }
+  .btn1:hover{
+      background-color: #0A3B55;
+      color: #CF9E3E;
+  }
+  .btn2{
+      background-color: #0A3B55;
+      text-decoration: none;
+      color: white;
+      margin-left:-39px;
+      font-size:24px;
+      padding:14px 36px;
+      border-radius:34px;
+      transition-duration: 0.4s;
+  }
+  .btn2:hover{
+      background-color: #0A3B55;
+      color: #CF9E3E;
+  }
+
   .re{
-    width:500px;
-    margin-top: -2.25rem;
-    margin-left: 88.5rem;
-    bottom: 4rem;
-    text-decoration: none;
+  
+      font-size:35px;
+      width:200px;
+      margin-top: 2rem;
+      margin-left: 5rem;
+      color: #0A3B55;
   }
-  .re a{
-    text-decoration: none;
-  }
-  .bot{
-    margin-top: 1rem;
-    margin-left:75rem;
-  }
+  .re input[type=text] {
+      border: none;
+      margin: 10px 0px;
+      padding: 0px 150px;
+      border-bottom: 2px solid #0A3B55;
+      box-sizing: border-box;
+      outline: none;
+    }
+    .re select{
+      border: none;
+      margin: 8px 0px;
+      padding: 0px 165px;
+      border-bottom: 2px solid #0A3B55;
+      box-sizing: border-box;
+      outline: none;
+    }
+    .re input[type=password] {
+      border: none;
+      margin: 8px 0px;
+      padding: 0px 150px;
+      border-bottom: 2px solid #0A3B55;
+      box-sizing: border-box;
+      outline: none;
+    }
+    .re input[type=email] {
+      border: none;
+      margin: 8px 0px;
+      padding: 0px 150px;
+      border-bottom: 2px solid #0A3B55;
+      box-sizing: border-box;
+      outline: none;
+    }
+    .btn3{
+      background-color: #0A3B55;
+      text-decoration: none;
+      color: white;
+      padding:14px 205px;
+      margin-top: 2.8rem;
+      margin-left: 5rem;
+      border-radius:15px;
+    }
+    .rece{
+      left:34%;
+            }
+            .info{
+              left:34%;
+            }
+    .parrafo{
+      margin-top: 2rem;
+      margin-left:5.5rem;
+      color: #0A3B55;
+    }
+    .parrafo1{
+      width: 100rem;
+    }
+    .parrafo2{
+      margin-top: -2.3rem;
+      margin-left:12.5rem;
+      width: 10rem;
+      color: #CF9E3E;
+    }
+    .parrafo3{
+      margin-top: -2.2rem;
+      margin-left:20.2rem;
+    }
+    .parrafo4{
+      margin-top: -2.3rem;
+      margin-left:22rem;
+      color: #CF9E3E;
+    }
+    .parrafo5{
+      margin-top: -1rem;
+      margin-left:13rem;
+    }
+  
 
-  .bot button{
-    background-color: #0A3B55;
-    text-decoration: none;
-    color: white;
-    padding: 14px 40px;
-    border-radius: 4px;
-    max-width: 317px;
+
+ }
+ @media only screen and (min-width: 901px) and (max-width: 2010px){
+  .loginlmovil{
+    display: none;
   }
-  .parrafo{
-    margin-top: -4rem;
-    margin-left:89rem;
-    color: #0A3B55;
+  .ti h1{ 
+      margin-top: 40px;
+      margin-left: 62.5%; 
+      font-size: 48px;
+      color: #0A3B55;
+    }
+    .justice{
+      background-image: url("../img/image2.png");
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+      width: 35%;
+      height: 600px; 
+      margin-top: -2rem;
+      margin-left: 4.5%;
+      box-sizing: border-box;   
+      position:sticky
+    }
+    .justice h1{
+      text-align: right;
+      margin-top: 22rem;
+      font-size: 83px;
+      color: white;
+    }
+    .justice h2{
+      text-align: right;
+      margin-top: -65px;
+      font-size: 30px;
+      color: white;
+    }
+    .law h1{
+      margin-left: 40%;
+      margin-top: -14.43rem;
+      font-size: 66.6px;
+      color: #CF9E3E;
+    }
+    .law h2{
+      margin-top: -3rem;
+      margin-left:40%;
+      font-size: 32px;
+      color: #0A3B55;
+    }
+    .reg{
+        width:10%;
+        margin-top: -28rem;
+        margin-left: 62.5%;
+        color: #0A3B55;
+        position:sticky;
+    }
+    .reg input[type=text] {
+        border: none;
+        margin: 10px 0px;
+        padding: 0px 130px;
+        border-bottom: 2px solid #0A3B55;
+        box-sizing: border-box;
+        outline: none;
+      }
+      .reg select{
+        border: none;
+        margin: 8px 0px;
+        padding: 0px 145px;
+        border-bottom: 2px solid #0A3B55;
+        box-sizing: border-box;
+        outline: none;
+      }
+      .reg input[type=password] {
+        border: none;
+        margin: 8px 0px;
+        padding: 0px 130px;
+        border-bottom: 2px solid #0A3B55;
+        box-sizing: border-box;
+        outline: none;
+      }
+      .reg input[type=email] {
+        border: none;
+        margin: 8px 0px;
+        padding: 0px 130px;
+        border-bottom: 2px solid #0A3B55;
+        box-sizing: border-box;
+        outline: none;
+      }
+      .bot{
+        margin-top: -1.5rem;
+        margin-left:62.4%;
+      }
+    
+      .bot button{
+        background-color: #0A3B55;
+        text-decoration: none;
+        color: white;
+        padding: 14px 40px;
+        border-radius: 4px;
+        max-width: 317px;
+      }
+      .rece{
+        left:34%;
+              }
+              .info{
+                left:34%;
+              }
+      .parrafo{
+        margin-top: -4rem;
+        margin-left:76%;
+        color: #0A3B55;
+      }
+      .parrafo1{
+        width: 15%;
+      }
+      .parrafo2{
+        width: 11%;
+        margin-top: -2.3rem;
+        margin-left:8%;
+        width: 10rem;
+        color: #CF9E3E;
+      }
+      .parrafo3{
+        margin-top: -1rem;
+        margin-left:0%;
+      }
+      .parrafo4{
+        margin-top: -2.2rem;
+        margin-left:5.8%;
+        color: #CF9E3E;
+      }
+      .parrafo5{
+        margin-top: -1rem;
+        margin-left:0%;
+      }
+      .par{
+        color: #0A3B55;
+        margin-top: -70px;
+        margin-left:62.4%;
+      }
+      .inicio{
+        margin-top: -1rem;
+        margin-left:64%;
+        margin-bottom: 6rem;
+      }
+    
+ }
+ @media only screen and (min-width: 601px) and (max-width: 900px){
+  .loginlmovil{
+    display: none;
   }
-  .parrafo1{
-    width: 10rem;
-  }
-  .parrafo2{
-    margin-top: -2.3rem;
-    margin-left:5rem;
-    width: 10rem;
-    color: #CF9E3E;
-  }
-  .parrafo3{
-    margin-top: -1rem;
-    margin-left:0rem;
-  }
-  .parrafo4{
-    margin-top: -2.2rem;
-    margin-left:1.8rem;
-    color: #CF9E3E;
-  }
-  .parrafo5{
-    margin-top: -1rem;
-    margin-left:0rem;
-  }
-  .par{
-    color: #0A3B55;
-    margin-top: -2rem;
-    margin-left:75rem;
-  }
-  .inicio{
-    margin-top: -1rem;
-    margin-left:76.8rem;
-    margin-bottom: 6rem;
-  }
+  .ti h1{ 
+      margin-top: 4%;
+      margin-left: 29.5%; 
+      font-size: 48px;
+      color: #0A3B55;
+    }
+    .justice{
+      background-image: url("../img/image2.png");
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+      width: 65%;
+      height: 600px; 
+      margin-top: 7rem;
+      margin-left: 10.5%;
+      box-sizing: border-box;   
+      position:sticky
+    }
+    .justice h1{
+      text-align: right;
+      margin-top: 22rem;
+      font-size: 83px;
+      color: white;
+    }
+    .justice h2{
+      text-align: right;
+      margin-top: -65px;
+      font-size: 30px;
+      color: white;
+    }
+    .law h1{
+      margin-left: 76%;
+      margin-top: -14.43rem;
+      font-size: 66.6px;
+      color: #CF9E3E;
+    }
+    .law h2{
+      margin-top: -3rem;
+      margin-left:76%;
+      font-size: 32px;
+      color: #0A3B55;
+    }
+    .reg{
+        width:.12%;
+        margin-top: 11rem;
+        margin-left:10.5%;
+        color: #0A3B55;
+        position:sticky;
+    }
+    .reg input[type=text] {
+        border: none;
+        margin: 10px 0px;
+        padding: 0px 130px;
+        border-bottom: 2px solid #0A3B55;
+        box-sizing: border-box;
+        outline: none;
+      }
+      .reg select{
+        border: none;
+        margin: 8px 0px;
+        padding: 0px 145px;
+        border-bottom: 2px solid #0A3B55;
+        box-sizing: border-box;
+        outline: none;
+      }
+      .reg input[type=password] {
+        border: none;
+        margin: 8px 0px;
+        padding: 0px 130px;
+        border-bottom: 2px solid #0A3B55;
+        box-sizing: border-box;
+        outline: none;
+      }
+      .reg input[type=email] {
+        border: none;
+        margin: 8px 0px;
+        padding: 0px 130px;
+        border-bottom: 2px solid #0A3B55;
+        box-sizing: border-box;
+        outline: none;
+      }
+      .bot{
+        margin-top: -1.5rem;
+        margin-left:10.4%;
+      }
+    
+      .bot button{
+        background-color: #0A3B55;
+        text-decoration: none;
+        color: white;
+        padding: 14px 40px;
+        border-radius: 4px;
+        max-width: 317px;
+      }
+      .re{
+left:34%;
+      }
+      .inf{
+        left:34%;
+      }
+
+      .parrafo{
+        margin-top: -4rem;
+        margin-left:100%;
+        color: #0A3B55;
+      }
+      .parrafo1{
+        width: 15%;
+      }
+      .parrafo2{
+        width: 11%;
+        margin-top: -2.3rem;
+        margin-left:8%;
+        width: 10rem;
+        color: #CF9E3E;
+      }
+      .parrafo3{
+        margin-top: -1rem;
+        margin-left:0%;
+      }
+      .parrafo4{
+        margin-top: -2.2rem;
+        margin-left:5.8%;
+        color: #CF9E3E;
+      }
+      .parrafo5{
+        margin-top: -1rem;
+        margin-left:0%;
+      }
+      .par{
+        color: #0A3B55;
+        margin-left:20.4%;
+      }
+      .inicio{
+        margin-top: -0.9rem;
+        margin-left:14%;
+        margin-bottom: 6rem;
+      }
+    
+ }   
