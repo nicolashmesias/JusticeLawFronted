@@ -1,3 +1,4 @@
+
 .container {
   display: flex;
   width: 100%;
@@ -110,6 +111,14 @@
   top: 140px;
   height: 40px;
   background-color: #dfe6e9;
+}
+.event.taskk {
+
+  border-color: #003c74;
+
+}
+#aa:hover {
+  border-color: #003c74;
 }
 .event.last {
   top: 240px;
