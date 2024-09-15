@@ -2,10 +2,9 @@
     display: flex;
     width: 100%;
     height: auto;
-
     overflow: hidden;
   }
-.sidebar {
+  .sidebar {
     position: sticky;
     padding-top: 2rem;
     max-width: 15%;
@@ -51,7 +50,7 @@
   }
   
   #cerrarSesion {
-    margin-top: 14rem;
+    margin-top: 10rem;
   }
   
   .sidebar ul li a:hover {
@@ -59,12 +58,18 @@
   }
 
 .notifications {
-    background: #f9f9f9;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    align-content: center;
+  background-color: #f7f7f9;
+  width: 100%;
+  height: auto;
+  text-align: left;
 }
+
+.contenido {
+  justify-content: center;
+  align-items: center;
+  margin-left: 15rem;
+}
+
 
 .notification-list {
     display: flex;
@@ -142,4 +147,12 @@
 
 .load-more button:hover {
     background-color: #003049;
+}
+
+.content .section {
+  display: none;
+}
+
+.content .section.active {
+  display: block;
 }
