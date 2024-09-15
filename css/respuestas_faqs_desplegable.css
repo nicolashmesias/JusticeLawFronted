@@ -288,7 +288,7 @@ body {
     font-size: 12px; 
     color: white;
 }
-/* Estilo del contenedor de las preguntas frecuentes */
+
 .faq-sections {
     display: flex;
     justify-content: space-between;
@@ -342,7 +342,7 @@ ul {
     color: #555;
         transition: max-height 0.3s ease-out, padding 0.3s ease-out;
 }
-/* Estilos cuando el desplegable está activo */
+
 .faq-item.active .faq-question {
     background-color: #e1e1e1;
 }
