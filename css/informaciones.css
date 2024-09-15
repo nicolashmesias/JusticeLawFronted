@@ -107,8 +107,223 @@ button{
     padding: 10px; /* Espaciado alrededor del texto */
     border-radius: 5px; /* Opcional: bordes redondeados */
 }
-@media (max-width: 768px) {
+/* Contenedor del buscador y lista de artículos ocultos por defecto */
+.buscador-container, .articles-list {
+    display: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+    margin: 10px auto; /* Centrar y agregar espaciado */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding-left: 10px;
+    font-size: 1em;
+    border-radius: 50px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.search-bar img {
+    width: 16px;
+    height: 16px;
+}
+
+.filter-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    gap: 10px;
+   
+}
+
+.filter-menu button {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.filter-menu button.active {
+    color: #CF9E3E;
+}
+
+.filter-menu button:hover {
+    color: black;
+}
+
+/* Contenedor de la lista de artículos */
+.articles-list {
+    margin: 10px 0;
+}
+
+.article-card {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.article-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.article-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article-info h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.article-info p {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+    color: #666;
+}
+  
+  /* Media query para mostrar el contenedor solo en pantallas menores a 600px */
+  @media (max-width: 600px) {
+    .buscador-container, .articles-list {
+      display: block;
+    }
+  
+    .buscador-container {
+      padding: 10px;
+      background-color:white;
+      border-radius: 8px;
+    }
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  
+    .header .time {
+      font-size: 0.9em; /* Tamaño más pequeño */
+      font-weight: bold;
+    }
+  
+    .header .icons img {
+      width: 20px;
+      margin-left: 10px;
+    }
+  
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      height: 40px;
+    }
+  
+    .search-bar input {
+      width: calc(100% - 50px);
+      padding: 8px;
+ 
+      border-radius: 4px 0 0 4px;
+    }
+  
+    .search-bar button {
+      width: 50px;
+      background-color: #fff;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+  
+    .filter-menu {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      gap: 10px;
+    }
+  
+    .filter-menu button {
+      background-color: transparent;
+      border: none;
+      font-size: 1em;
+      cursor: pointer;
+      padding: 5px;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+  
+    .filter-menu button.active {
+      color: black;
+      font-weight: lighter;
+    }
+  
+    .filter-menu button:hover {
+      color: black;
+      font-weight: bold;
+    }
+  
+    .articles-list {
+      padding: 10px;
+    }
+  
+    .article {
+      display: flex;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ada5a5;
+      padding-bottom: 10px;
+    }
+  
+    .article img {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+    }
+  
+    .article-info h3 {
+      font-size: 1em;
+      margin: 0;
+    }
+  
+    .article-info p {
+      font-size: 0.9em;
+      color: #666;
+    }
+  
+    .article-info span {
+      font-size: 0.8em;
+      color: #999;
+    }
+  }
+  
+/* Responsive para pantallas menores a 600px */
+@media (max-width: 600px) {
     .informaciones-home {
-        grid-template-columns: 1fr;
+        display: none; /* Oculta el contenedor en pantallas menores a 600px */
     }
 }
