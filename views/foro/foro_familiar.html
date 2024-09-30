@@ -429,6 +429,7 @@
             <h1>¡Bienvenido al foro!</h1>
             <p>Infórmate y comparte tu opinión con los demás.</p>
             <input type="text" placeholder="Buscar en el foro..." />
+            <button id="redirectButton">Ir a la vista deseada</button>
         </section>
 
         <div class="content">
@@ -588,7 +589,11 @@
         ></a>
         <a href="../foro/foro.html"><i class="fa-solid fa-users"></i></a>
       </footer>
-  
+      <script>
+        document.getElementById("goToForum").addEventListener("click", function() {
+            window.location.href = "ruta/a/tu/.html";
+        });
+    </script>
 </body>
 
 </html>
