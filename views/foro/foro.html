@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="stylesheet" href="../../css/home.css" />
     <link rel="stylesheet" href="../../css/foro.css" />
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="../../css/styles.css" />
+>>>>>>> 2df0b9f405d40a7e2d9f2fd78ff6ad9fd07d952d
     <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Justice Law Forum</title>
 </head>
@@ -14,20 +18,25 @@
 <body>
     <header class="header-large">
         <div class="logo">
-          <img src="../../img/logo.jpg" alt="JusticeLaw Logo" />
-          <div class="logo-text">
-            <h1>JUSTICE</h1>
-            <p>LAW</p>
-          </div>
+            <img src="../../img/logo.jpg" alt="JusticeLaw Logo" />
+            <div class="logo-text">
+                <h1>JUSTICE</h1>
+                <p>LAW</p>
+            </div>
         </div>
         <div class="search-bar">
+<<<<<<< HEAD
           <input type="text" placeholder="" />
+=======
+          <input type="text" id="searchInput" placeholder="Buscar en el foro..." />
+>>>>>>> 2df0b9f405d40a7e2d9f2fd78ff6ad9fd07d952d
           <img id="filtroBusqueda" src="../../img/FiltroBusqueda.png" alt="Filtro" />
           <button>
-            <img src="../../img/Lupa.png" alt="Buscar" />
+              <img src="../../img/Lupa.png" alt="Buscar" />
           </button>
         </div>
         <nav class="nav-links">
+<<<<<<< HEAD
           <a href="#" id="home">Home</a>
           <a href="#">Foro</a>
           <a href="#">Sobre nosotros</a>
@@ -57,8 +66,44 @@
             <p>Infórmate y comparte tu opinión con los demás.</p>
             <input type="text" id="foroSearchInput" placeholder="Buscar en el foro..." />
         </section>
+=======
+            <a href="#">Home</a>
+            <a href="#">Foro</a>
+            <a href="#">Sobre nosotros</a>
+        </nav>
+        <div class="user-menu">
+            <img class="img-perfil" src="../../img/fotoPerfil.png" alt="foto de Perfil" />
+            <span>Alfonso Juan</span>
+            <input type="checkbox" id="dropdownToggle" class="dropdown-checkbox" />
+            <label for="dropdownToggle">
+                <img class="img-flecha" src="../../img/flechaPerfil.png" alt="flecha" />
+            </label>
+            <div class="dropdown">
+                <ul>
+                    <li><a href="../perfil_usuario/crearPerfil.html">Perfil</a></li>
+                    <li><a href="../historial/historial.html">Historial</a></li>
+                    <li><a href="../notification/notification.html">Notificaciones</a></li>
+                    <li><a href="../configuracion/configuracion.html">Configuraciones</a></li>
+                    <li><a href="#" id="openModal">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+>>>>>>> 2df0b9f405d40a7e2d9f2fd78ff6ad9fd07d952d
 
-        <div class="content">
+    <main>
+      <section class="welcome">
+        <h1>¡Bienvenido al foro!</h1>
+        <p>Infórmate y comparte tu opinión con los demás.</p>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Buscar en el foro..." />
+            <a href="#" class="search-button" id="searchBtn">
+                <img src="../../img/Lupa.png" alt="Buscar" class="search-icon" />
+            </a>
+        </div>
+    </section>
+
+        <div class="content" id="forumContent">
             <div class="forum">
                 <table>
                     <tr>
@@ -70,6 +115,7 @@
                         <td class="message-col">
                             <h2>¿Qué pasos debo seguir si me lesiono en un accidente de tráfico y el culpable se da a la fuga?</h2>
                             <p>Recientemente estuve involucrado en un accidente de tráfico donde el otro conductor se dio a la fuga. Sufrí lesiones y daños en mi vehículo. ¿Cuáles son mis opciones legales en esta situación? ¿Cómo puedo buscar compensación por mis lesiones y los daños a mi propiedad si el culpable no ha sido identificado?</p>
+<<<<<<< HEAD
                             <div class="meta">
                                 <span class="date">30 de marzo, 2024</span>
                                 <span class="category">Categoría: Legal</span>
@@ -92,47 +138,75 @@
                                 <span class="date">2 de abril, 2024</span>
                                 <span class="category">Categoría: Legal</span>
                             </div>
+=======
+>>>>>>> 2df0b9f405d40a7e2d9f2fd78ff6ad9fd07d952d
                         </td>
                         <td class="responses-col"><a href="">3</a></td>
                         <td class="user-col">
                             <div class="user-info">
                                 <img src="../../img/fotoPerfil.png" class="fotoperfil" alt="Carla Pérez" />
                                 <br>
+<<<<<<< HEAD
                                 <span class="name_user">Carla Pérez</span>
+=======
+                                <span class="name_user">Andrés López</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="message-col">
+                            <h2>¿Cuáles son mis derechos como inquilino si el propietario no realiza las reparaciones necesarias?</h2>
+                            <p>Estoy alquilando un apartamento y el propietario no ha realizado las reparaciones necesarias a pesar de mis repetidas solicitudes. ¿Qué puedo hacer para proteger mis derechos como inquilino?</p>
+                        </td>
+                        <td class="responses-col"><a href="foro_respuestas.html">5</a></td>
+                        <td class="user-col">
+                            <div class="user-info">
+                                <img src="../../img/fotoPerfil.png" class="fotoperfil" alt="María García" />
+                                <br>
+                                <span class="name_user">María García</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="message-col">
+                            <h2>¿Qué debo hacer si soy víctima de acoso laboral?</h2>
+                            <p>He estado sufriendo acoso laboral en mi lugar de trabajo y no sé qué pasos seguir. ¿Qué recursos legales están disponibles para mí y cómo puedo abordarlo de manera efectiva?</p>
+                        </td>
+                        <td class="responses-col"><a href="foro_respuestas.html">1</a></td>
+                        <td class="user-col">
+                            <div class="user-info">
+                                <img src="../../img/fotoPerfil.png" class="fotoperfil" alt="Juan Pérez" />
+                                <br>
+                                <span class="name_user">Juan Pérez</span>
+>>>>>>> 2df0b9f405d40a7e2d9f2fd78ff6ad9fd07d952d
                             </div>
                         </td>
                     </tr>
                     <!-- Puedes continuar agregando más mensajes aquí -->
                 </table>
             </div>
+
             <aside>
                 <div class="categories">
                     <h3>Categorías</h3>
                     <ul>
                         <li><a href="foro_familiar.html">Familiar</a></li>
-                        <br>
                         <li><a href="#">Legal</a></li>
-                        <br>
                         <li><a href="#">Laboral</a></li>
-                        <br>
                         <li><a href="#">Propiedad</a></li>
-                        <br>
                         <li><a href="#">Vivienda</a></li>
-                        <br>
                         <li><a href="#">Negocio</a></li>
-                        <br>
                         <li><a href="#">Inmigración</a></li>
-                        <br>
                         <li><a href="#">Consumidor</a></li>
-                        <br>
                         <li><a href="#">Propiedad Intelectual</a></li>
                     </ul>
                 </div>
+
                 <div class="ask-question">
                     <h3>Escribe tu duda....</h3>
-                    <input type="text" placeholder="Asunto:" />
-                    <textarea placeholder="Contenido:"></textarea>
-                    <select>
+                    <input type="text" id="asunto" placeholder="Asunto:" />
+                    <textarea id="contenido" placeholder="Contenido:"></textarea>
+                    <select id="categoria">
                         <option value="">Categoría</option>
                         <option value="familiar">Familiar</option>
                         <option value="legal">Legal</option>
@@ -144,7 +218,7 @@
                         <option value="consumidor">Consumidor</option>
                         <option value="propiedad-intelectual">Propiedad Intelectual</option>
                     </select>
-                    <button>Publicar</button>
+                    <button id="publicarBtn">Publicar</button>
                 </div>
             </aside>
         </div>
@@ -174,6 +248,7 @@
                 <img src="../../img/Youtube.png" alt="Youtube" />
             </a>
             <a href="https://www.x.com/">
+<<<<<<< HEAD
                 <img src="../../img/Twiter.png" alt="Twiter" />
             </a>
             <a href="https://www.linkedin.com/">
@@ -194,6 +269,14 @@
     </footer>
 
     <script src="foro.js"></script>
+=======
+                <img src="../../img/Twiter.png" alt="Twitter" />
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+>>>>>>> 2df0b9f405d40a7e2d9f2fd78ff6ad9fd07d952d
 </body>
 
 </html>
