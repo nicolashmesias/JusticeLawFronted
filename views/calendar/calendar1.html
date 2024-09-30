@@ -134,73 +134,27 @@
             <div class="container">
                 <div class="calendar">
                     <h1>Calendario</h1>
-                    <div class="months">
-                        <div>Enero</div>
-                        <div>Febrero</div>
-                        <div>Marzo</div>
-                        <div>Abril</div>
-                        <div>Mayo</div>
-                        <div>Junio</div>
-                        <div>Julio</div>
-                    </div>
-                    <div class="days">
-                        <div class="day">
-                            <span class="date">1</span>
-                            <span class="day-name">Lun</span>
-                        </div>
-                        <div class="day">
-                            <span class="date">2</span>
-                            <span class="day-name">Mar</span>
-                        </div>
-                        <div class="day">
-                            <span class="date">3</span>
-                            <span class="day-name">Mié</span>
-                        </div>
-                        <div class="day">
-                            <span class="date">4</span>
-                            <span class="day-name">Jue</span>
-                        </div>
-                        <div class="day">
-                            <span class="date">5</span>
-                            <span class="day-name">Vie</span>
-                        </div>
-                        <div class="day">
-                            <span class="date">6</span>
-                            <span class="day-name">Sáb</span>
-                        </div>
-                        <div class="day">
-                            <span class="date">8</span>
-                            <span class="day-name">Lun</span>
-                        </div>
-                        <div class="day">
-                            <span class="date">9</span>
-                            <span class="day-name">Mar</span>
-                        </div>
-                        <div class="day">
-                            <span class="date">10</span>
-                            <span class="day-name">Mié</span>
-                        </div>
-                        <div class="day selected">
-                            <span class="date">11</span>
-                            <span class="day-name">Jue</span>
-                        </div>
-                        <div class="day">
-                            <span class="date">12</span>
-                            <span class="day-name">Vie</span>
-                        </div>
-                        <div class="day">
-                            <span class="date">13</span>
-                            <span class="day-name">Sáb</span>
-                        </div>
-                        <div class="day">
-                            <span class="date">15</span>
-                            <span class="day-name">Lun</span>
-                        </div>
-                        <div class="day">
-                            <span class="date">16</span>
-                            <span class="day-name">Mar</span>
-                        </div>
-                    </div>
+                    <div class="month-navigation">
+                      <button id="prev-month" class="arrow">←</button>
+              
+                      <!-- Contenedor de los meses -->
+                      <div class="months"></div>
+              
+                      <!-- Botón de navegación derecha para los meses -->
+                      <button id="next-month" class="arrow">→</button>
+                  </div>
+              
+                  <!-- Botón de navegación izquierda para los días -->
+                  <div class="day-navigation">
+                      <button id="prev-day" class="arrow">←</button>
+              
+                      <!-- Contenedor de los días -->
+                      <div class="days"></div>
+              
+                      <!-- Botón de navegación derecha para los días -->
+                      <button id="next-day" class="arrow">→</button>
+                  </div>
+                    
                     <div class="schedule">
                         <div class="hours">
                             <div>10:00</div>

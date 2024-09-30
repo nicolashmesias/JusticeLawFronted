@@ -204,3 +204,69 @@
     border: 0.1px solid #cf9e3e;
     width: 0px;
 }
+
+
+/*borrar si esta mal */
+
+.arrow {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.months {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  overflow: hidden; /* Oculta los meses que estén fuera del área visible */
+  width: 100%; /* El ancho del contenedor */
+}
+
+
+.month-navigation,
+.day-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.months,
+.days {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    overflow: hidden;
+    width: 80%; /* Ajuste para que los meses y días se mantengan dentro de los márgenes */
+    
+}
+
+.months,
+.days:hover {
+  cursor: pointer;
+    
+}
+
+
+/* slector*/
+
+/* Estilo para el mes seleccionado */
+.months span.selected {
+  color: #0561b7; /* Cambia el color del texto */
+  padding-bottom: 2px;
+}
+
+/* Estilo para el día seleccionado */
+.day.selected {
+  
+  color: white; /* Cambia el color del texto */
+  border-radius: 50%; /* Hace que el fondo del día seleccionado sea circular */
+ 
+}

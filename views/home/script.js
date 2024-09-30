@@ -21,4 +21,9 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     }
   });
 
+//cambiar a foro
+  document.getElementById('forum-link').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    window.location.href = '../foro/foro.html'; 
+});
  
